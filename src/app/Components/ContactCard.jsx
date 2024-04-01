@@ -10,7 +10,7 @@ const ContactCard = (props) => {
     <div className="grid grid-cols-3 gap-4">
       {contact.map((item, index) => (
         <div key={index} className="bg-[#185B9C] rounded-md text-white p-4">
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-2 font-semibold">
             <div className="flex items-center gap-2">
               <UserCircleIcon className="h-5" />
               <h3 className="capitalize">{item.username}</h3>
