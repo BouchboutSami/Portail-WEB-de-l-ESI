@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 // import required modules
-import { Grid, Pagination } from "swiper/modules";
+import { Grid, Pagination, Navigation } from "swiper/modules";
 import CardEvent from "./CardEvent";
 
 export default function NextEvents() {
@@ -19,14 +19,16 @@ export default function NextEvents() {
     <>
       <Swiper
         slidesPerView={3}
+        navigation={true}
         grid={{
-          columns: 3,
+          rows: 2,
+          fill: "row",
         }}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        modules={[Grid, Pagination]}
+        modules={[Grid, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
