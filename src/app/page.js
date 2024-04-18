@@ -2,6 +2,7 @@ import Button from "./components/Button";
 import ButtonIcon from "./components/ButtonIcon";
 import Stats from "./components/Stats";
 import Breadcrumb from "./components/Breadcrumb";
+import Academics from "./components/Academics";
 
 export default function Home() {
   const table = [
@@ -34,6 +35,7 @@ export default function Home() {
       <div className="container mx-auto py-4">
       <Breadcrumb/>
       </div>
+      <Academics/>
     </div>
   );
 }
