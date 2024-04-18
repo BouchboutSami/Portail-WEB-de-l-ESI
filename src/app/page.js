@@ -1,3 +1,15 @@
+"use client";
+import { BrowserRouter } from "react-router-dom";
+import NavBar from "./Components/NavBar";
+import CampusNews from "./Components/CampusNews";
+
 export default function Home() {
-  return <div className="font-poppins text-bleu">Hello</div>;
+  return (
+    <BrowserRouter>
+      <div className=" w-screen">
+        <NavBar />
+        <CampusNews/>
+      </div>
+    </BrowserRouter>
+  );
 }
