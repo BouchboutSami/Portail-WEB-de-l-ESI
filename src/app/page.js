@@ -3,7 +3,7 @@ import ButtonIcon from "./components/ButtonIcon";
 import Stats from "./components/Stats";
 import Breadcrumb from "./components/Breadcrumb";
 import Academics from "./components/Academics";
-
+import LifeCampus from "./components/LifeCampus";
 export default function Home() {
   const table = [
     {
@@ -36,6 +36,7 @@ export default function Home() {
       <Breadcrumb/>
       </div>
       <Academics/>
+      <LifeCampus/>
     </div>
   );
 }
