@@ -1,11 +1,11 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
-import SwiperCore from 'swiper';
-
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import SwiperCore from "swiper";
 
 // Install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
@@ -13,8 +13,8 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 const ImgSlider = ({ images }) => {
   return (
     <div className="swiper-container">
-      <Swiper 
-        effect='coverflow'
+      <Swiper
+        effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3}
@@ -29,8 +29,17 @@ const ImgSlider = ({ images }) => {
         className="mySwiper"
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} style={ { width : 'auto', height : '18rem'} }>
-              <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%', height: '85%', borderRadius: '15px', objectFit: 'cover' }} />
+          <SwiperSlide key={index} style={{ width: "auto", height: "18rem" }}>
+            <img
+              src={image}
+              alt={`Slide ${index + 1}`}
+              style={{
+                width: "100%",
+                height: "85%",
+                borderRadius: "15px",
+                objectFit: "cover",
+              }}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
