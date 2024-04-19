@@ -23,17 +23,16 @@ const LifeCampus = () => {
     <div className="w-full bg-white p-4">
       <div className='text-black font-bold font-poppins text-[36px] text-center'>Life at campus</div>
       <div className='text-black font-medium font-poppins text-[20px] text-center mb-4'>Find out about our range of activities designed to liven up student life</div>
-      <div className="container mx-auto mt-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="container  mx-auto mt-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {photos.map((photo, index) => (
             <div key={index} className="flex flex-col items-start mb-[76px]">
               <img src={photo.image} alt={photo.title} className="w-400 h-280 mb-2" />
               <p className="font-semibold mb-1 hover:underline m-4">{photo.title}</p>
-              <p className='m-4'>{photo.text}</p>
             </div>
           ))}
         </div>
-        <div className="text-center mt-8">
+        <div className="text-center ">
           <button className="bg-[#185B9C] text-white font-poppins text-[20px] font-bold py-2 px-4 w-[300px] h-[78] ">
             More about campus life
           </button>
