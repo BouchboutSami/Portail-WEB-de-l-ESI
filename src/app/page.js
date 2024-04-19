@@ -7,6 +7,7 @@ import Signalbar from "@/components/SignalBar";
 import NavBar from "@/components/NavBar";
 import CampusNews from "@/components/CampusNews";
 import Academics from "@/components/Academics";
+import LifeCampus from "@/components/LandingPage/LifeCampus";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <NextEvents />
       </div>
       <Academics />
+      <LifeCampus />
       <ServicesForCompanies />
       <Partenaires />
       <Footer />
