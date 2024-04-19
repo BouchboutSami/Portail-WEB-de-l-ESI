@@ -3,8 +3,8 @@ import React from "react";
 
 const CardEvent = () => {
   return (
-    <div className="card w-full min-h-max text-black flex flex-col items-center rounded-xl border-collapse">
-      <div className="min-w-full h-36 rounded-t-xl bg-[url(/images/Event2.png)]">
+    <div className="card w-full min-h-max text-black flex flex-col items-center rounded-xl border-collapse hover:drop-shadow-md hover:scale-[1.02] ease-in-out">
+      <div className="min-w-full h-36 rounded-t-xl bg-[url(/images/Event2.png)] bg-cover">
         {/* <img
           src="/images/Event.png"
           alt="event"

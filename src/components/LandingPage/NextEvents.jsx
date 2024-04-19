@@ -8,11 +8,11 @@ import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 
-import "./styles.css";
+// import "./styles.css";
 
 // import required modules
 import { Grid, Pagination, Navigation } from "swiper/modules";
-import CardEvent from "./CardEvent";
+import CardEvent from "../Cards/CardEvent";
 
 export default function NextEvents() {
   return (
@@ -55,7 +55,7 @@ export default function NextEvents() {
         <SwiperSlide>
           <CardEvent />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="mb-16">
           <CardEvent />
         </SwiperSlide>
       </Swiper>
