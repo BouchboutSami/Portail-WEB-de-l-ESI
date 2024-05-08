@@ -90,7 +90,7 @@ const PostSideBar = () => {
   ];
 
   return (
-    <div className=" min-h-screen bg-white w-fit mr-4 ">
+    <div className=" min-h-screen bg-white w-fit">
       <div class="sidebar pt-8 flex flex-col w-fit border-r border-[#A9A9A9] h-full ">
         <hr className="border-[#A9A9A9] mt-4" />
         {navigation.map((item, index) => (
