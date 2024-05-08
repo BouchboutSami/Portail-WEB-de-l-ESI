@@ -1,33 +1,42 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { ChevronRightIcon } from "@heroicons/react/outline";
+import { LuChevronRight } from "react-icons/lu";
+import { usePathname } from "next/navigation";
+
 const Breadcrumb = () => {
-  const breadcrumbData = [
-    { label: "Home", path: "/" },
-    { label: "Page", path: "/Page" },
-    { label: "SousPage", path: "/SousPage" },
-    { label: "SSousPage", path: "/SSousPage" },
-  ];
+  const paths = usePathname();
+  const pathNames = paths.split("/").filter((path) => path);
 
   return (
     <div className="w-fit bg-[#F5F5F5] rounded-[35px] px-2">
       <ol className=" flex space-x-2">
-        {breadcrumbData.map((breadcrumb, index) => (
-          <li key={index} className="flex items-center">
+        <li className="flex items-center">
+          <a
+            href="/"
+            className="text-black font-normal font-poppins hover:underline"
+          >
+            <div className="flex flex-row gap-2 items-center">
+              Home
+              <LuChevronRight className=" h-4" />
+            </div>
+          </a>
+        </li>
+        {pathNames.map((path, index) => (
+          <li key={index} className="flex items-center cursor-pointer">
             <a
-              href={breadcrumb.path}
-              className="text-black font-semibold font-poppins hover:underline"
+              href={"/" + pathNames.slice(0, index + 1).join("/")}
+              className="text-black font-normal font-poppins hover:underline"
             >
-              {breadcrumbData.length - 1 !== index ? (
+              {pathNames.length - 1 !== index ? (
                 <div className="flex flex-row gap-2 items-center">
-                  {breadcrumb.label}
-                  <ChevronRightIcon className=" h-4" />
+                  {path}
+                  <LuChevronRight className=" h-4" />
                 </div>
               ) : (
-                <div>{breadcrumb.label}</div>
+                <div>{path}</div>
               )}
             </a>
-            {index < breadcrumb.length - 1 && (
+            {index < pathNames.length - 1 && (
               <svg
                 className="fill-current w-3 h-3 mx-2 text-gray-500"
                 xmlns="http://www.w3.org/2000/svg"

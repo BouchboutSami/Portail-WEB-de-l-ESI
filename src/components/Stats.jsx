@@ -3,8 +3,8 @@ import React from "react";
 const Stats = (props) => {
   const stat = props.table;
   return (
-    <div className="bg-blue-900 py-24 sm:py-14">
-      <div className="max-w-7xl px-5 lg:px-8">
+    <div className="bg-bleu py-24 sm:py-14 w-full">
+      <div className="px-5 lg:px-8">
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stat.map((item, index) => (
             <div
