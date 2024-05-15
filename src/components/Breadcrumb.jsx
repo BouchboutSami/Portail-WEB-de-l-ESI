@@ -5,7 +5,10 @@ import { usePathname } from "next/navigation";
 
 const Breadcrumb = () => {
   const paths = usePathname();
-  const pathNames = paths.split("/").filter((path) => path);
+  const pathNames = paths.split("/").filter((path) => path.replace("-"," "));
+  pathNames.forEach((element,index) => {
+    pathNames[index]=element.replace("-"," ");
+  });
 
   return (
     <div className="w-fit bg-[#F5F5F5] rounded-[35px] px-2">
@@ -24,7 +27,7 @@ const Breadcrumb = () => {
         {pathNames.map((path, index) => (
           <li key={index} className="flex items-center cursor-pointer">
             <a
-              href={"/" + pathNames.slice(0, index + 1).join("/")}
+              href={"/" + pathNames.slice(0, index + 1).join("/").replace(" ","-")}
               className="text-black font-normal font-poppins hover:underline"
             >
               {pathNames.length - 1 !== index ? (
