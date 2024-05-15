@@ -24,23 +24,31 @@ const PostSideBar = () => {
 
   useEffect(() => {
     const pathname = location.pathname;
-    let activeItem = "/";
+    let activeItem = "/Postgraduation-Research";
     let activesubtitle = "";
-    if (pathname === "/Postgraduate-studies") {
+    if (pathname === "/Postgraduation-Research/Postgraduate-studies") {
       activeItem = "Postgraduate studies";
-    } else if (pathname === "/Research") {
+    } else if (pathname === "/Postgraduation-Research/Research") {
       activeItem = "Research";
-    } else if (pathname === "/Academic-authorization") {
+    } else if (pathname === "/Postgraduation-Research/Academic-authorization") {
       activeItem = "Academic authorization";
-    } else if (pathname === "/LCSI") {
+    } else if (pathname === "/Postgraduation-Research/Research/LCSI") {
       activesubtitle = "LCSI";
-    } else if (pathname === "/LMCS") {
+    } else if (pathname === "/Postgraduation-Research/Research/LMCS") {
       activesubtitle = "LMCS";
-    } else if (pathname === "/Research-projects") {
+    } else if (
+      pathname === "/Postgraduation-Research/Research/Research-projects"
+    ) {
       activesubtitle = "Research Projects";
-    } else if (pathname === "/University-accreditation") {
+    } else if (
+      pathname ===
+      "/Postgraduation-Research/Academic-authorization/University-accreditation"
+    ) {
       activesubtitle = "University accreditation";
-    } else if (pathname === "/Artciles-news") {
+    } else if (
+      pathname ===
+      "/Postgraduation-Research/Academic-authorization/Articles-news"
+    ) {
       activesubtitle = "Articles News";
     }
     setActiveItem(activeItem);
@@ -52,45 +60,45 @@ const PostSideBar = () => {
   const navigation = [
     {
       title: "Postgraduate studies",
-      link: "/Postgraduate-studies",
+      link: "/Postgraduation-Research/Postgraduate-studies",
       subtitles: [],
     },
     {
       title: "Research",
-      link: "/Research",
+      link: "/Postgraduation-Research/Research",
       subtitles: [
         {
           title: "LCSI",
-          link: "/LCSI",
+          link: "/Postgraduation-Research/Research/LCSI",
         },
         {
           title: "LMCS",
-          link: "/LMCS",
+          link: "/Postgraduation-Research/Research/LMCS",
         },
         {
           title: "Research Projects",
-          link: "/Research-projects",
+          link: "/Postgraduation-Research/Research/Research-projects",
         },
       ],
     },
     {
       title: "Academic authorization",
-      link: "/Academic-authorization",
+      link: "/Postgraduation-Research/Academic-authorization",
       subtitles: [
         {
           title: "University accreditation",
-          link: "/University-accreditation",
+          link: "/Postgraduation-Research/Academic-authorization/University-accreditation",
         },
         {
           title: "Articles News",
-          link: "/Articles-news",
+          link: "/Postgraduation-Research/Academic-authorization/Articles-news",
         },
       ],
     },
   ];
 
   return (
-    <div className=" min-h-screen bg-white w-fit">
+    <div className=" min-h-screen bg-white w-fit text-[16px]">
       <div class="sidebar pt-8 flex flex-col w-fit border-r border-[#A9A9A9] h-full ">
         <hr className="border-[#A9A9A9] mt-4" />
         {navigation.map((item, index) => (
@@ -98,7 +106,7 @@ const PostSideBar = () => {
             <a href={item.link}>
               <button
                 onClick={() => handleClick(item.title)}
-                className={`font-poppins font-medium hover:text-[#185B9C] pl-8 text-start hover:font-semibold w-[275px] text-[20px] py-2 px-2  ${
+                className={`font-poppins font-medium hover:text-[#185B9C] pl-8 text-start hover:font-semibold w-[325px] text-[16px] py-2 px-2  ${
                   activeItem === item.title
                     ? "text-[#185B9C] font-semibold "
                     : ""
@@ -107,15 +115,18 @@ const PostSideBar = () => {
                 {item.title}
               </button>
             </a>
-            {activeItem === item.title && (
+            {(activeItem === item.title ||
+              item.subtitles.some(
+                (subtitle) => subtitle.title === activeSubtitle
+              )) && (
               <>
                 {item.subtitles.map((subtitle, index) => (
                   <a href={subtitle.link} key={index}>
                     <button
                       onClick={() => handleSubtitleClick(subtitle.title)}
-                      className={`font-poppins font-medium hover:text-black pl-16 text-start hover:font-semibold w-[250px] text-[16px] py-2 px-2  ${
+                      className={`font-poppins font-medium hover:text-black pl-16 text-start hover:font-semibold w-[250px] text-[14px] py-2 px-2  ${
                         activeSubtitle === subtitle.title
-                          ? "text-black font-black"
+                          ? "text-black font-semibold"
                           : ""
                       }`}
                     >
