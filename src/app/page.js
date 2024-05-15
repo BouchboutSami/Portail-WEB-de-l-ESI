@@ -1,3 +1,44 @@
+<<<<<<< HEAD
+import Button from "./components/Button";
+import ButtonIcon from "./components/ButtonIcon";
+import Stats from "./components/Stats";
+import Breadcrumb from "./components/Breadcrumb";
+import Academics from "./components/Academics";
+import LifeCampus from "./components/LifeCampus";
+export default function Home() {
+  const table = [
+    {
+      title: 'Professors',
+      stats: '4',
+    },
+    {
+      title: 'Lecturers',
+      stats: '20',  
+    },
+    {
+      title: 'Doctoral candidates',
+      stats: '60+',
+    }
+  ];
+
+  const Buttontitle = 'Hello world!';
+  const items = [
+    { label: 'Home', url: '/' },
+    { label: 'Products', url: '/products' },
+    { label: 'Category', url: '/category' },
+    { label: 'Current Page' },
+  ];
+  return (
+    <div className="font-poppins text-blue">
+      <Stats table={table} />
+      <Button title={Buttontitle} />
+      <ButtonIcon title={Buttontitle}/>
+      <div className="container mx-auto py-4">
+      <Breadcrumb/>
+      </div>
+      <Academics/>
+      <LifeCampus/>
+=======
 import Footer from "@/components/Footer";
 import NextEvents from "@/components/LandingPage/NextEvents";
 import Partenaires from "@/components/Partenaires/Partenaires";
@@ -28,6 +69,7 @@ export default function Home() {
       <ServicesForCompanies />
       <Partenaires />
       <Footer />
+>>>>>>> c5e1e7b7a28e77722a1a7c7bc9cfe22786387925
     </div>
   );
 }
