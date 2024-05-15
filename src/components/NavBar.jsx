@@ -99,8 +99,7 @@ const NavBar = () => {
     {
       title: "Doctoral Condidate",
       imageUrl: "/assets/DoctoralCondidate.jpg",
-      link: "/",
-    },
+      link: "/YouAre-PhD" },
     { title: "Company", imageUrl: "/assets/Company.jpg", link: "/YouAre-Company" },
     { title: "Faculty Staff", imageUrl: "/assets/FacultyStaff.jpg", link: "/" },
     { title: "Alumni", imageUrl: "/assets/Alumni.jpg", link: "/" },
