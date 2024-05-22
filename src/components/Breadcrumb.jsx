@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 
 const Breadcrumb = () => {
   const paths = usePathname();
-  const pathNames = paths.split("/").filter((path) => path.replace("-"," "));
+  const pathNames = paths.split("/").filter((path) => path.replace(/-/g," "));
   pathNames.forEach((element,index) => {
-    pathNames[index]=element.replace("-"," ");
+    pathNames[index]=element.replace(/-/g," ");
   });
 
   return (
