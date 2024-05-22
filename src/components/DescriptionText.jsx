@@ -12,6 +12,11 @@ const DescriptionText = ({ imageUrl, title, description, link, right }) => {
       ) : (
         <div className="w-1/2 flex flex-col pl-44">
             <p className="text-base font-normal">{description}</p>
+          <p className="font-black text-lg mt-2 text-center text-black">{title}</p>
+        </div>
+      ) : (
+        <div className="w-1/2 flex flex-col pl-44">
+            <p className="text-base font-normal text-black">{description}</p>
           <div className="flex mt-2">
             <a href={link} className="flex font-poppins font-bold text-bleu">
               See More <RxCaretRight className="mt-1" />
@@ -22,7 +27,7 @@ const DescriptionText = ({ imageUrl, title, description, link, right }) => {
       {right ? (
         <div className="w-1/2 flex flex-col items-start pr-44">
           <div>
-            <p className="text-base font-normal">{description}</p>
+            <p className="text-base font-normal text-black">{description}</p>
           </div>
           <div className="w-full flex mt-2 justify-end">
             <a href={link} className="flex font-poppins font-bold text-bleu">
