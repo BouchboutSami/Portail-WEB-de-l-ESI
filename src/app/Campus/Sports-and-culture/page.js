@@ -5,6 +5,7 @@ import CampusSideBar from "../CampusSideBar";
 import NavBar from "@/components/NavBar";
 import PostImage from "@/components/PostImage";
 import Sports from "./sports";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
           <CampusSideBar/> 
           <Sports/>
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
