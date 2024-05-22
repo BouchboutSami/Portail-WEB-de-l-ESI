@@ -2,11 +2,8 @@ import ImageLanding from "@/components/ImageLanding";
 import NavBar from "@/components/NavBar";
 import Signalbar from "@/components/SignalBar";
 import React from "react";
-import CampusNews from "@/components/CampusNews";
 import UpcomingEvents from "@/components/UpcomingEvents";
 import TrainingOffers from "@/components/TrainingOffers";
-import LifeCampus from "@/components/LandingPage/LifeCampus";
-import YouMightFindUseful from "@/components/YouMightFindUseful";
 import Footer from "@/components/Footer";
 import DiscoverSchool from "@/components/DiscoverSchool";
 

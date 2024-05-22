@@ -5,6 +5,7 @@ import NavBar from "../../../Components/NavBar";import NextEvents from "@/compon
 import EventSearch from "@/components/EventSearch";
 import PostImage from "@/components/PostImage";
 import EventDiscoverArtcile from "@/components/EventDiscoverArticle";
+import Footer from "@/components/Footer";
 
 
 
@@ -34,6 +35,7 @@ const page = () => {
             <EventDiscoverArtcile imageUrl={"/assets/campus5.jpg"} title={"Graduation Ceremony"} description={"Every year ESI organises a ceremony for that year's graduating engineers to celebrate their success and share a good time together"}/>
         </div>
       </div>
+      <Footer/>
       </div>
     </BrowserRouter>
   )

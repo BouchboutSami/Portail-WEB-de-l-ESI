@@ -51,7 +51,7 @@ const Signalbar = () => {
           </span>
         </Link>
         {showDropdown && (
-          <div className="absolute top-6 right-0 bg-bleunuit shadow-md rounded-md z-50">
+          <div className="absolute top-6 right-0 bg-bleunuit shadow-md z-50">
             <ul>
               {languageOptions.map((option) => (
                 <li
