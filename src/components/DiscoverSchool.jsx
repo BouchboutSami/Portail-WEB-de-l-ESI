@@ -1,40 +1,38 @@
 import React from "react";
 
-const LifeCampus = () => {
+const DiscoverSchool = () => {
   const photos = [
     {
       image: "https://via.placeholder.com/400x280",
-      title: "Title 1",
-      text: "Text 1",
+      title: "Why ESI ?",
+      text: " Ignite your potential at ESI.  Join a thriving community of learners and propel your career to new heights.",
       link:"WhyESI"
     },
     {
       image: "https://via.placeholder.com/400x280",
-      title: "Title 2",
-      text: "Text 2",
-      link:"WhyESI"
+      title: "Titre School",
+      text: "Discover ESI: A Center for Excellence in Higher Education",
+      link:"School"
     },
     {
       image: "https://via.placeholder.com/400x280",
-      title: "Title 3",
-      text: "Text 3",
-      link:"WhyESI"
-    },
+      title: "Organisation and structure",
+      text: "Dive deeper into ESI's staff organization and discover how our expertise aligns to support your journey.",
+      link:"Organisation-structure"},
   ];
 
   return (
-    <div className="w-full bg-white p-4">
+    <div className="w-full bg-[#F5F5F5]  p-4">
       <div className="text-black font-bold font-poppins text-[36px] text-center">
-        Life at campus
+      Discover the school
       </div>
-      <div className="text-black font-medium font-poppins text-[20px] text-center mb-4">
-        Find out about our range of activities designed to liven up student life
-      </div>
+      <div className="text-black font-medium font-poppins text-[20px] text-center mb-8">
+      Ready to take the next step? Dive into ESI’s world and see where you belong      </div>
       <div className="container  mx-auto mt-4">
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {photos.map((photo, index) => (
             <div key={index} className="flex flex-col items-start mb-[76px]">
-              <a href={photo.link}>
+                <a href={photo.link}>
               <img
                 src={photo.image}
                 alt={photo.title}
@@ -43,18 +41,16 @@ const LifeCampus = () => {
               <p className="font-semibold mb-1 hover:underline m-4">
                 {photo.title}
               </p>
+              <p className="font-normal mb-1 m-4">
+                {photo.text}
+              </p>
               </a>
             </div>
           ))}
-        </div>
-        <div className="text-center ">
-          <button className="bg-[#185B9C] text-white font-poppins text-[20px] font-bold py-2 px-4 w-[300px] h-[78] ">
-            More about campus life
-          </button>
         </div>
       </div>
     </div>
   );
 };
 
-export default LifeCampus;
+export default DiscoverSchool;

@@ -17,7 +17,7 @@ const NavBar = () => {
     {
       title: "About the University ",
       imageUrl: "/assets/university1.jpg",
-      link: "/",
+      link: "/Ecole/PresentationEcole",
     },
     {
       title: "Organization & Administration",
@@ -89,12 +89,12 @@ const NavBar = () => {
     {
       title: "Futur Student",
       imageUrl: "/assets/FuturStudent.jpg",
-      link: "/",
+      link: "/YouAreFuturStudent",
     },
     {
       title: "Student",
       imageUrl: "/assets/Student.jpg",
-      link: "/",
+      link: "/YouAreStudent",
     },
     {
       title: "Doctoral Condidate",
