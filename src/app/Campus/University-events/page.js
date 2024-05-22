@@ -11,13 +11,14 @@ import EventDiscoverArtcile from "@/components/EventDiscoverArticle";
 const page = () => {
   return (
     <BrowserRouter>
-      <div className=" w-screen flex flex-col items-center">
+      <div className=" w-screen">
         <NavBar />
         <PostImage 
         img = "/assets/postGraduationResearch.jpg"
          titre = "University events"
           details = "Discover the dynamic world of the higher national school of computer science through our Events page. Keep up to date with the latest news, discoveries and events that reflect our commitment to knowledge sharing and the scientific community."
            />
+        <div className="flex flex-col items-center">
         <div className=" mt-10 mb-8 justify-center items-center min-h-max bg-bleu rounded-md w-3/4 px-[5%] py-4">
             <EventSearch/>
         </div>
@@ -32,6 +33,7 @@ const page = () => {
             <EventDiscoverArtcile imageUrl={"/assets/campus4.jpg"} title={"Journée portes ouvertes"} description={"Every year, ESI opens its doors at the beginning of the year to baccalaureate students to find out about the courses on offer, ask questions, talk to students and teachers at the school and find out more about life at ESI."}/>
             <EventDiscoverArtcile imageUrl={"/assets/campus5.jpg"} title={"Graduation Ceremony"} description={"Every year ESI organises a ceremony for that year's graduating engineers to celebrate their success and share a good time together"}/>
         </div>
+      </div>
       </div>
     </BrowserRouter>
   )

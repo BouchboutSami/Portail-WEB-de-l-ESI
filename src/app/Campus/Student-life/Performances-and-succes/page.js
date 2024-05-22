@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import CampusSideBar from "../CampusSideBar";
+import CampusSideBar from "../../CampusSideBar";
 import NavBar from "@/components/NavBar";
 import PostImage from "@/components/PostImage";
 import PostSideBar from "@/components/PostSideBar";
