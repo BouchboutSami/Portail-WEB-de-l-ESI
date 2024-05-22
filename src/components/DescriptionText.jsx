@@ -7,6 +7,11 @@ const DescriptionText = ({ imageUrl, title, description, link, right }) => {
       {right ? (
         <div className="w-1/2 flex flex-col items-center pr-4">
           <img src={imageUrl} alt={title} className="w-[400px] h-auto" />
+          <p className="font-black text-lg mt-2 text-center">{title}</p>
+        </div>
+      ) : (
+        <div className="w-1/2 flex flex-col pl-44">
+            <p className="text-base font-normal">{description}</p>
           <p className="font-black text-lg mt-2 text-center text-black">{title}</p>
         </div>
       ) : (
