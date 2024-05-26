@@ -29,6 +29,10 @@ const Healthcare = () => {
         linktext="Infirmary’s contact info"
       />
     </div>
+    <div className='bg-[#F5F5F5] flex flex-col items-center w-full p-10'>
+    <h2 className="font-bold text-3xl mb-10">Social Insurance</h2>
+    
+    </div>
     </div>
   )
 }

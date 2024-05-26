@@ -5,17 +5,17 @@ import NavBar from "@/components/NavBar";
 import PostImage from "@/components/PostImage";
 import Footer from "@/components/Footer";
 import CampusSideBar from "../../CampusSideBar";
-import Healthcare from "./Healthcare";
+import Workspaces from "./Workspaces";
 
 const page = () => {
   return (
     <BrowserRouter>
       <div className=" w-screen">
         <NavBar/>
-        <PostImage img="\assets\healthcare.png" titre = "Healthcare & social insurance" details ="Your well-being is our priority at ESI. We provide a supportive environment that goes beyond academics to ensure your physical and mental health. Explore our comprehensive health services and discover how ESI empowers you to thrive throughout your studies. " />
+        <PostImage img="\assets\workspaces.png" titre = "Work spaces" details ="ESI's workspaces offer a perfect mix of focus areas and collaborative zones, all designed to fuel your academic success. Equipped with advanced technology and a supportive environment, you'll have what you need to thrive." />
         <div className="flex ">
           <CampusSideBar/> 
-          <Healthcare/>
+          <Workspaces/>
         </div>
         <Footer/>
       </div>
