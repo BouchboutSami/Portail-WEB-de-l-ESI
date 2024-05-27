@@ -63,7 +63,7 @@ const page = () => {
                                     ORGANIZATION & MANAGEMENT
                                 </h1>
                                 <div className="text-black font-light font-poppins text-[18px] mb-4">
-                                    The ESI currently has 1,206 students in the graduation phase, accompanied by 134 doctoral students who are continuing their research. The teaching staff is made up of 120 permanent members dedicated to teaching and research. In addition, the establishment benefits from the contribution of 175 workers who support various administrative and logistical activities, thus contributing to the efficiency and vitality of the institution.
+                                    ESI currently has 1,206 students in the graduation phase, accompanied by 134 doctoral students who are continuing their research. The teaching staff is made up of 120 permanent members dedicated to teaching and research. In addition, the establishment benefits from the contribution of 175 workers who support various administrative and logistical activities, thus contributing to the efficiency and vitality of the institution.
                                 </div>
                                 <ListComp heading={"Administrative organisation"} points={AdminOrgapoints} />
                                 <ListComp heading={"Educational and scientific organization"} points={departments} />

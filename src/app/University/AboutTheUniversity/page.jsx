@@ -16,16 +16,16 @@ const page = () => {
     { id: 4, imageSrc: '/assets/university4.png', name: 'Specialty 4' },]
 
   const points = [
-    "06 Amphis.",
-    "36 Salles de travaux dirigés et travaux pratiques.",
-    "Une bibliothèque et 2 salles de lecture d’une capacité de 100 places.",
-    "Un auditorium d’une capacité de 270 places.",
-    "Une salle de conférences de 130 places.",
-    "Une salle équipée pour les étudiants en fin de cycle.",
-    "Une académie réseaux.",
-    "Une salle de télé-enseignement.",
-    "Deux salles équipées dédiées à la formation continue.",
-    "Quatre salles de réunions.",
+    "06 Lecture Halls.",
+    "36 Tutorial and practical work rooms.",
+    "A library and 2 reading rooms with a capacity of 100 seats.",
+    "An auditorium with a capacity of 270 seats.",
+    "A conference room with 130 seats.",
+    "A room equipped for students at the end of their cycle.",
+    "A network academy.",
+    "A tele-teaching room.",
+    "Two equipped rooms dedicated to continuing education.",
+    "Four meeting rooms.",
   ];
   return (
     <BrowserRouter>
@@ -45,35 +45,23 @@ const page = () => {
               </div>
               <div className="">
                 <h1 className="font-poppins font-bold text-[24px] text-[#185B9C]">
-                  CRÉATION DE L’ÉCOLE
+                  ESTABLISHMENT OF THE SCHOOL
                 </h1>
                 <div className="text-black font-light font-poppins text-[18px] mb-4">
-                  L’Ecole a été créée en 1969 sous le nom de Centre d’Etudes et
-                  de Recherche en Informatique (CERI). Rattachée au ministère de
-                  l’Enseignement Supérieur en 1983 sous le nom de l’Institut
-                  National de Formation en Informatique (INI), elle a été
-                  transformée en école nationale supérieure par le décret
-                  exécutif n° 08-220 du 14 juillet 2008, sous le nom d’Ecole
-                  nationale Supérieure d’Informatique (ESI). Elle comptabilise à
-                  ce jour plus de <span className="font-bold">8269</span>
-                  diplômés.
+                  The School was founded in 1969 under the name Centre d′Études et de Recherche en Informatique (CERI). Attached to the Ministry of Higher Education in 1983 under the name Institut National de Formation en Informatique (INI), it was transformed into a national higher school by executive decree No. 08-220 of July 14, 2008, under the name École Nationale Supérieure d′Informatique (ESI). To date, it has produced over <span className="font-bold">8269</span> graduates.
                 </div>
                 <h1 className="font-poppins font-bold mt-8 text-[24px] text-[#185B9C]">
-                  COMPÉTENCES
+                  SKILLS
                 </h1>
                 <div className="text-black font-light font-poppins text-[18px] mb-4">
-                  L’ingénieur de l’école est apte à résoudre individuellement et
-                  collectivement des problèmes complexes au sein des
-                  organisations en tenant compte des évolutions technologiques.
-                  Il construit ses compétences scientifiques, techniques et
-                  humaines à travers un parcours exigeant.
+                  The engineer from the school is able to solve complex problems individually and collectively within organizations, taking into account technological developments. He develops his scientific, technical, and human skills through a demanding course.
                 </div>
               </div>
             </div>
             <div className="flex flex-row gap-12 px-[100px] w-full mt-12 items-center">
               <div className="flex-grow">
                 <h1 className="font-poppins font-bold text-[24px] text-[#185B9C]">
-                  PLACES PÉDAGOGIQUES
+                  EDUCATIONAL FACILITIES
                 </h1>
                 <div className="text-black font-light font-poppins text-[18px] mb-4">
                   <ul className="list-disc pl-5">
@@ -95,33 +83,22 @@ const page = () => {
               </div>
               <div className="">
                 <h1 className="font-poppins font-bold text-[24px] text-[#185B9C]">
-                  VIE A L’ÉCOLE
+                  LIFE AT SCHOOL
                 </h1>
                 <div className="text-black font-light font-poppins text-[18px] mb-4">
-                  La vie à notre école est imprégnée d’une richesse culturelle,
-                  intellectuelle et sociale, dix clubs et associations
-                  d’étudiants dynamiques alimentent le bouillonnement constant
-                  de notre campus. <br/> De la célébration de la curiosité
-                  intellectuelle à travers des ateliers scientifiques
-                  passionnants, aux performances artistiques éblouissantes
-                  mettant en lumière notre créativité.
+                  Life at our school is imbued with cultural, intellectual, and social richness, ten dynamic student clubs and associations fuel the constant buzz of our campus. <br/> From celebrating intellectual curiosity through exciting scientific workshops to dazzling artistic performances showcasing our creativity.
                 </div>
                 <div className="flex justify-end">
-                  <Button title={"VOIR DÉTAILS"} />
+                  <Button title={"SEE DETAILS"} />
                 </div>
               </div>
             </div>
             <div className="flex flex-col mt-16 items-center justify-center text-center">
               <h1 className="font-poppins font-bold text-[24px] text-[#185B9C] pb-4">
-                RECHERCHE SCIENTIFIQUE
+                SCIENTIFIC RESEARCH
               </h1>
               <div className="text-black font-light font-poppins text-[18px] mb-4">
-                Notre école offre des formations doctorales, soutenues par deux
-                laboratoires de recherche : le LMCS et le LCSI, abritant la
-                majorité de nos enseignants-chercheurs. Ces laboratoires sont
-                des centres d’excellence où l’innovation et la découverte
-                prospèrent, propulsant notre institution vers de nouveaux
-                sommets dans le domaine de la recherche.
+                Our school offers doctoral training, supported by two research laboratories: LMCS and LCSI, which house the majority of our teacher-researchers. These laboratories are centers of excellence where innovation and discovery thrive, propelling our institution to new heights in research.
               </div>
             </div>
             <div>
