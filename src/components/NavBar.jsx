@@ -17,18 +17,18 @@ const NavBar = () => {
     {
       title: "About the University ",
       imageUrl: "/assets/university1.jpg",
-      link: "/Ecole/PresentationEcole",
+      link: "/University/AboutTheUniversity",
     },
     {
       title: "Organization & Administration",
       imageUrl: "/assets/university2.jpg",
-      link: "/",
+      link: "/University/Organisation-Administration",
     },
-    { title: "Bachelor Space", imageUrl: "/assets/university3.png", link: "/" },
+    { title: "Bachelor Space", imageUrl: "/assets/university3.png", link: "/University/Bachelor-Space" },
     {
       title: "University Library",
       imageUrl: "/assets/university4.png",
-      link: "/",
+      link: "/University/ESI-Library",
     },
   ];
 

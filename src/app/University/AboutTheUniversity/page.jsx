@@ -7,8 +7,14 @@ import Signalbar from "@/components/SignalBar";
 import UniSideBar from "@/components/UniSideBar";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-
+import SpecialtiesSwiper from "@/components/SpecialtiesSwiper";
 const page = () => {
+  const mySpecialties = [
+    { id: 1, imageSrc: '/assets/university1.jpg', name: 'Specialty 1' },
+    { id: 2, imageSrc: '/assets/university2.jpg', name: 'Specialty 2' },
+    { id: 3, imageSrc: '/assets/university3.png', name: 'Specialty 3' },
+    { id: 4, imageSrc: '/assets/university4.png', name: 'Specialty 4' },]
+
   const points = [
     "06 Amphis.",
     "36 Salles de travaux dirigés et travaux pratiques.",
@@ -23,7 +29,7 @@ const page = () => {
   ];
   return (
     <BrowserRouter>
-      <div className="w-screen">
+      <div className="bg-cyan-300 overflow-scroll">
         <NavBar />
         <ImageLanding
           imageUrl="/assets/PresentationEcole.png"
@@ -31,7 +37,7 @@ const page = () => {
         />
         <div className="flex">
           <UniSideBar />
-          <div className=" w-full">
+          <div className="w-full">
             {/* Code here ! */}
             <div className="flex flex-row gap-12 px-[100px] w-full mt-12 items-center">
               <div className="">
@@ -50,7 +56,7 @@ const page = () => {
                   exécutif n° 08-220 du 14 juillet 2008, sous le nom d’Ecole
                   nationale Supérieure d’Informatique (ESI). Elle comptabilise à
                   ce jour plus de <span className="font-bold">8269</span>
-                   diplômés.
+                  diplômés.
                 </div>
                 <h1 className="font-poppins font-bold mt-8 text-[24px] text-[#185B9C]">
                   COMPÉTENCES
@@ -95,7 +101,7 @@ const page = () => {
                   La vie à notre école est imprégnée d’une richesse culturelle,
                   intellectuelle et sociale, dix clubs et associations
                   d’étudiants dynamiques alimentent le bouillonnement constant
-                  de notre campus.De la célébration de la curiosité
+                  de notre campus. <br/> De la célébration de la curiosité
                   intellectuelle à travers des ateliers scientifiques
                   passionnants, aux performances artistiques éblouissantes
                   mettant en lumière notre créativité.
@@ -105,7 +111,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col px-[100px] w-full mt-16 items-center justify-center">
+            <div className="flex flex-col mt-16 items-center justify-center text-center">
               <h1 className="font-poppins font-bold text-[24px] text-[#185B9C] pb-4">
                 RECHERCHE SCIENTIFIQUE
               </h1>
@@ -116,6 +122,11 @@ const page = () => {
                 des centres d’excellence où l’innovation et la découverte
                 prospèrent, propulsant notre institution vers de nouveaux
                 sommets dans le domaine de la recherche.
+              </div>
+            </div>
+            <div>
+              <div>
+                <SpecialtiesSwiper specialties={mySpecialties} />
               </div>
             </div>
           </div>
