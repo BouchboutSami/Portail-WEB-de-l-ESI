@@ -30,7 +30,7 @@ const page = () => {
     ];
     return (
         <BrowserRouter>
-            <div className="overflow-hidden">
+            <div className="overflow-scroll">
                 <NavBar />
                 <ImageLanding
                     imageUrl="/assets/OrganisationAdministrationHeader.png"
@@ -38,9 +38,9 @@ const page = () => {
                 />
                 <div className="flex">
                     <UniSideBar />
-                    <div className="w-full">
+                    <div className="w-full flex flex-col items-center">
                         {/* Code here ! */}
-                        <div className="px-[100px] w-full my-12 items-center">
+                        <div className="w-full my-12 items-center px-[5%]">
                             <h1 className="font-poppins font-bold text-[24px] text-[#185B9C]">
                                 PRESENTATION
                             </h1>
@@ -51,7 +51,10 @@ const page = () => {
                                 <Button title={"Catalogue en ligne de la bibliothèque de l'ESI"} />
                                 <Button title={"Entrepôt Mémoires de fin d'études"} />
                             </div>
+                            <div className="bg-red-500">
                             <ImgSlider images={imagesLib} />
+                            </div>
+                            
                             <ListComp heading={""} paragraph={"Elle a pour missions essentielles :"} points={LibPoints} />
                             <div className="flex justify-center">
                                 <Button title={"Voir le règlement interne de la bibliothèque"} />
@@ -89,24 +92,22 @@ const page = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div>
+                        <div className="w-full">
                             <Stats table={statsData} />
                         </div>
-                        <div className="py-8 flex flex-row px-[100px] items-center">
-                            <div>
+                            <div className="px-[5%]">
                                 <h3 className="font-poppins font-bold text-[20px]">Chaque année la bibliothèque organise :</h3>
                                 <h1 className="font-poppins font-bold text-[22px] text-[#185B9C] mt-8">
-                                Au mois d’Avril
-                            </h1>
-                            <p className="font-poppins font-light text-[18px]">
-                            Une journée d’information pour la préparation de la fiche technique (Bon de commande), concernant les nouveaux ouvrages est organisée, son objectif est le recueil des besoins des étudiants et des enseignants
-                            </p>
-                            <h1 className="font-poppins font-bold text-[22px] text-[#185B9C] mt-8">
-                                Au mois de Mai
-                            </h1>
-                            <p className="font-poppins font-light text-[18px]">
-                            Des portes ouvertes relatives aux nouvelles acquisitions des ouvrages, l’objectif est la diffusion de l’information (durée 3 à 4 jours ) par rapport aux nouveaux ouvrages acquis                            </p>
-                            </div>
+                                    Au mois d’Avril
+                                </h1>
+                                <p className="font-poppins font-light text-[18px]">
+                                    Une journée d’information pour la préparation de la fiche technique (Bon de commande), concernant les nouveaux ouvrages est organisée, son objectif est le recueil des besoins des étudiants et des enseignants
+                                </p>
+                                <h1 className="font-poppins font-bold text-[22px] text-[#185B9C] mt-8">
+                                    Au mois de Mai
+                                </h1>
+                                <p className="font-poppins font-light text-[18px]">
+                                    Des portes ouvertes relatives aux nouvelles acquisitions des ouvrages, l’objectif est la diffusion de l’information (durée 3 à 4 jours ) par rapport aux nouveaux ouvrages acquis                            </p>
 
                         </div>
                     </div>
