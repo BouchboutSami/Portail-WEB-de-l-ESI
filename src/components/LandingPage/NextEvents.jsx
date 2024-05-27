@@ -32,31 +32,31 @@ export default function NextEvents() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
         <SwiperSlide className="mb-16">
-          <CardEvent />
+          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
         </SwiperSlide>
       </Swiper>
     </>

@@ -4,6 +4,7 @@ import React from "react";
 import Breadcrumb from "./Breadcrumb";
 
 const PostImage = (props) => {
+  console.log(props);
   return (
     <div className="w-full h-[500px] relative pl-[5%]">
       <img

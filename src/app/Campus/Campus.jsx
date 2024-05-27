@@ -28,9 +28,27 @@ const Campus = () => {
       <div className="w-full flex flex-col py-10 bg-grisbg items-center">
         <h2 className="mb-10 font-bold text-3xl">Upcoming events</h2>
         <div className="flex flex-row items-center justify-evenly w-full cursor-pointer gap-10 px-[10%]">
-          <CardEvent />
-          <CardEvent />
-          <CardEvent />
+          <CardEvent
+            img="/assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            day={14}
+            month="APR"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit?"
+          />
+          <CardEvent
+            img="/assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            day={14}
+            month="APR"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit?"
+          />
+          <CardEvent
+            img="/assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            day={14}
+            month="APR"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit?"
+          />
         </div>
       </div>
       <h2 className="my-10 font-bold text-3xl">Sports & Culture</h2>

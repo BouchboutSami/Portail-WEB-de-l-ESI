@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import React from "react";
 
 const CardEvent = (props) => {
@@ -6,15 +7,8 @@ const CardEvent = (props) => {
     <div className="card w-full min-h-max text-black flex flex-col items-center rounded-xl border-collapse hover:drop-shadow-md hover:scale-[1.02] ease-in-out">
       <div
         className="min-w-full h-36 rounded-t-xl bg-cover"
-        style={{ backgroundImage: props.image }}
-      >
-        {/* <img
-          src="/images/Event.png"
-          alt="event"
-          className="w-full h-full"
-          style={{ borderRadius: "12px 12px 0 0" }}
-        /> */}
-      </div>
+        style={{ backgroundImage: `url(${props.img})` }}
+      ></div>
       <div className="content flex flex-row p-4 bg-bleu/[.22] gap-6 rounded-b-xl text-left">
         <div className="date flex flex-col items-center">
           <div className="month text-[#3D37F1] font-bold">{props.month}</div>
