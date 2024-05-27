@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import NavBar from "../../Components/NavBar";
-import PostImage from "../../Components/PostImage";
-import PostSideBar from "../../Components/PostSideBar";
+import NavBar from "../../../../Components/NavBar";
+import PostImage from "../../../../Components/PostImage";
+import PostSideBar from "../../../../Components/PostSideBar";
 
 const page = () => {
   return (
@@ -13,9 +13,7 @@ const page = () => {
         <PostImage />
         <div className="flex ">
           <PostSideBar />
-          <div className=" w-full items-center text-center">
-            Academic authorization
-          </div>
+          <div className=" w-full items-center text-center">LCSI</div>
         </div>
       </div>
     </BrowserRouter>

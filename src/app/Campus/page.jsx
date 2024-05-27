@@ -3,8 +3,8 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import NavBar from "../../components/NavBar";
 import PostImage from "../../components/PostImage";
-import PostSideBar from "../../components/PostSideBar";
 import Campus from "./Campus";
+import CampusSideBar from "./CampusSideBar";
 
 const page = () => {
   return (
@@ -19,7 +19,7 @@ const page = () => {
             your field."
         />
         <div className="flex ">
-          <PostSideBar />
+          <CampusSideBar/>
           <div className="w-full">
             <Campus />
           </div>

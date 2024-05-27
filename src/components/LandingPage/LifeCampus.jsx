@@ -6,16 +6,19 @@ const LifeCampus = () => {
       image: "https://via.placeholder.com/400x280",
       title: "Title 1",
       text: "Text 1",
+      link:"WhyESI"
     },
     {
       image: "https://via.placeholder.com/400x280",
       title: "Title 2",
       text: "Text 2",
+      link:"WhyESI"
     },
     {
       image: "https://via.placeholder.com/400x280",
       title: "Title 3",
       text: "Text 3",
+      link:"WhyESI"
     },
   ];
 
@@ -31,6 +34,7 @@ const LifeCampus = () => {
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {photos.map((photo, index) => (
             <div key={index} className="flex flex-col items-start mb-[76px]">
+              <a href={photo.link}>
               <img
                 src={photo.image}
                 alt={photo.title}
@@ -39,6 +43,7 @@ const LifeCampus = () => {
               <p className="font-semibold mb-1 hover:underline m-4">
                 {photo.title}
               </p>
+              </a>
             </div>
           ))}
         </div>
