@@ -1,3 +1,4 @@
+import CampusNewsCard from "@/components/CampusNewsCard";
 import CardEvent from "@/components/Cards/CardEvent";
 import Stats from "@/components/Stats";
 import React from "react";
@@ -20,17 +21,23 @@ const Campus = () => {
       <Stats table={table} />
       <h2 className="my-10 font-bold text-3xl">Student life</h2>
       <div className="flex flex-row items-center justify-evenly w-full cursor-pointer mb-10">
-        <div className="bg-[url(/assets/CampusMain.png)] bg-cover bg-no-repeat bg-center w-1/5 h-48" />
-        <div className="bg-[url(/assets/CampusMain.png)] bg-cover bg-no-repeat bg-center w-1/5 h-48" />
-        <div className="bg-[url(/assets/CampusMain.png)] bg-cover bg-no-repeat bg-center w-1/5 h-48" />
+        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
+        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
+        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
       </div>
       <div className="w-full flex flex-col py-10 bg-grisbg items-center">
         <h2 className="mb-10 font-bold text-3xl">Upcoming events</h2>
-        <div className="flex flex-row items-center justify-evenly w-full cursor-pointer">
+        <div className="flex flex-row items-center justify-evenly w-full cursor-pointer gap-10 px-[10%]">
           <CardEvent />
           <CardEvent />
           <CardEvent />
         </div>
+      </div>
+      <h2 className="my-10 font-bold text-3xl">Sports & Culture</h2>
+      <div className="flex flex-row items-center justify-evenly w-full cursor-pointer mb-10">
+        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
+        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
+        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
       </div>
     </div>
   );

@@ -18,8 +18,8 @@ const CampusNewsCard = (props) => {
       />
       {Shadow && (
         <>
-          <div class="absolute bottom-0 left-0 w-full opacity-90 h-40 bg-gradient-to-t from-[#0E375F] " />
-          <div class="absolute bottom-8 left-0 w-full font-poppins font-medium text-white  text-[12px]">
+          <div className="absolute bottom-0 left-0 w-full opacity-90 h-40 bg-gradient-to-t from-[#0E375F] " />
+          <div className="absolute bottom-8 left-0 w-full font-poppins font-medium text-white  text-[12px]">
             <p className=" overflow-hidden line-clamp-3 px-2 font-semibold text-[14px]">
               {props.title}
             </p>
