@@ -1,5 +1,5 @@
 import React from "react";
-import CardPostGrad from "./Cards/CardPostGrad";
+import CardPostGrad from "@/components/CardPostGrad";
 
 const PostGradAndResearchSection = () => {
   return (
