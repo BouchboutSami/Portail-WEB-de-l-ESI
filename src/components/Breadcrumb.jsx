@@ -32,7 +32,7 @@ const Breadcrumb = () => {
             >
               {pathNames.length - 1 !== index ? (
                 <div className="flex flex-row gap-2 items-center">
-                  {path}
+                  {path.replace("-", " ")}
                   <LuChevronRight className=" h-4" />
                 </div>
               ) : (
