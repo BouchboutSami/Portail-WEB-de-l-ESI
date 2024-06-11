@@ -102,7 +102,7 @@ const NavBar = () => {
       link: "/",
     },
     { title: "Company", imageUrl: "/assets/Company.jpg", link: "/" },
-    { title: "Faculty Staff", imageUrl: "/assets/FacultyStaff.jpg", link: "/" },
+    { title: "Faculty Staff", imageUrl: "/assets/FacultyStaff.jpg", link: "/YouAre-Staff" },
     { title: "Alumni", imageUrl: "/assets/Alumni.jpg", link: "/" },
   ];
 
