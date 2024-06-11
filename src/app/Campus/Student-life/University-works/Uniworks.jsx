@@ -1,6 +1,28 @@
 import ArticleCard from '@/components/ArticleCard'
+import FAQItem from '@/components/FAQItem'
 import React from 'react'
-
+import Transport from './transport';
+import Restoration from './restoration';
+import DropdownDoc from '@/components/DropdownDoc';
+const faqfinancialaid = [
+    {
+      question: "What are the conditions to benefit from the university financial aid?",
+      answer:"Each student benefits from the university financial aid for the entire duration of their studies, starting from the year they obtained their baccalaureate. The financial aid is suspended in the event of a second failure and is not extended until the following year. The benefit of the financial aid is subject to the annual income of the parents.",
+    },
+    {
+      question: "What is the percentage of the university scholarship?",
+      answer: "2000 DA per month ",
+    },
+    {
+      question: "What is the link to the university scholarships website? ",
+      answer: "Link to website : www.mena.com ",
+    },
+  ];
+const dossier = [
+  {
+    text : "Download the necessary files here", href : '#'
+  }
+]
 const Uniworks = () => {
   return (
     <div className='w-full flex flex-col items-center py-10'>
@@ -18,15 +40,18 @@ const Uniworks = () => {
                 link={""}
                 linkText={""}/>
         </div>
-        <div className='bg-[#F5F5F5] flex flex-col items-center w-full p-10'>
-            <h2 className="font-bold text-3xl mb-10">Financial Aid</h2>
+        <div className='bg-[#F5F5F5] flex flex-col items-start w-full p-10'>
+            <h2 className="font-bold text-3xl mb-10 self-center">Financial Aid</h2>
+            <DropdownDoc text={"Financial aid file"} menuItems={dossier}/>
+            <h3 className='font-bold text-xl mb-5 text-bleu'> Q&A</h3>
+            {faqfinancialaid.map((faqfinancialaid, index) => (
+            <FAQItem key={index} question={faqfinancialaid.question} answer={faqfinancialaid.answer} />
+          ))}
         </div>
-        <div className=' flex flex-col items-center w-full p-10'>
-            <h2 className="font-bold text-3xl mb-10">Transport</h2>
-        </div>
-        <div className='bg-[#F5F5F5] flex flex-col items-center w-full p-10'>
-            <h2 className="font-bold text-3xl mb-10">Restoration</h2>
-        </div>
+        <div className='w-full'>
+        <Transport />
+        <Restoration />
+    </div>
     </div>
   )
 }
