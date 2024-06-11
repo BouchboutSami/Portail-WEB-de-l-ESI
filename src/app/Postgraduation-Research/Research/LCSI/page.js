@@ -6,6 +6,7 @@ import PostImage from "../../../../Components/PostImage";
 import PostSideBar from "../../../../Components/PostSideBar";
 import { FaUserGroup } from "react-icons/fa6";
 import UpComingEvent from "@/components/UpComingEvent";
+import Footer from "@/components/Footer";
 
 const page = () => {
   const laboratory = {
@@ -167,6 +168,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import ArticleCard from "@/components/ArticleCard";
 import DoctoralRegistration from "@/components/DoctoralRegistration";
 import PostEventCard from "@/components/PostEventCard";
+import Footer from "@/components/Footer";
 
 const Page = () => {
   const articles = [
@@ -112,6 +113,7 @@ const Page = () => {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

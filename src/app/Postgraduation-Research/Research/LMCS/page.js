@@ -6,13 +6,15 @@ import PostImage from "../../../../Components/PostImage";
 import PostSideBar from "../../../../Components/PostSideBar";
 import { FaUserGroup } from "react-icons/fa6";
 import UpComingEvent from "@/components/UpComingEvent";
+import Footer from "@/components/Footer";
 
 const page = () => {
   const laboratory = {
     Title: "Laboratory for System Design Methods",
     imageUrl: "/assets/lmc.png",
     Director: "Pr GHOMARI Abdessamed Réda",
-    ServiceTitle: " Expertise: Implementing multi-partner R&D projects; Consulting, Auditing, Diagnostics for third-party organizations",
+    ServiceTitle:
+      " Expertise: Implementing multi-partner R&D projects; Consulting, Auditing, Diagnostics for third-party organizations",
     Website: "https://lmcs.esi.dz",
     Stats: [
       { label: "Professors", value: "0" },
@@ -31,9 +33,11 @@ const page = () => {
       },
       {
         TeamLabel: "Optimization ",
-      }, {
+      },
+      {
         TeamLabel: "SURES ",
-      }, {
+      },
+      {
         TeamLabel: "Image Processing and Interpretation ",
       },
     ],
@@ -162,7 +166,7 @@ const page = () => {
                         key={index}
                       >
                         <h1 className="text-[#185B9C] hover:text-[#3587DE] underline ">
-                          {item.linkText} {'>'}
+                          {item.linkText} {">"}
                         </h1>
                       </div>
                     ))}
@@ -172,6 +176,7 @@ const page = () => {
             </div>
           </div>
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
