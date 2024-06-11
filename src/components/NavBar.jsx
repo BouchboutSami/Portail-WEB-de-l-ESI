@@ -118,7 +118,7 @@ const NavBar = () => {
     {
       title: "Research",
       imageUrl: "/assets/post2.jpg",
-      link: "/Postgraduation-Research/Research",
+      link: "/Postgraduation-Research/Research/LCSI",
       description:
         "Join visionary researchers and explore innovative projects.",
     },

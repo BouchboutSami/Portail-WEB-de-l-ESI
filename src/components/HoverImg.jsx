@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
-const HoverImg = ({title , link , imageUrl}) => {
+const HoverImg = ({ title, link, imageUrl }) => {
   const [Shadow, setShadow] = useState(false);
   return (
     <div
       className="w-[270px] h-[190px] relative m-1 border border-gray-100 font-poppins"
       onMouseLeave={() => setShadow(false)}
-      onClick={()=>{
-        Navigate({link})
+      onClick={() => {
+        Navigate({ link });
       }}
     >
       <img
