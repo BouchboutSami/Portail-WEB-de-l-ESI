@@ -8,11 +8,12 @@ import Campus from "../../Campus";
 import Footer from "@/components/Footer";
 import ListeClubs from "./ListeClubs";
 
-const page = () => {
+const page = ({ params }) => {
   return (
     <BrowserRouter>
       <div className=" w-screen">
         <NavBar />
+        {params.clubname}
         <PostImage
           img="/assets/studentorgs.png"
           titre="Student organisations"
