@@ -5,7 +5,9 @@ import Signalbar from "@/components/SignalBar";
 import Footer from "@/components/Footer";
 import PostImage from "@/components/PostImage";
 import ServicesSideBar from "@/components/Partenaires/ServicesSideBar";
+import HeadingUnderlined from "@/components/HeadingUnderlined";
 import { BrowserRouter } from "react-router-dom";
+import Registration from "./Registration";
 
 const page = () => { 
     return (
@@ -18,7 +20,10 @@ const page = () => {
           titre="Pre-promotion Training"
           details="Discover our pre-promotion training themes and perfect your skills in various fields thanks to our wide selection of programs tailored to your professional needs."
         />
+        <div className="flex">
         <ServicesSideBar/>
+        <Registration/>
+        </div>
         <Footer/>
       </div>
       </BrowserRouter>

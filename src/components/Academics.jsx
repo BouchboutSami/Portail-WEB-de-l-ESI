@@ -4,19 +4,19 @@ import React from "react";
 const Academics = () => {
   const photos = [
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 1",
-      text: "Text 1",
+      image: "/assets/Prepa.png",
+      title: "Preparatory classes",
+      text: "Discover more about the program ESI offers to preparatory class students. This program aims to provide a smooth transition to the field of computer science ",
     },
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 2",
-      text: "Text 2",
+      image: "/assets/Sup.png",
+      title: "Superior classes",
+      text: "Explore advanced academic opportunities at ESI, tailored to your expertise and career goals.",
     },
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 3",
-      text: "Text 3",
+      image: "/assets/Complementary.png",
+      title: "Complementary studies",
+      text: "Enhance your skills and knowledge with our range of supplementary courses designed to complement your primary academic pursuits at ESI.",
     },
   ];
 
@@ -25,7 +25,7 @@ const Academics = () => {
       <div className="text-black font-bold font-poppins text-[36px] text-center">
         Academics
       </div>
-      <div className="text-black font-medium font-poppins text-[20px] text-center mb-4">
+      <div className="text-black font-medium font-poppins text-[20px] text-center mb-4 pb-2">
         Have a look at the program studies that ESI offers
       </div>
       <div className="container mx-auto mt-4">
