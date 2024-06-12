@@ -6,6 +6,7 @@ import PostSideBar from "../../../Components/PostSideBar";
 import { BrowserRouter } from "react-router-dom";
 import CampusNewsCard from "@/components/CampusNewsCard";
 import { IoIosArrowForward } from "react-icons/io";
+import Footer from "@/components/Footer";
 
 const page = () => {
   const News = [
@@ -90,6 +91,8 @@ const page = () => {
 
           </div>
         </div>
+        <p className="mb-4"></p>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
