@@ -1,6 +1,19 @@
 import DescriptionText from '@/components/DescriptionText'
+import DropdownDoc from '@/components/DropdownDoc';
+import Map from '@/components/Map'
 import React from 'react'
 
+const loctable = {
+  lat: 36.720257652315446,
+  lng: 3.145609716792752,
+  name: 'Hasan Badi Center',
+};
+const dossier = [
+  { text: 'Insurance form', href: '#' },
+  { text: 'Copy of identity card', href: '#' },
+  { text: 'School certificate', href: '#' },
+  { text: 'Certificate of location', href: '#' }
+];
 const Healthcare = () => {
   return (
     <div className="w-full flex flex-col items-center py-10">
@@ -28,6 +41,12 @@ const Healthcare = () => {
         right={false}
         linktext="Infirmary’s contact info"
       />
+    </div>
+    <div className='bg-[#F5F5F5] flex flex-col items-start w-full p-10'>
+    <h2 className="font-bold text-3xl self-center">Social Insurance</h2>
+    <DropdownDoc text={"Insurance file"} menuItems={dossier}/>
+    <h3 className='text-bleu text-xl font-bold'> Geographical location of the CNAS</h3>
+    <Map width = "320px" height ="320px" location ={loctable}/>
     </div>
     </div>
   )

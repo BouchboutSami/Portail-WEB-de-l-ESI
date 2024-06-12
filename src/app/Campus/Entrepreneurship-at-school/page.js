@@ -1,21 +1,21 @@
 "use client";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import CampusSideBar from "../CampusSideBar";
 import NavBar from "@/components/NavBar";
 import PostImage from "@/components/PostImage";
-import Sports from "./sports";
 import Footer from "@/components/Footer";
+import Entrepreneurship from "./Entrepreneurship";
+import CampusSideBar from "../CampusSideBar";
 
 const page = () => {
   return (
     <BrowserRouter>
       <div className=" w-screen">
         <NavBar/>
-        <PostImage img="\assets\sports.png" titre = "Sports and culture" details ="Discover a range of stimulating sporting and cultural activities at ESI. Balance your studies with activities that nourish body and mind. Explore our modern facilities and engage in cultural experiences that will enrich your academic journey. " />
+        <PostImage img="\assets\entrepreneurship.png" titre = "Entrepreneurship at school" details ="Unleash your inner innovator at ESI.  Collaborate, gain practical skills, and turn your business dreams into reality.  ESI ignites your entrepreneurial spirit." />
         <div className="flex ">
           <CampusSideBar/> 
-          <Sports/>
+          <Entrepreneurship/>
         </div>
         <Footer/>
       </div>

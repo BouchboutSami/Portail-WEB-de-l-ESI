@@ -17,7 +17,7 @@ const Map = ({ width, height, location }) => {
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={position} icon={new Icon({ iconUrl: './assets/marker.png', iconSize: [25, 41], iconAnchor: [12, 41] })}>
+        <Marker position={position} icon={new Icon({ iconUrl: '/assets/marker.png', iconSize: [25, 41], iconAnchor: [12, 41] })}>
           <Popup>{location.name}</Popup> 
         </Marker>
       </MapContainer>

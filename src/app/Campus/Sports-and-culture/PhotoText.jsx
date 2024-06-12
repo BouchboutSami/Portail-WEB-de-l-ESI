@@ -7,7 +7,7 @@ const PhotoText = (props) => {
     <div className="container mx-auto mt-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {photos ? photos.map((item, index) => (
-          <div key={index} className="flex flex-col items-start w-full mb-1">
+          <div key={index} className="flex flex-col items-start mb-1">
             <img
               src={item.image}
               alt={item.title}
