@@ -8,7 +8,7 @@ const PostEventCard = ({ date, month, title, time, location }) => {
   const [isRinging, setIsRinging] = useState(false);
 
   return (
-    <div className="w-[300px] p-4 bg-white shadow-lg rounded-2xl flex flex-col gap-2">
+    <div className="w-[300px] p-4 bg-white shadow-lg hover:shadow-xl rounded-2xl flex flex-col gap-2">
       <div className="flex items-center justify-between">
         <div className="text-center">
           <p className="text-2xl font-bold">{date}</p>
