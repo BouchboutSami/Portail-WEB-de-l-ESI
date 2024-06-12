@@ -23,5 +23,5 @@ const PostGradAndResearchSection = () => {
     </div>
   );
 };
-
 export default PostGradAndResearchSection;
+

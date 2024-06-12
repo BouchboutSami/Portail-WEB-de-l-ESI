@@ -19,3 +19,7 @@ body {
   margin-right: auto;
   /* justify-content: space-evenly; */
 }
+
+.swiper-slide{
+  width: 100%;
+}

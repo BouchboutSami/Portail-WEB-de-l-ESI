@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Grid, Pagination, Navigation } from "swiper/modules";
 import CardEvent from "../Cards/CardEvent";
+import { title } from "process";
 
 export default function NextEvents() {
   return (

@@ -12,7 +12,7 @@ const page = () => {
     <BrowserRouter>
       <div className=" w-screen">
         <NavBar/>
-        <PostImage img="\assets\healthcare.png" titre = "Healthcare & social insurance" description ="Your well-being is our priority at ESI. We provide a supportive environment that goes beyond academics to ensure your physical and mental health. Explore our comprehensive health services and discover how ESI empowers you to thrive throughout your studies. " />
+        <PostImage img="\assets\healthcare.png" titre = "Healthcare & social insurance" details ="Your well-being is our priority at ESI. We provide a supportive environment that goes beyond academics to ensure your physical and mental health. Explore our comprehensive health services and discover how ESI empowers you to thrive throughout your studies. " />
         <div className="flex ">
           <CampusSideBar/> 
           <Healthcare/>

@@ -34,22 +34,30 @@ const PostSideBar = () => {
       activeItem = "Academic authorization";
     } else if (pathname === "/Postgraduation-Research/Research/LCSI") {
       activesubtitle = "LCSI";
+      activeItem= "Research"
     } else if (pathname === "/Postgraduation-Research/Research/LMCS") {
       activesubtitle = "LMCS";
+      activeItem= "Research"
     } else if (
       pathname === "/Postgraduation-Research/Research/Research-projects"
     ) {
       activesubtitle = "Research Projects";
+      activeItem= "Research"
+
     } else if (
       pathname ===
       "/Postgraduation-Research/Academic-authorization/University-accreditation"
     ) {
       activesubtitle = "University accreditation";
+      activeItem = "Academic authorization";
+
     } else if (
       pathname ===
       "/Postgraduation-Research/Academic-authorization/Articles-news"
     ) {
       activesubtitle = "Articles News";
+      activeItem = "Academic authorization";
+
     }
     setActiveItem(activeItem);
     setActiveSubtitle(activesubtitle);
@@ -65,7 +73,7 @@ const PostSideBar = () => {
     },
     {
       title: "Research",
-      link: "/Postgraduation-Research/Research",
+      link: "/Postgraduation-Research/Research/LCSI",
       subtitles: [
         {
           title: "LCSI",
