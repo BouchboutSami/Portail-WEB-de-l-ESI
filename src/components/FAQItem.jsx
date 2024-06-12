@@ -10,7 +10,7 @@ const FAQItem = ({ question, answer }) => {
         className="flex justify-between items-center cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h3 className="font-semibold text-[#185B9C] mr-4">{question}</h3>
+        <h3 className="font-semibold text-[#185B9C]">{question}</h3>
         {isOpen ? (
           <FaChevronUp className="text-[#185B9C]" />
         ) : (
