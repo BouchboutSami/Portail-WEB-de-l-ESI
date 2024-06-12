@@ -18,7 +18,6 @@ const page = () => {
   };
   return (
     <div>
-      <Signalbar />
       <NavBar />
       <ImageLanding
         imageUrl="/assets/studentGatewayLanding.png"
