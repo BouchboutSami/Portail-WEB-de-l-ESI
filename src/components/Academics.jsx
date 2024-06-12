@@ -25,22 +25,22 @@ const Academics = () => {
       <div className="text-black font-bold font-poppins text-[36px] text-center">
         Academics
       </div>
-      <div className="text-black font-medium font-poppins text-[20px] text-center mb-4 pb-2">
+      <div className="text-black font-medium font-poppins text-md text-center mb-4 pb-2">
         Have a look at the program studies that ESI offers
       </div>
       <div className="container mx-auto mt-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 items-start justify-center">
           {photos.map((photo, index) => (
             <div key={index} className="flex flex-col items-start mb-[76px]">
               <img
                 src={photo.image}
                 alt={photo.title}
-                className="w-400 h-280 mb-2"
+                className="w-[350px] h-[200px] mb-2"
               />
-              <p className="font-semibold mb-1 hover:underline m-4">
+              <p className="font-semibold mb-1 hover:underline mt-4">
                 {photo.title}
               </p>
-              <p className="m-4">{photo.text}</p>
+              <p className="mb-4 text-sm text-black w-[350px]">{photo.text}</p>
             </div>
           ))}
         </div>

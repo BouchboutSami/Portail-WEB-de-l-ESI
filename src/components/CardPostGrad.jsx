@@ -13,7 +13,9 @@ const CardPostGrad = ({ imageSrc, title, buttonLink }) => {
       <div className="PGCardBottom">
         <ButtonIcon 
         title={"Discover"}
-        link={buttonLink}/>
+        link={buttonLink} 
+        className='hover:bg-[#002E5F] font-medium'
+        />
       </div>
     </div>
   )

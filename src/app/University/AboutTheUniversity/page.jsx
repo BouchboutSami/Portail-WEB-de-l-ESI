@@ -2,12 +2,12 @@
 import Button from "@/components/Buttons/Button";
 import ImageLanding from "@/components/ImageLanding";
 import ImageWithRectangle from "@/components/ImageWithRectangle";
-import NavBar from "@/components/NavBar";
-import Signalbar from "@/components/SignalBar";
 import UniSideBar from "@/components/UniSideBar";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import SpecialtiesSwiper from "@/components/SpecialtiesSwiper";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 const page = () => {
   const mySpecialties = [
     { id: 1, imageSrc: "/assets/university1.jpg", name: "Specialty 1" },
@@ -30,8 +30,8 @@ const page = () => {
   ];
   return (
     <BrowserRouter>
-      <div className="overflow-scroll">
-        <NavBar />
+      <div className="w-screen">
+      <NavBar />
         <ImageLanding
           imageUrl="/assets/PresentationEcole.png"
           title="About the university"
@@ -128,6 +128,7 @@ const page = () => {
             </div>
           </div>
         </div>
+      <Footer/>
       </div>
     </BrowserRouter>
   );

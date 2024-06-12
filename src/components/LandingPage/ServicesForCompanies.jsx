@@ -16,7 +16,7 @@ const ServicesForCompanies = () => {
           />
         </div>
         <div className="bg-bleu w-1/2 p-6 text-white font-poppins absolute right-20 top-50 leading-10">
-          <p className="text-wrap mb-4">
+          <p className="text-wrap text-md pb-12">
             ESI, maintaining its status as a leading training institute, offers
             customized training services and pre-promotion training sessions
             regulated by the Ministry of Education. These high-quality training
@@ -25,8 +25,8 @@ const ServicesForCompanies = () => {
             skills and stay at the forefront of their industry.
           </p>
           <a
-            href="/"
-            className="bg-blanc text-bleu py-2 px-6 absolute bottom-4 right-10"
+            href="/Services"
+            className="bg-blanc text-bleu py-1  px-4 absolute bottom-2 right-10"
           >
             Discover more !
           </a>

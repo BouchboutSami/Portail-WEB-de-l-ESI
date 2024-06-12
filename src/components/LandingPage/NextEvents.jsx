@@ -1,16 +1,10 @@
 "use client";
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-
-// import "./styles.css";
-
-// import required modules
 import { Grid, Pagination, Navigation } from "swiper/modules";
 import CardEvent from "../Cards/CardEvent";
 import { title } from "process";
@@ -35,82 +29,82 @@ export default function NextEvents() {
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
         <SwiperSlide className="mb-16">
           <CardEvent
             img="assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
-            text="tttttttttttttttt"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </SwiperSlide>
       </Swiper>
