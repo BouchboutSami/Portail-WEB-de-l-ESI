@@ -33,12 +33,40 @@ export default function NextEvents() {
         className="mySwiper"
       >
         <SwiperSlide>
+        <CardEvent 
+          img="/assets/VIVATECH.jpg"
+          month="MAY"
+          day="22"
+          title="VivaTechnology 2024"
+          text="The European annual meeting place for technology innovations and startups"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
           <CardEvent 
           img="/assets/CTO.png"
           month="MAY"
           day="20"
           title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          text="The Algerian annual Information and Communication Technology Forum"
+          />
+        </SwiperSlide>
+       
+        <SwiperSlide>
+        <CardEvent 
+          img="/assets/ASC.jpeg"
+          month="DEC"
+          day="05"
+          title="Algerian Startup Conference"
+          text="The most inspiring entrepreneurial event on the continent"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+        <CardEvent 
+          img="/assets/VIVATECH.jpg"
+          month="MAY"
+          day="22"
+          title="VivaTechnology 2024"
+          text="The European annual meeting place for technology innovations and startups"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -50,6 +78,7 @@ export default function NextEvents() {
           text="Le forum des technologies de l’Information et de la Communication"
           />
         </SwiperSlide>
+       
         <SwiperSlide>
         <CardEvent 
           img="/assets/CTO.png"
@@ -61,38 +90,20 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
         <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          img="/assets/ASC.jpeg"
+          month="DEC"
+          day="05"
+          title="Algerian Startup Conference"
+          text="The most inspiring entrepreneurial event on the continent"
           />
         </SwiperSlide>
         <SwiperSlide>
         <CardEvent 
-          img="/assets/CTO.png"
+          img="/assets/VIVATECH.jpg"
           month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          day="22"
+          title="VivaTechnology 2024"
+          text="The European annual meeting place for technology innovations and startups"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -106,20 +117,11 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide className="mb-16">
         <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="mb-16">
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          img="/assets/ASC.jpeg"
+          month="DEC"
+          day="05"
+          title="Algerian Startup Conference"
+          text="The most inspiring entrepreneurial event on the continent"
           />
         </SwiperSlide>
       </Swiper>

@@ -13,7 +13,6 @@ import PostGradStudies from "@/components/YouArePhD/PostGradStudies";
 const page = () => { 
     return (
         <div className="font-poppins text-bleu w-screen flex flex-col relative">
-        <Signalbar />
         <NavBar />
         <PostImage 
           img="/assets/PhDImg.png"

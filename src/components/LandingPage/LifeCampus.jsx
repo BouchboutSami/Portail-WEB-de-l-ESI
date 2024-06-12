@@ -9,7 +9,7 @@ const LifeCampus = () => {
       link:"WhyESI"
     },
     {
-      image: "/assets/Sports.png",
+      image: "/assets/Sports1.png",
       title: "Sports & Culture",
       text: "Text 2",
       link:"WhyESI"

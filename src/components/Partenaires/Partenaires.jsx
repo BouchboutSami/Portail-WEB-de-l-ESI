@@ -22,23 +22,27 @@ export default function Partenaires() {
           modules={[Pagination]}
           className="mySwiper w-full"
         >
+        
           <SwiperSlide>
-            <PartenairesCard />
+            <PartenairesCard image="/assets/PwC.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <PartenairesCard />
+            <PartenairesCard image="/assets/Ooredoo.png"/>
           </SwiperSlide>
           <SwiperSlide>
-            <PartenairesCard />
+            <PartenairesCard image="/assets/Ouedkniss.png"/>
           </SwiperSlide>
           <SwiperSlide>
-            <PartenairesCard />
+            <PartenairesCard image="/assets/AVenture.png"/>
           </SwiperSlide>
           <SwiperSlide>
-            <PartenairesCard />
+            <PartenairesCard image="/assets/Djezzy.png"/>
           </SwiperSlide>
           <SwiperSlide>
-            <PartenairesCard />
+            <PartenairesCard image="/assets/Yassir.png"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <PartenairesCard image="/assets/AVenture.png"/>
           </SwiperSlide>
         </Swiper>
       </div>
