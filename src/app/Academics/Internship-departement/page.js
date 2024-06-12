@@ -9,7 +9,7 @@ import ArticleCard from '@/components/ArticleCard';
 
 export default function EntrepriseDiscovery() {
   return (
-    <div className="font-poppins w-screen flex flex-col relative bg-gray-100">
+    <div className="font-poppins w-full flex flex-col relative bg-gray-100">
       <NavBar />
       <PageImg
         img="/assets/Internship.jpg"

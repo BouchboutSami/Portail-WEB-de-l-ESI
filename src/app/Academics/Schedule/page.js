@@ -29,24 +29,24 @@ export default function Schedule() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Timetable Card */}
-            <div className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <div className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-300 ">
               <img src="/assets/timetable.jpg" alt="Timetable" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-bleunuit to-transparent opacity-90"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
                 <h2 className="text-2xl font-semibold text-white mb-2">Timetable</h2>
                 <p className="text-gray-200 mb-4">View the schedule for classes, exams, and other events.</p>
-                <a href="/timetable" className="text-white hover:text-gray-300 font-semibold">View Timetable</a>
+                <a href="https://www.esi.dz/edt.html" className="text-white hover:text-gray-300 font-semibold">View Timetable</a>
               </div>
             </div>
 
             {/* Classrooms Planning Card */}
-            <div className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+            <div className="relative rounded-lg overflow-hidden shadow-lg transform transition duration-300">
               <img src="/assets/classrooms.jpeg" alt="Classrooms" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-bleunuit to-transparent opacity-90"></div>
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
                 <h2 className="text-2xl font-semibold text-white mb-2">Classrooms Planning</h2>
                 <p className="text-gray-200 mb-4">Check the availability and schedule of classrooms.</p>
-                <a href="/classrooms-planning" className="text-white hover:text-gray-300 font-semibold">View Classrooms Planning</a>
+                <a href="https://www.esi.dz/PlanningSalles.html" className="text-white hover:text-gray-300 font-semibold">View Classrooms Planning</a>
               </div>
             </div>
           </div>
