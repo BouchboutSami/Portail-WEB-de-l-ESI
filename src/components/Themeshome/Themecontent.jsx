@@ -15,7 +15,7 @@ const Themecontent = ({ Theme, contenus }) => {
   async function handleDemandeDevis() {
     localStorage.setItem("ThemeDevis", JSON.stringify(Theme));
 
-    router.push("/demandeDevis");
+    router.push("./Customizedprograms/demandeDevis");
   }
   function handleCommandeFormation() {
     localStorage.setItem("ThemeCommande", JSON.stringify(Theme));

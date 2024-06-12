@@ -58,11 +58,11 @@ const page = () => {
             <div className="px-[10px] text-black font-light font-poppins text-[18px] mb-4">
               The National School of Computer Science is organizing the 4th
               training session before the  
-              <span className="font-bold">"March 2024"</span> promotion for
-              access to the rank of Assistant Engineer in Computer Science Level
-              1, for the benefit of senior computer technicians in public
-              institutions. The training will provide access to the rank of
-              Assistant in Computer Science and includes  
+              <span className="font-bold">&quot;March 2024&quot;</span>{" "}
+              promotion for access to the rank of Assistant Engineer in Computer
+              Science Level 1, for the benefit of senior computer technicians in
+              public institutions. The training will provide access to the rank
+              of Assistant in Computer Science and includes  
               <span className="font-bold">210 hours</span> of instruction spread
               over <span className="font-bold">7 months </span>, with  
               <span className="font-bold">one week per month</span>.
@@ -139,12 +139,13 @@ const page = () => {
                 </div>
                 <div class="font-poppins text-justify mt-2">
                   The National School of Computer Science is organizing the 4th
-                  training session before the "March 2024" promotion for access
-                  to the rank of Assistant Engineer in Computer Science Level 1,
-                  for the benefit of senior computer technicians in public
-                  institutions. The training will provide access to the rank of
-                  Assistant in Computer Science and includes 210 hours of
-                  instruction spread over 7 months, with one week per month.
+                  training session before the &quot;March 2024&quot; promotion
+                  for access to the rank of Assistant Engineer in Computer
+                  Science Level 1, for the benefit of senior computer
+                  technicians in public institutions. The training will provide
+                  access to the rank of Assistant in Computer Science and
+                  includes 210 hours of instruction spread over 7 months, with
+                  one week per month.
                 </div>
               </div>
             </div>
@@ -155,12 +156,13 @@ const page = () => {
                 </div>
                 <div class="font-poppins text-justify mt-2">
                   The National School of Computer Science is organizing the 4th
-                  training session before the "March 2024" promotion for access
-                  to the rank of Assistant Engineer in Computer Science Level 1,
-                  for the benefit of senior computer technicians in public
-                  institutions. The training will provide access to the rank of
-                  Assistant in Computer Science and includes 210 hours of
-                  instruction spread over 7 months, with one week per month.
+                  training session before the &quot;March 2024&quot; promotion
+                  for access to the rank of Assistant Engineer in Computer
+                  Science Level 1, for the benefit of senior computer
+                  technicians in public institutions. The training will provide
+                  access to the rank of Assistant in Computer Science and
+                  includes 210 hours of instruction spread over 7 months, with
+                  one week per month.
                 </div>
               </div>
             </div>
