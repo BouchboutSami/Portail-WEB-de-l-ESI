@@ -25,9 +25,10 @@ const CampusSideBar = () => {
   useEffect(() => {
     const pathname = location.pathname;
     let activeItem = "/Campus";
-    let activesubtitle = "";
+    let activesubtitle = "/Campus/Performances-and-success";
     if (pathname === "/Campus/Student-life/Performances-and-success") {
       activeItem = "Student Life";
+      activesubtitle = "Performances and success";
     } else if (pathname === "/Campus/University-events") {
       activeItem = "University events";
     } else if (pathname === "/Campus/Sports-and-culture") {
@@ -40,15 +41,16 @@ const CampusSideBar = () => {
       pathname === "/Campus/Student-life/Healthcare-and-social-insurance"
     ) {
       activesubtitle = "Healthcare and social insurance";
+      activeItem = "Student Life";
     } else if (pathname === "/Campus/Student-life/University-works") {
       activesubtitle = "University works";
+      activeItem = "Student Life";
     } else if (pathname === "/Campus/Student-life/Work-spaces") {
       activesubtitle = "Work spaces";
-    } else if (pathname === "/Campus/Student-life/Student-organisations") {
+      activeItem = "Student Life";
+    } else if (pathname === "/Campus/Student-life/Student-orgs") {
       activesubtitle = "Student organisations";
-    } else if (pathname === "/Campus/Student-life/Performances-and-success") {
-      activesubtitle = "Performances and success";
-    }
+    } 
     setActiveItem(activeItem);
     setActiveSubtitle(activesubtitle);
     localStorage.setItem("activeItem", activeItem);
@@ -66,7 +68,7 @@ const CampusSideBar = () => {
         },
         {
           title: "Student organisations",
-          link: "/Campus/Student-life/Student-organisations",
+          link: "/Campus/Student-life/Student-orgs",
         },
         {
           title: "Healthcare and social insurance",

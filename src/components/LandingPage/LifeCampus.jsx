@@ -23,7 +23,7 @@ const LifeCampus = () => {
   ];
 
   return (
-    <div className="w-full bg-white p-4">
+    <div className="w-full bg-white p-4 pb-8">
       <div className="text-black font-bold font-poppins text-[36px] text-center">
         Life at campus
       </div>
@@ -48,9 +48,11 @@ const LifeCampus = () => {
           ))}
         </div>
         <div className="text-center ">
-          <button className="bg-[#185B9C] text-white font-poppins text-[20px] font-bold py-2 px-4 w-[300px] h-[78] ">
+          <a href='/Academics/Education' >
+          <button className="bg-[#185B9C] hover:bg-[#002E5F] text-white font-poppins text-md rounded-lg py-3 px-4 w-[300px] h-[78] ">
             More about campus life
           </button>
+          </a>
         </div>
       </div>
     </div>

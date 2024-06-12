@@ -62,106 +62,111 @@ const EtudeSideBar = () => {
   }, [location.pathname]);
     const navigation = [
         {
-          title: "Training offers",
-          link: "/Training-offers",
+          title: "Education",
+          link: "/Academics/Education",
           subtitles: [
             {
                 title: "First preparatory Year",
-                link: "/First-preparatory-year",
+                link: "/Academics/Education/First-preparatory-year",
               },
               {
                 title: "Second preparatory Year",
-                link: "/Second-preparatory-year",
+                link: "/Academics/Education/Second-preparatory-year",
               },
               {
                 title: "Common core of the second cycle",
-                link: "/Common-core-of-the-second-cycle",
+                link: "/Academics/Education/Common-core-of-the-second-cycle",
               },
               {
                 title: "SIL Specialty: Computer Systems and Software",
-                link: "/SIL-Specialty",
+                link: "/Academics/Education/SIL-Specialty",
               },
               {
                 title: "SIQ Specialty: Computer Systems",
-                link: "/SIQ-Specialty",
+                link: "/Academics/Education/SIQ-Specialty",
               },
               {
                 title: "Specialty SIT: Information Systems and Technologies",
-                link: "/Specialty-SIT",
+                link: "/Academics/Education/Specialty-SIT",
               },
               {
                 title: "Specialty SID: Intelligent Systems and Data",
-                link: "/Specialty-SID",
+                link: "/Academics/Education/Specialty-SID",
               },
               {
                 title: "Master",
-                link: "/Master",
+                link: "/Academics/Education/Master",
               },
               {
                 title: "Entrepreneurship Engineer Training",
-                link: "/Entrepreneurship-engineer-training",
+                link: "/Academics/Education/Entrepreneurship-engineer-training",
               },
               {
                 title: "Doctoral Training",
-                link: "/Doctoral-training",
+                link: "/Academics/Education/Doctoral-training",
               },
           ],
         },
         {
           title: "Diplomas and Authentication",
-          link: "/Diplomas-and-authentication",
+          link: "/Academics/Graduate-and-professional",
           subtitles: [],
         },
         {
           title: "Entreprise discovery",
-          link: "/Entreprise-discovery",
+          link: "/Academics/Internship-department",
           subtitles: [],
         },
         {
             title: "Schedule",
-            link: "/Schedule",
+            link: "/Academics/Schedule",
             subtitles: [],
           },
       ];
     return (
-        <div className=" min-h-screen bg-white w-fit mr-4 ">
-          <div class="sidebar pt-8 flex flex-col w-fit border-r border-[#A9A9A9] h-full ">
-            <hr className="border-[#A9A9A9] mt-4 " />
-            {navigation.map((item, index) => (
+      <div className=" min-h-screen bg-white w-fit text-[16px]">
+      <div class="sidebar pt-8 flex flex-col w-fit border-r border-[#A9A9A9] h-full ">
+        <hr className="border-[#A9A9A9] mt-4" />
+        {navigation.map((item, index) => (
+          <>
+            <a href={item.link}>
+              <button
+                onClick={() => handleClick(item.title)}
+                className={`font-poppins font-medium hover:text-[#185B9C] pl-8 text-start hover:font-semibold w-[325px] text-[16px] py-2 px-2  ${
+                  activeItem === item.title
+                    ? "text-[#185B9C] font-semibold "
+                    : ""
+                }`}
+              >
+                {item.title}
+              </button>
+            </a>
+            {(activeItem === item.title ||
+              item.subtitles.some(
+                (subtitle) => subtitle.title === activeSubtitle
+              )) && (
               <>
-                <a href={item.link}>
-                  <button
-                    onClick={() => handleClick(item.title)}
-                    className={`font-poppins font-medium hover:text-[#185B9C] pl-8 text-start hover:font-semibold w-[275px] text-[20px] py-2 px-2  ${
-                      activeItem === item.title ? "text-[#185B9C] font-semibold " : ""
-                    }`}
-                  >
-                    {item.title}
-                  </button>
-                </a>
-                {activeItem === item.title && (
-                  <>
-                    {item.subtitles.map((subtitle, idx) => (
-                      <a href={subtitle.link}>
-                        <button
-                          onClick={() => handleSubtitleClick(subtitle.title)}
-                          className={`font-poppins font-medium hover:text-black pl-16 text-start hover:font-semibold w-[250px] text-[16px] py-2 px-2  ${
-                            activeSubtitle === subtitle.title
-                              ? "text-black font-black"
-                              : ""
-                          }`}
-                        >
-                          {subtitle.title}
-                        </button>
-                      </a>
-                    ))}
-                  </>
-                )}
-                <hr className="border-[#A9A9A9] " />
+                {item.subtitles.map((subtitle, index) => (
+                  <a href={subtitle.link} key={index}>
+                    <button
+                      onClick={() => handleSubtitleClick(subtitle.title)}
+                      className={`font-poppins font-medium hover:text-black pl-16 text-start hover:font-semibold w-[250px] text-[14px] py-2 px-2  ${
+                        activeSubtitle === subtitle.title
+                          ? "text-black font-semibold"
+                          : ""
+                      }`}
+                    >
+                      {subtitle.title}
+                    </button>
+                  </a>
+                ))}
               </>
-            ))}
-          </div>
-        </div>
-      );
+            )}
+            <hr className="border-[#A9A9A9] " />
+          </>
+        ))}
+      </div>
+    </div>
+  );
 }
 export default EtudeSideBar;

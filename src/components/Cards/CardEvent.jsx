@@ -16,7 +16,7 @@ const CardEvent = (props) => {
         </div>
         <div className="paras flex flex-col gap-2">
           <h2 className="font-bold text-sm">{props.title}</h2>
-          <h3 className="text-[#6a6a6a] text-sm text-wrap">{props.text}</h3>
+          <h3 className="text-[#6a6a6a] text-xs text-wrap">{props.text}</h3>
         </div>
       </div>
     </div>

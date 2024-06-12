@@ -4,7 +4,7 @@ import PostImage from "@/components/PostImage";
 import PostSideBar from "@/components/PostSideBar";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Campus from "../Campus";
+import Campus from "../../Campus";
 import Footer from "@/components/Footer";
 import ListeClubs from "./ListeClubs";
 

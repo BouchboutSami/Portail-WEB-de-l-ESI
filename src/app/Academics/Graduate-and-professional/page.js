@@ -10,33 +10,33 @@ export default function Home() {
   const documents = {
     "Diplôme Final Ingénieur": {
       "Retrait Du Diplôme Final Ingénieur": [
-        "Extrait de Naissance (N° 07)",
-        "Original du Relevé de notes du BAC",
-        "Originaux des Relevés de Notes du Cursus",
-        "Attestation provisoire de succès",
-        "Fiche de Renseignements (Ingénieur)",
-        "Demande manuscrite"
+        { name: "Extrait de Naissance (N° 07)" },
+        { name: "Original du Relevé de notes du BAC" },
+        { name: "Originaux des Relevés de Notes du Cursus" },
+        { name: "Attestation provisoire de succès" },
+        { name: "Fiche de Renseignements (Ingénieur)", url: "https://www.esi.dz/wp-content/uploads/2021/05/Fiche-de-Renseignement-Ingenieur.pdf" },
+        { name: "Demande manuscrite" }
       ],
       "Authentification Diplôme Final Ingénieur": [
-        "Etudiants n’ayant pas encore terminé leur scolarité:",
-        "Originaux des Certificats de Scolarité",
-        "Copie du Relevé de Note du BAC",
-        "Originaux des Relevés de Notes",
-        "Etudiants diplômés Ingénieurs:",
-        "Diplôme final ou l’original de l’Attestation provisoire",
-        "Copie du Relevé de Note du BAC",
-        "Original du relevé des Notes Global ou originaux des Relevés de Notes",
-        "N.B : Ne plus légaliser les documents pédagogiques photocopiés"
+        { name: "Etudiants n’ayant pas encore terminé leur scolarité:" },
+        { name: "Originaux des Certificats de Scolarité" },
+        { name: "Copie du Relevé de Note du BAC" },
+        { name: "Originaux des Relevés de Notes" },
+        { name: "Etudiants diplômés Ingénieurs:" },
+        { name: "Diplôme final ou l’original de l’Attestation provisoire" },
+        { name: "Copie du Relevé de Note du BAC" },
+        { name: "Original du relevé des Notes Global ou originaux des Relevés de Notes" },
+        { name: "N.B : Ne plus légaliser les documents pédagogiques photocopiés" }
       ]
     },
     "Diplôme Final Master": {
       "Retrait Du Diplôme Final Master": [
-        "Extrait de Naissance (N° 07)",
-        "Original du Relevé de notes du BAC",
-        "Originaux des Relevés de Notes du Cursus",
-        "Attestation provisoire de succès",
-        "Fiche de Renseignements (Master)",
-        "Demande manuscrite"
+        { name: "Extrait de Naissance (N° 07)" },
+        { name: "Original du Relevé de notes du BAC" },
+        { name: "Originaux des Relevés de Notes du Cursus" },
+        { name: "Attestation provisoire de succès" },
+        { name: "Fiche de Renseignements (Master)", url: "https://www.esi.dz/wp-content/uploads/2021/05/Fiche-de-Renseignement-Ingenieur-et-Master.pdf" },
+        { name: "Demande manuscrite" }
       ],
       "Authentification Diplôme Final Master": [
         // List the required documents
@@ -44,12 +44,12 @@ export default function Home() {
     },
     "Diplôme Final Magister": {
       "Retrait Du Diplôme Final Magister": [
-        "Extrait de Naissance (N° 07)",
-        "Original du Relevé de notes du BAC",
-        "Originaux des Relevés de Notes du Cursus",
-        "Attestation provisoire de succès",
-        "Fiche de Renseignements (Magister)",
-        "Demande manuscrite"
+        { name: "Extrait de Naissance (N° 07)" },
+        { name: "Original du Relevé de notes du BAC" },
+        { name: "Originaux des Relevés de Notes du Cursus" },
+        { name: "Attestation provisoire de succès" },
+        { name: "Fiche de Renseignements (Magister)", url: "https://www.esi.dz/wp-content/uploads/2021/05/Fiche-de-Renseignement-Magister.pdf" },
+        { name: "Demande manuscrite" }
       ],
       "Authentification Diplôme Final Magister": [
         // List the required documents
@@ -57,12 +57,13 @@ export default function Home() {
     },
     "Diplôme Final Docteur en Sciences et docteur LMD": {
       "Retrait Du Diplôme Final Docteur en Sciences et docteur LMD": [
-        "Extrait de Naissance (N° 07)",
-        "Original du Relevé de notes du BAC",
-        "Originaux des Relevés de Notes du Cursus",
-        "Attestation provisoire de succès",
-        "Fiche de Renseignements (Docteur en Sciences)",
-        "Demande manuscrite"
+        { name: "Extrait de Naissance (N° 07)" },
+        { name: "Original du Relevé de notes du BAC" },
+        { name: "Originaux des Relevés de Notes du Cursus" },
+        { name: "Attestation provisoire de succès" },
+        { name: "Fiche de Renseignements (Docteur en Sciences)", url: "https://www.esi.dz/wp-content/uploads/2021/05/Fiche-de-Renseignement-Docteur-En-Sciences.pdf" },
+        { name: "Fiche de Renseignements (LMD)", url: "https://www.esi.dz/wp-content/uploads/2021/05/Fiche-de-Renseignement-Docteur-LMD.pdf" },
+        { name: "Demande manuscrite" }
       ],
       "Authentification Diplôme Final Docteur en Sciences et docteur LMD": [
         // List the required documents
@@ -71,7 +72,7 @@ export default function Home() {
   };
 
   return (
-    <div className="font-poppins w-screen flex flex-col relative">
+    <div className="font-poppins w-full flex flex-col relative">
       <NavBar />
       <PageImg
         img="/assets/Diplomas.jpg" 
@@ -97,10 +98,10 @@ export default function Home() {
                     <ul className="list-disc list-inside ml-4 space-y-2">
                       {documents[diploma][category].map((doc, id) => (
                         <li key={id} className="flex items-center justify-between">
-                          <span>{doc}</span>
-                          {doc.includes("Fiche de Renseignements") && (
+                          <span>{doc.name}</span>
+                          {doc.url && (
                             <a
-                              href={`/path/to/${doc.replace(/ /g, "_")}.pdf`}
+                              href={doc.url}
                               download
                               className="text-[#185B9C] hover:text-[#154b7a] transition-colors"
                             >

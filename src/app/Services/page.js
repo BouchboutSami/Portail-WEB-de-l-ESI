@@ -28,11 +28,10 @@ const data = [
     Skills_acquired: ["- Written Expression and Communication", "- English"],
   },
 ];
-
 const page = () => {
   return (
     <BrowserRouter>
-      <div className="overflow-hidden">
+      <div className="w-screen">
         <NavBar />
         <ServicesImage />
         <div className="flex">

@@ -9,7 +9,7 @@ const Overview = () => {
         <div className="w-1/2 relative mr-0">
           <img
             className="h-auto w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
-            src="./assets/overview.png"
+            src="/assets/overview.png"
             alt="Overview"
           />
         </div>

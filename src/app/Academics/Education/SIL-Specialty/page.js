@@ -16,8 +16,8 @@ export default function Home() {
   const duration = '30 weeks';
   const semester1 = '15 weeks';
   const semester2 = '15 weeks';
-  const imageS1 = '/images/Capture.png'; 
-  const imageS2 = 'https://via.placeholder.com/600x500'; 
+  const imageS1 = '/assets/ProgrammeSIL-S1.png'; 
+  const imageS2 = '/assets/ProgrammeSIL-S2.png'; 
   const conditions="To pass the requirements of the common core in the second cycle, candidates must obtain an average mark equal to or greater than 10 and must not receive any eliminatory mark. In addition, admission is subject to taking into account the candidate's ranking within the promotion."
   const objectives = [
     "Gain proficiency in programming languages such as JavaScript and Python.",
@@ -32,7 +32,7 @@ export default function Home() {
     "Data Scientist",
    ];
   return (
-    <div className=" font-poppins w-screen flex flex-col relative">
+    <div className=" font-poppins w-full flex flex-col relative">
       <NavBar />
       <PageImg
        img="/assets/Etude.jpg" 
@@ -47,7 +47,7 @@ export default function Home() {
        <EtudeSideBar />
        </Router>
        <div className="container mx-auto w-fit py-10 flex flex-col gap-4">
-      <Accordion title="Training Duration and Organization:">
+      <Accordion title="Training Duration and Organization">
       <div>
       <TrainingDurOrga
         duree={duration}
@@ -58,12 +58,12 @@ export default function Home() {
       />
     </div>
       </Accordion>
-      <Accordion title="Access conditions:">
+      <Accordion title="Access conditions">
         <div>
           <AccessConditions conditions={conditions}/>
         </div>
       </Accordion>
-      <Accordion title="Training objectives:">
+      <Accordion title="Training objectives">
         <div>
           <TrainingObjectives objectives={objectives}/>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
           <TrainingProfiles profiles={profiles}/>
         </div>
       </Accordion>
-      <Accordion title="Training program:">
+      <Accordion title="Training program">
         <div>
           <TrainingProgram pdfPath='https://www.esi.dz/wp-content/uploads/2021/02/programmes/programme2cs-sil.pdf'/>
         </div>

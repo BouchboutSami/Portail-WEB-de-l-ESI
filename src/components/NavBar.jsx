@@ -75,7 +75,7 @@ const NavBar = () => {
     {
       title: "Student Life",
       imageUrl: "/assets/campus1.jpg",
-      link: "/Campus/Student-Life",
+      link: "/Campus/Student-life/Performances-and-success",
       description: "Engage in a vibrant campus community.",
     },
     {
