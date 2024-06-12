@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const HeadingUnderlined = ({ text }) => {
   return (
     <div style={{ display: 'inline-block' }}>
-      <h1 className="font-poppins font-bold text-xl">{text}</h1>
+      <h1 className="font-poppins font-bold text-black text-xl">{text}</h1>
       <div
         className="mt-1"
         style={{
@@ -20,5 +20,6 @@ const HeadingUnderlined = ({ text }) => {
 HeadingUnderlined.propTypes = {
   text: PropTypes.string.isRequired,
 };
+
 
 export default HeadingUnderlined;

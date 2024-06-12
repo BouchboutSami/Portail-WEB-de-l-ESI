@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoDocumentOutline } from "react-icons/io5";
+
 const TelechargerDoc = ({ text, link, additionalStyles }) => {
     return (
         <div className={`relative my-[1%] ${additionalStyles}`}>
@@ -21,5 +22,6 @@ const TelechargerDoc = ({ text, link, additionalStyles }) => {
         </div>
     )
 }
+
 
 export default TelechargerDoc
