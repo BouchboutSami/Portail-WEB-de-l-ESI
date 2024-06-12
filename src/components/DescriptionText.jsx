@@ -1,7 +1,9 @@
 import React from "react";
 import { RxCaretRight } from "react-icons/rx";
 
+
 const DescriptionText = ({ imageUrl, title, description, link, right, linktext = "See More" }) => {
+
   return (
     <div className="flex items-center pb-4">
       {right ? (

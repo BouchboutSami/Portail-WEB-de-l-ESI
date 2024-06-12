@@ -9,30 +9,30 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="w-full flex flex-col text-white text-[13px]">
-      <div className="links bg-bleu flex flex-row w-full py-10 px-[10%] gap-[10%]">
+      <div className="links bg-bleu flex flex-row w-full py-10 px-[10%] gap-[8%]">
         <div className="flex flex-col gap-6">
-          <h1 className="text-[16px] font-medium">École</h1>
-          <h2 className="opacity-85">Présentation de l&apos;école</h2>
-          <h2 className="opacity-85">Organisation & Gestion</h2>
-          <h2 className="opacity-85">La bibliothèque</h2>
-          <h2 className="opacity-85">Pourquoi l&apos;ESI ?</h2>
+          <h1 className="text-[16px] font-medium">University</h1>
+          <h2 className="opacity-85">About University</h2>
+          <h2 className="opacity-85">Organisation & Administration</h2>
+          <h2 className="opacity-85">University Library</h2>
+          <h2 className="opacity-85">Why us  ?</h2>
         </div>
         <div className="flex flex-col gap-6">
-          <h1 className="text-[16px] font-medium">Études</h1>
-          <h2 className="opacity-85">Présentation de l&apos;école</h2>
-          <h2 className="opacity-85">Organisation & Gestion</h2>
-          <h2 className="opacity-85">La bibliothèque</h2>
-          <h2 className="opacity-85">Pourquoi l&apos;ESI ?</h2>
+          <h1 className="text-[16px] font-medium">Academics</h1>
+          <h2 className="opacity-85">Education</h2>
+          <h2 className="opacity-85">Graduate and Professional</h2>
+          <h2 className="opacity-85">Internship Departement</h2>
+          <h2 className="opacity-85">Schedule</h2>
         </div>
         <div className="flex flex-col gap-6">
-          <h1 className="text-[16px] font-medium">École</h1>
-          <h2 className="opacity-75">Présentation de l&apos;école</h2>
-          <h2 className="opacity-75">Organisation & Gestion</h2>
-          <h2 className="opacity-75">La bibliothèque</h2>
-          <h2 className="opacity-75">Pourquoi l&apos;ESI ?</h2>
+          <h1 className="text-[16px] font-medium">Prestation</h1>
+          <h2 className="opacity-75">Customized Programs</h2>
+          <h2 className="opacity-75">Pre-promotion Training</h2>
+          <h2 className="opacity-75">Trainers</h2>
+          <h2 className="opacity-75">Traning Calendar</h2>
         </div>
         <div className="flex flex-col gap-6">
-          <h1 className="text-[16px] font-medium">Situation géographique</h1>
+          <h1 className="text-[16px] font-medium">Location</h1>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12794.725851776133!2d3.1678454924060055!3d36.70619168516716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sdz!4v1711912514796!5m2!1sfr!2sdz"
             width="full"
@@ -55,13 +55,13 @@ const Footer = () => {
 
         <div className="credit flex flex-col gap-6">
           <div className="extraLinks flex gap-4">
-            <a href="/Reglementation">Actes réglementaires</a>
+            <a href="">Regulations</a>
             <a href="">Contact</a>
             <a href="">Logos</a>
           </div>
           <div className="esi flex items-center gap-4">
             <AiOutlineCopyright style={{ color: "#A9A9A9" }} />
-            <p>École Supérieure d’Informatique ESI</p>
+            <p>Higher National School of Computer Science - ESI </p>
             <FaFacebook style={{ color: "#A9A9A9" }} />
             <FaTwitter style={{ color: "#A9A9A9" }} />
             <IoLogoInstagram style={{ color: "#A9A9A9" }} />

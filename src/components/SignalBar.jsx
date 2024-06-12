@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 "use client";
+=======
+'use client' ; 
+>>>>>>> ae6769a8c13867a252f8bc127762824ead438841
 import React, { useState } from 'react';
 import { FaEye, FaLanguage ,FaExclamationCircle } from 'react-icons/fa';
 import Link from 'next/link';

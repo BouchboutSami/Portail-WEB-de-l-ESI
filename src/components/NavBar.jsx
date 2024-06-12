@@ -24,24 +24,30 @@ const NavBar = () => {
       title: "Organization & Administration",
       imageUrl: "/assets/university2.jpg",
       link: "/University/Organisation-Administration",
-       description:
+      description:
         "Check out the competent staff that insures our stellar reputation",
     },
-    { title: "Bachelor Space", imageUrl: "/assets/university3.png", link: "/University/Bachelor-Space", description:
-        "Get inspired by many students’ testimonies and an all-in-one Q&A " },
+    {
+      title: "Bachelor Space",
+      imageUrl: "/assets/university3.png",
+      link: "/University/Bachelor-Space",
+      description:
+        "Get inspired by many students’ testimonies and an all-in-one Q&A ",
+    },
     {
       title: "University Library",
       imageUrl: "/assets/university4.png",
       link: "/University/ESI-Library",
-       description:
-        "Source of Zen for our students, Discover the School’s library"},
+      description:
+        "Source of Zen for our students, Discover the School’s library",
+    },
   ];
 
   const academicsItems = [
     {
       title: "Education",
       imageUrl: "/assets/academics1.jpg",
-      link: "/",
+      link: "/Academics",
       description:
         "Explore diverse educational programs for transformative learning.",
     },
@@ -69,31 +75,31 @@ const NavBar = () => {
     {
       title: "Student Life",
       imageUrl: "/assets/campus1.jpg",
-      link: "/",
+      link: "/Campus/Student-Life",
       description: "Engage in a vibrant campus community.",
     },
     {
       title: "University events",
       imageUrl: "/assets/campus2.jpg",
-      link: "/",
+      link: "/Campus/University-events",
       description: "Experience exciting cultural and academic events.",
     },
     {
       title: "Sports & Culture",
       imageUrl: "/assets/campus3.jpg",
-      link: "/",
+      link: "/Campus/Sports-and-culture",
       description: "Embrace a healthy lifestyle and celebrate diversity.",
     },
     {
       title: "Entrepreneurship at school ",
       imageUrl: "/assets/campus4.jpg",
-      link: "/",
+      link: "/Campus/Entrepreneurship-at-school",
       description: "Ignite your entrepreneurial spirit in our innovation hub.",
     },
     {
       title: "Numeric spaces",
       imageUrl: "/assets/campus5.jpg",
-      link: "/",
+      link: "/Campus",
       description:
         "Immersing in technology and innovation within collaborative workspaces",
     },
@@ -164,8 +170,15 @@ const NavBar = () => {
       title: "Doctoral Condidate",
       imageUrl: "/assets/DoctoralCondidate.jpg",
       link: "/YouAre-PhD",
+<<<<<<< HEAD
+=======
     },
-    { title: "Company", imageUrl: "/assets/Company.jpg", link: "/YouAre-Company" },
+    {
+      title: "Company",
+      imageUrl: "/assets/Company.jpg",
+      link: "/YouAre-Company",
+>>>>>>> ae6769a8c13867a252f8bc127762824ead438841
+    },
     { title: "Faculty Staff", imageUrl: "/assets/FacultyStaff.jpg", link: "/" },
     { title: "Alumni", imageUrl: "/assets/Alumni.jpg", link: "/" },
   ];
@@ -211,24 +224,30 @@ const NavBar = () => {
           </div>
           {showSearch === false ? (
             <div className="flex flex-row items-center gap-6 ml-auto font-bold text-[16px] text-[#185B9C] ">
-              <ul
-                className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded relative"
-                onMouseEnter={() => handleHover("University")}
-              >
-                University
-              </ul>
-              <ul
-                className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
-                onMouseEnter={() => handleHover("Academics")}
-              >
-                Academics
-              </ul>
-              <ul
-                className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
-                onMouseEnter={() => handleHover("Campus")}
-              >
-                Campus
-              </ul>
+              <a href="/University/AboutTheUniversity">
+                <ul
+                  className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded relative"
+                  onMouseEnter={() => handleHover("University")}
+                >
+                  University
+                </ul>
+              </a>
+              <a href="/Academics">
+                <ul
+                  className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
+                  onMouseEnter={() => handleHover("Academics")}
+                >
+                  Academics
+                </ul>
+              </a>
+              <a href="/Campus">
+                <ul
+                  className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
+                  onMouseEnter={() => handleHover("Campus")}
+                >
+                  Campus
+                </ul>
+              </a>
               <a href="/Postgraduation-Research">
                 <ul
                   className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
@@ -237,12 +256,14 @@ const NavBar = () => {
                   Postgraduation&Research
                 </ul>
               </a>
-              <ul
-                className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
-                onMouseEnter={() => handleHover("Services for companies")}
-              >
-                Services for companies
-              </ul>
+              <a href="/Services">
+                <ul
+                  className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
+                  onMouseEnter={() => handleHover("Services for companies")}
+                >
+                  Services for companies
+                </ul>
+              </a>
             </div>
           ) : (
             <div className="inline-flex items-center ml-auto pl-4 font-bold text-[16px] text-[#185B9C] ">

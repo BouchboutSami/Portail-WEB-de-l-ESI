@@ -8,7 +8,6 @@ import { EffectCoverflow, Pagination } from "swiper/modules";
 import SwiperCore from "swiper";
 import CardSpecialty from "./Cards/CardSpecialty";
 
-// Install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const SpecialtiesSwiper = ({ specialties }) => {
@@ -25,17 +24,20 @@ const SpecialtiesSwiper = ({ specialties }) => {
           modifier: 1,
           slideShadows: false,
         }}
-        pagination={{ clickable: true }}  
-        style={{ padding:"0rem"}}    >
+        pagination={{ clickable: true }}
+        style={{ padding: "0rem" }}
+      >
         {specialties.map((specialty, index) => (
-          <SwiperSlide key={index} className="flex justify-center items-center p-0 outline outline-2 outline-red-500">
-  <CardSpecialty
-    imageSrc={specialty.imageSrc}
-    specialty={specialty.name}
-    className="w-full h-full outline outline-2 outline-blue-500"
-  />
-</SwiperSlide>
-
+          <SwiperSlide
+            key={index}
+            className="flex justify-center items-center p-0"
+          >
+            <CardSpecialty
+              imageSrc={specialty.imageSrc}
+              specialty={specialty.name}
+              className="w-full h-full"
+            />
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>

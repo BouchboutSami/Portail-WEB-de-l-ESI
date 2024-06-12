@@ -6,7 +6,7 @@ const PostImage = (props) => {
   return (
     <div className="w-full h-[500px] relative pl-[5%]">
       <img
-        src={props.image}
+        src={props.img}
         className="object-cover w-full h-full absolute inset-0"
         alt="gg"
       />
