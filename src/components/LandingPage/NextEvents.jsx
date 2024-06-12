@@ -13,6 +13,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Grid, Pagination, Navigation } from "swiper/modules";
 import CardEvent from "../Cards/CardEvent";
+import { title } from "process";
 
 export default function NextEvents() {
   return (
@@ -32,31 +33,94 @@ export default function NextEvents() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
         <SwiperSlide className="mb-16">
-          <CardEvent />
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="mb-16">
+        <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="Le forum des technologies de l’Information et de la Communication"
+          />
         </SwiperSlide>
       </Swiper>
     </>
