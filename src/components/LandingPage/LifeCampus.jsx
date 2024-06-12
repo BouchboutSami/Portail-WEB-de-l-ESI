@@ -3,18 +3,18 @@ import React from "react";
 const LifeCampus = () => {
   const photos = [
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 1",
+      image: "/assets/S2EE15.JPG",
+      title: "Student organizations",
       text: "Text 1",
     },
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 2",
+      image: "/assets/Sports.png",
+      title: "Sports & Culture",
       text: "Text 2",
     },
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 3",
+      image: "/assets/ESIFabLab.png",
+      title: "ESI FabLab",
       text: "Text 3",
     },
   ];
