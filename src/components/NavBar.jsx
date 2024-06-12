@@ -18,7 +18,7 @@ const NavBar = () => {
     {
       title: "About the University ",
       imageUrl: "/assets/university1.jpg",
-      link: "/Ecole/PresentationEcole",
+      link: "/",
       description:
         "Discover the history of university, its perks, trainings and adapted life",
     },
@@ -161,17 +161,18 @@ const NavBar = () => {
     {
       title: "Futur Student",
       imageUrl: "/assets/FuturStudent.jpg",
-      link: "/YouAreFuturStudent",
+      link: "/",
     },
     {
       title: "Student",
       imageUrl: "/assets/Student.jpg",
-      link: "/YouAreStudent",
+      link: "/",
     },
     {
       title: "Doctoral Condidate",
       imageUrl: "/assets/DoctoralCondidate.jpg",
-      link: "/YouAre-PhD" },
+      link: "/",
+    },
     { title: "Company", imageUrl: "/assets/Company.jpg", link: "/YouAre-Company" },
     { title: "Faculty Staff", imageUrl: "/assets/FacultyStaff.jpg", link: "/" },
     { title: "Alumni", imageUrl: "/assets/Alumni.jpg", link: "/" },
