@@ -16,7 +16,6 @@ const page = () => {
   };
   return (
     <div>
-      <Signalbar />
       <NavBar />
       <ImageLanding
         imageUrl="/assets/FuturStudentGatewayLanding.png"
@@ -38,14 +37,22 @@ const page = () => {
         </div>
         <div className="bg-bleu w-5/12 p-6 text-white font-poppins absolute left-1/2 -translate-x-[10%]">
           <p className="text-wrap mb-2">
-          ESI prioritizes fostering a welcoming and enriching academic environment specifically designed to support new students. Our dedicated faculty provides personalized guidance and mentorship, ensuring you have the resources needed to excel. The collaborative spirit at ESI is highly encouraged, promoting a network of peers where you can learn from and support one another. This nurturing environment empowers you to develop your critical thinking skills, build confidence, and cultivate a lifelong passion for learning within the field of computer science.
+            ESI prioritizes fostering a welcoming and enriching academic
+            environment specifically designed to support new students. Our
+            dedicated faculty provides personalized guidance and mentorship,
+            ensuring you have the resources needed to excel. The collaborative
+            spirit at ESI is highly encouraged, promoting a network of peers
+            where you can learn from and support one another. This nurturing
+            environment empowers you to develop your critical thinking skills,
+            build confidence, and cultivate a lifelong passion for learning
+            within the field of computer science.
           </p>
         </div>
       </div>
       <TrainingOffers />
       <UpcomingEvents />
-<DiscoverSchool/>
-      <Footer/>
+      <DiscoverSchool />
+      <Footer />
     </div>
   );
 };

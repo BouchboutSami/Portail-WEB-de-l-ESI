@@ -1,8 +1,8 @@
 import React from "react";
-import { PhoneIcon } from "@heroicons/react/20/solid";
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
-import { MapPinIcon } from "@heroicons/react/24/outline";
-import { UserCircleIcon } from "@heroicons/react/24/outline";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa6";
+import { HiMapPin } from "react-icons/hi2";
+import { FaCircleUser } from "react-icons/fa6";
 const ContactCard = (props) => {
   const contact = props.table;
   
@@ -12,19 +12,19 @@ const ContactCard = (props) => {
         <div key={index} className="bg-[#185B9C] rounded-md text-white p-4">
           <div className="flex flex-col gap-2 font-semibold">
             <div className="flex items-center gap-2">
-              <UserCircleIcon className="h-5" />
+              <FaCircleUser className="h-5" />
               <h3 className="capitalize">{item.username}</h3>
             </div>
             <div className="flex items-center gap-2">
-              <PhoneIcon className="h-5" />
+              <FaPhoneAlt className="h-5" />
               <h3>{item.phone}</h3>
             </div>
             <div className="flex items-center gap-2">
-              <EnvelopeIcon className="h-5" />
+              <FaEnvelope className="h-5" />
               <h3>{item.email}</h3>
             </div>
             <div className="flex items-center gap-2">
-              <MapPinIcon className="h-5" />
+              <HiMapPin className="h-5" />
               <h3>{item.adresse}</h3>
             </div>
           </div>

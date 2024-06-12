@@ -10,10 +10,11 @@ import { BrowserRouter } from "react-router-dom";
 import SpecialtiesSwiper from "@/components/SpecialtiesSwiper";
 const page = () => {
   const mySpecialties = [
-    { id: 1, imageSrc: '/assets/university1.jpg', name: 'Specialty 1' },
-    { id: 2, imageSrc: '/assets/university2.jpg', name: 'Specialty 2' },
-    { id: 3, imageSrc: '/assets/university3.png', name: 'Specialty 3' },
-    { id: 4, imageSrc: '/assets/university4.png', name: 'Specialty 4' },]
+    { id: 1, imageSrc: "/assets/university1.jpg", name: "Specialty 1" },
+    { id: 2, imageSrc: "/assets/university2.jpg", name: "Specialty 2" },
+    { id: 3, imageSrc: "/assets/university3.png", name: "Specialty 3" },
+    { id: 4, imageSrc: "/assets/university4.png", name: "Specialty 4" },
+  ];
 
   const points = [
     "06 Lecture Halls.",
@@ -29,7 +30,7 @@ const page = () => {
   ];
   return (
     <BrowserRouter>
-      <div className="bg-cyan-300 overflow-scroll">
+      <div className="overflow-scroll">
         <NavBar />
         <ImageLanding
           imageUrl="/assets/PresentationEcole.png"
@@ -48,13 +49,24 @@ const page = () => {
                   ESTABLISHMENT OF THE SCHOOL
                 </h1>
                 <div className="text-black font-light font-poppins text-[18px] mb-4">
-                  The School was founded in 1969 under the name Centre d′Études et de Recherche en Informatique (CERI). Attached to the Ministry of Higher Education in 1983 under the name Institut National de Formation en Informatique (INI), it was transformed into a national higher school by executive decree No. 08-220 of July 14, 2008, under the name École Nationale Supérieure d′Informatique (ESI). To date, it has produced over <span className="font-bold">8269</span> graduates.
+                  The School was founded in 1969 under the name Centre d′Études
+                  et de Recherche en Informatique (CERI). Attached to the
+                  Ministry of Higher Education in 1983 under the name Institut
+                  National de Formation en Informatique (INI), it was
+                  transformed into a national higher school by executive decree
+                  No. 08-220 of July 14, 2008, under the name École Nationale
+                  Supérieure d′Informatique (ESI). To date, it has produced over{" "}
+                  <span className="font-bold">8269</span> graduates.
                 </div>
                 <h1 className="font-poppins font-bold mt-8 text-[24px] text-[#185B9C]">
                   SKILLS
                 </h1>
                 <div className="text-black font-light font-poppins text-[18px] mb-4">
-                  The engineer from the school is able to solve complex problems individually and collectively within organizations, taking into account technological developments. He develops his scientific, technical, and human skills through a demanding course.
+                  The engineer from the school is able to solve complex problems
+                  individually and collectively within organizations, taking
+                  into account technological developments. He develops his
+                  scientific, technical, and human skills through a demanding
+                  course.
                 </div>
               </div>
             </div>
@@ -86,7 +98,11 @@ const page = () => {
                   LIFE AT SCHOOL
                 </h1>
                 <div className="text-black font-light font-poppins text-[18px] mb-4">
-                  Life at our school is imbued with cultural, intellectual, and social richness, ten dynamic student clubs and associations fuel the constant buzz of our campus. <br/> From celebrating intellectual curiosity through exciting scientific workshops to dazzling artistic performances showcasing our creativity.
+                  Life at our school is imbued with cultural, intellectual, and
+                  social richness, ten dynamic student clubs and associations
+                  fuel the constant buzz of our campus. <br /> From celebrating
+                  intellectual curiosity through exciting scientific workshops
+                  to dazzling artistic performances showcasing our creativity.
                 </div>
                 <div className="flex justify-end">
                   <Button title={"SEE DETAILS"} />
@@ -98,7 +114,11 @@ const page = () => {
                 SCIENTIFIC RESEARCH
               </h1>
               <div className="text-black font-light font-poppins text-[18px] mb-4">
-                Our school offers doctoral training, supported by two research laboratories: LMCS and LCSI, which house the majority of our teacher-researchers. These laboratories are centers of excellence where innovation and discovery thrive, propelling our institution to new heights in research.
+                Our school offers doctoral training, supported by two research
+                laboratories: LMCS and LCSI, which house the majority of our
+                teacher-researchers. These laboratories are centers of
+                excellence where innovation and discovery thrive, propelling our
+                institution to new heights in research.
               </div>
             </div>
             <div>

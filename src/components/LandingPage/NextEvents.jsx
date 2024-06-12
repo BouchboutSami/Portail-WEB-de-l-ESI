@@ -33,93 +33,84 @@ export default function NextEvents() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide>
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
         <SwiperSlide className="mb-16">
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="mb-16">
-        <CardEvent 
-          img="/assets/CTO.png"
-          month="MAY"
-          day="20"
-          title="CTO Forum Algeria"
-          text="Le forum des technologies de l’Information et de la Communication"
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
           />
         </SwiperSlide>
       </Swiper>

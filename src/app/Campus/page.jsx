@@ -1,9 +1,11 @@
 "use client";
+import NavBar from "@/components/NavBar";
+import PostImage from "@/components/PostImage";
+import PostSideBar from "@/components/PostSideBar";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import NavBar from "../../components/NavBar";
-import PostImage from "../../components/PostImage";
 import Campus from "./Campus";
+import Footer from "@/components/Footer";
 import CampusSideBar from "./CampusSideBar";
 
 const page = () => {
@@ -19,11 +21,12 @@ const page = () => {
             your field."
         />
         <div className="flex ">
-          <CampusSideBar/>
+          <CampusSideBar />
           <div className="w-full">
             <Campus />
           </div>
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
