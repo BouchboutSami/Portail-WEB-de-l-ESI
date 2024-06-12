@@ -1,13 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-const PartenairesCard = () => {
+const PartenairesCard = ({image}) => {
   return (
     <div className="mb-16 flex justify-center items-center">
       <img
         loading="lazy"
-        src="https://www.marketing-et-direct.com/wp-content/uploads/2019/01/logo-google-404px-grey-1.png"
+        src={image}
         alt="Image 1"
+        className="w-[350px] h-[150px] object-contain"
       />
     </div>
   );

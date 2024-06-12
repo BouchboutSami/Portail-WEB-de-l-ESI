@@ -13,7 +13,6 @@ const page = () => {
     return (
       <BrowserRouter>
       <div className="font-poppins text-bleu w-screen flex flex-col relative">
-        <Signalbar />
         <NavBar />
         <PostImage 
           img="/assets/Pre-promotion1.png"
