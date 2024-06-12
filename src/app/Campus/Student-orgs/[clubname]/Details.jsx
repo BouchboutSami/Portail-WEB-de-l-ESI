@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa6";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { FaYoutube } from "react-icons/fa";
@@ -11,11 +12,18 @@ import { TbWorldWww } from "react-icons/tb";
 import { FaTiktok } from "react-icons/fa";
 
 const Details = () => {
-  return (
+  const club = JSON.parse(localStorage.getItem("club"));
+  return club.id > 0 ? (
     <div className="w-full flex flex-row px-[10%] gap-20 py-[5%]">
       <div className="logo flex flex-col w-1/5 items-center gap-10">
         <div className="logoClub">
-          <img src="/images/LOGO_ETIC_1.png" alt="" />
+          <img
+            src={
+              "http://localhost:1337" +
+              club.attributes.logo.data.attributes.formats.thumbnail.url
+            }
+            alt=""
+          />
         </div>
         <div className="w-full icons flex flex-row justify-between">
           <FaFacebook color="#185B9C" size={25} />
@@ -26,36 +34,32 @@ const Details = () => {
         </div>
       </div>
       <div className="detailstext flex flex-col w-3/5 min-h-max justify-between">
-        <h1 className="text-[#666] font-bold">
-          Entrepreneuriat et Technologies d’Informations et de communication{" "}
-        </h1>
-        <p>
-          ETIC est une organisations estudiantine à but non lucratif créée en
-          2009, son but est de rapprocher les étudiants du monde professionnel
-          et de l’entrepreneuriat
-        </p>
+        <h1 className="text-[#666] font-bold">{club.attributes.categorie}</h1>
+        <p>{club.attributes.description}</p>
         <div className="flex flex-row items-center gap-2">
           <VscAccount />
           <h2 className="font-bold">Président :</h2>
-          <p>BOUCHBOUT Sami Anis</p>
+          <p>{club.attributes.president}</p>
         </div>
         <div className="flex flex-row items-center gap-2">
           <GiPositionMarker />
           <h2 className="font-bold">Local :</h2>
-          <p>BP N°124</p>
+          <p>{club.attributes.local}</p>
         </div>
         <div className="flex flex-row items-center gap-2">
           <AiOutlineMail />
           <h2 className="font-bold">Email :</h2>
-          <p>etic@esi.dz</p>
+          <p>{club.attributes.email}</p>
         </div>
         <div className="flex flex-row items-center gap-2">
           <TbWorldWww />
           <h2 className="font-bold">Site web :</h2>
-          <p>etic-club.com</p>
+          <p>{club.attributes.website}</p>
         </div>
       </div>
     </div>
+  ) : (
+    <div>loading</div>
   );
 };
 
