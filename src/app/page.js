@@ -19,10 +19,6 @@ export default function Home() {
       <LandingImage/>
       <WhyUs />
       <CampusNews/>
-      <UpcomingEvents/>
-      <Academics />
-      <LifeCampus />
-      <PostGradAndResearchSection/>
       <div className="w-full flex flex-col justify-center items-center min-h-max xl:px-[15%] lg:px-[15%] px-[10%]">
         <h1 className="text-noir font-bold text-3xl mb-4 pt-8">Upcoming Events</h1>
         <h2 className="mb-10 text-noir text-md">
@@ -30,6 +26,9 @@ export default function Home() {
         </h2>
         <NextEvents />
       </div>
+      <Academics />
+      <LifeCampus />
+      <PostGradAndResearchSection/>
       <ServicesForCompanies />
       <Partenaires />
       <Footer />

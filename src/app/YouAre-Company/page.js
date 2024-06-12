@@ -13,7 +13,6 @@ import PostImage from "@/components/PostImage";
 const page = () => { 
     return (
       <div className="font-poppins text-bleu w-screen flex flex-col relative">
-        <Signalbar />
         <NavBar />
         <PostImage 
           img="/assets/CompanyImg.png"

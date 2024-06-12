@@ -170,14 +170,11 @@ const NavBar = () => {
       title: "Doctoral Condidate",
       imageUrl: "/assets/DoctoralCondidate.jpg",
       link: "/YouAre-PhD",
-<<<<<<< HEAD
-=======
     },
     {
       title: "Company",
       imageUrl: "/assets/Company.jpg",
       link: "/YouAre-Company",
->>>>>>> ae6769a8c13867a252f8bc127762824ead438841
     },
     { title: "Faculty Staff", imageUrl: "/assets/FacultyStaff.jpg", link: "/" },
     { title: "Alumni", imageUrl: "/assets/Alumni.jpg", link: "/" },
