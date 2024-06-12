@@ -11,7 +11,7 @@ const Registration = () => {
         {text : "Règlement intérieur", href :'#'}
      ]
     return(
-        <div className="flex flex-col items-left py-10 overflow-hidden">
+        <div className="flex flex-col items-left py-10 overflow-hidden z-0">
             <div><HeadingUnderlined text='Inscription'/></div>
             <div><HeadingUnderlined text='Dossier à fournir'/></div>
         <TelechargerDoc text="Copie de l’arrêté de la décision d’ouverture de la formation avant promotion"/>

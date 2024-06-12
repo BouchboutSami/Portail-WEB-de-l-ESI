@@ -32,31 +32,88 @@ export default function NextEvents() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/VIVATECH.jpg"
+          month="MAY"
+          day="22"
+          title="VivaTechnology 2024"
+          text="The European annual meeting place for technology innovations and startups"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="The Algerian annual Information and Communication Technology Forum"
+          />
+        </SwiperSlide>
+       
+        <SwiperSlide>
+        <CardEvent 
+          img="/assets/ASC.jpeg"
+          month="DEC"
+          day="05"
+          title="Algerian Startup Conference"
+          text="The most inspiring entrepreneurial event on the continent"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/VIVATECH.jpg"
+          month="MAY"
+          day="22"
+          title="VivaTechnology 2024"
+          text="The European annual meeting place for technology innovations and startups"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="The Algerian annual Information and Communication Technology Forum"
+          />
+        </SwiperSlide>
+       
+        <SwiperSlide>
+        <CardEvent 
+          img="/assets/ASC.jpeg"
+          month="DEC"
+          day="05"
+          title="Algerian Startup Conference"
+          text="The most inspiring entrepreneurial event on the continent"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+        <CardEvent 
+          img="/assets/VIVATECH.jpg"
+          month="MAY"
+          day="22"
+          title="VivaTechnology 2024"
+          text="The European annual meeting place for technology innovations and startups"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent />
+          <CardEvent 
+          img="/assets/CTO.png"
+          month="MAY"
+          day="20"
+          title="CTO Forum Algeria"
+          text="The Algerian annual Information and Communication Technology Forum"
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <CardEvent />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardEvent />
-        </SwiperSlide>
+       
         <SwiperSlide className="mb-16">
-          <CardEvent />
+        <CardEvent 
+          img="/assets/ASC.jpeg"
+          month="DEC"
+          day="05"
+          title="Algerian Startup Conference"
+          text="The most inspiring entrepreneurial event on the continent"
+          />
         </SwiperSlide>
       </Swiper>
     </>
