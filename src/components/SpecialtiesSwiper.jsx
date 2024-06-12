@@ -6,19 +6,17 @@ import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import SwiperCore from "swiper";
+import CardSpecialty from "./Cards/CardSpecialty";
 
 // Install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
 
-const ImgSlider = ({ images }) => {
+const SpecialtiesSwiper = ({ specialties }) => {
   return (
     <div className="swiper-container">
       <Swiper
-
-        effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
-        centeredSlidesBounds={true}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 30,
@@ -27,26 +25,21 @@ const ImgSlider = ({ images }) => {
           modifier: 1,
           slideShadows: false,
         }}
-        pagination={{ clickable: true }}
-        className="mySwiper"
-      >
-        {images.map((image, index) => (
-          <SwiperSlide key={index} style={{ width: "auto", height: "18rem" }}>
-            <img
-              src={image}
-              alt={`Slide ${index + 1}`}
-              style={{
-                width: "100%",
-                height: "85%",
-                borderRadius: "15px",
-                objectFit: "cover",
-              }}
-            />
-          </SwiperSlide>
+        pagination={{ clickable: true }}  
+        style={{ padding:"0rem"}}    >
+        {specialties.map((specialty, index) => (
+          <SwiperSlide key={index} className="flex justify-center items-center p-0 outline outline-2 outline-red-500">
+  <CardSpecialty
+    imageSrc={specialty.imageSrc}
+    specialty={specialty.name}
+    className="w-full h-full outline outline-2 outline-blue-500"
+  />
+</SwiperSlide>
+
         ))}
       </Swiper>
     </div>
   );
 };
 
-export default ImgSlider;
+export default SpecialtiesSwiper;

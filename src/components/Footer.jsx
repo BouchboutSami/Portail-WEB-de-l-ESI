@@ -55,7 +55,7 @@ const Footer = () => {
 
         <div className="credit flex flex-col gap-6">
           <div className="extraLinks flex gap-4">
-            <a href="">Actes réglementaires</a>
+            <a href="/Reglementation">Actes réglementaires</a>
             <a href="">Contact</a>
             <a href="">Logos</a>
           </div>

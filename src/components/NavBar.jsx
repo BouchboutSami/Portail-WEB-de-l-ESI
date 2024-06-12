@@ -16,31 +16,25 @@ const NavBar = () => {
     {
       title: "About the University ",
       imageUrl: "/assets/university1.jpg",
-      link: "/",
+      link: "/University/AboutTheUniversity",
       description:
         "Discover the history of university, its perks, trainings and adapted life",
     },
     {
       title: "Organization & Administration",
       imageUrl: "/assets/university2.jpg",
-      link: "/",
-      description:
+      link: "/University/Organisation-Administration",
+       description:
         "Check out the competent staff that insures our stellar reputation",
     },
-    {
-      title: "Bachelor Space",
-      imageUrl: "/assets/university3.png",
-      link: "/",
-      description:
-        "Get inspired by many students’ testimonies and an all-in-one Q&A ",
-    },
+    { title: "Bachelor Space", imageUrl: "/assets/university3.png", link: "/University/Bachelor-Space", description:
+        "Get inspired by many students’ testimonies and an all-in-one Q&A " },
     {
       title: "University Library",
       imageUrl: "/assets/university4.png",
-      link: "/",
-      description:
-        "Source of Zen for our students, Discover the School’s library",
-    },
+      link: "/University/ESI-Library",
+       description:
+        "Source of Zen for our students, Discover the School’s library"},
   ];
 
   const academicsItems = [

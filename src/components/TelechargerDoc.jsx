@@ -1,8 +1,9 @@
 import React from 'react';
 import { IoDocumentOutline } from "react-icons/io5";
-const TelechargerDoc = ({ text, link }) => {
+
+const TelechargerDoc = ({ text, link, additionalStyles }) => {
     return (
-        <div className="relative my-[1%] ">
+        <div className={`relative my-[1%] ${additionalStyles}`}>
             <div className="flex items-center">
                 <button
                     className="text-black bg-white border min-w-[50%] border-gray-400 shadow-sm relative z-10"
@@ -22,4 +23,5 @@ const TelechargerDoc = ({ text, link }) => {
     )
 }
 
-export default TelechargerDoc;
+
+export default TelechargerDoc

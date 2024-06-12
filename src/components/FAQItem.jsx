@@ -21,5 +21,4 @@ const FAQItem = ({ question, answer }) => {
     </div>
   );
 };
-
 export default FAQItem;
