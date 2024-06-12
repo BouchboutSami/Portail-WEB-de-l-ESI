@@ -14,9 +14,11 @@ const ImgSlider = ({ images }) => {
   return (
     <div className="swiper-container">
       <Swiper
+
         effect="coverflow"
         grabCursor={true}
         centeredSlides={true}
+        centeredSlidesBounds={true}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 30,
