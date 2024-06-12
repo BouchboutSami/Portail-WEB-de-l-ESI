@@ -6,15 +6,17 @@ import Signalbar from "../components/SignalBar";
 import Footer from "../components/Footer";
 import NavBar from "@/components/NavBar";
 import CampusNews from "@/components/CampusNews";
+import ContactCard from "@/components/Cards/ContactCard";
+import LandingImage from "@/components/LandingImage";
 import Academics from "@/components/Academics";
 import LifeCampus from "@/components/LandingPage/LifeCampus";
 import PostGradAndResearchSection from "@/components/PostGradAndResearchSection";
 import UpcomingEvents from "@/components/UpcomingEvents";
-
 export default function Home() {
   return (
     <div className="font-poppins text-bleu w-screen flex flex-col relative">
       <NavBar/>
+      <LandingImage/>
       <WhyUs />
       <CampusNews/>
       <UpcomingEvents/>

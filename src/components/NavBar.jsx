@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
 import Signalbar from "./SignalBar";
@@ -118,7 +116,7 @@ const NavBar = () => {
     {
       title: "Research",
       imageUrl: "/assets/post2.jpg",
-      link: "/Postgraduation-Research/Research",
+      link: "/Postgraduation-Research/Research/LCSI",
       description:
         "Join visionary researchers and explore innovative projects.",
     },
