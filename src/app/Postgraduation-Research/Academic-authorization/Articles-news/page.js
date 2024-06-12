@@ -4,6 +4,9 @@ import { BrowserRouter } from "react-router-dom";
 import NavBar from "../../../../Components/NavBar";
 import PostImage from "../../../../Components/PostImage";
 import PostSideBar from "../../../../Components/PostSideBar";
+import ArticleCard from "@/components/ArticleCard";
+import Footer from "@/components/Footer";
+
 
 const page = () => {
   return (
@@ -11,13 +14,41 @@ const page = () => {
       <div className=" w-screen">
         <NavBar />
         <PostImage
+        image="/assets/postGraduationResearch.jpg"
         titre = 'Articles News'
         details = 'Explore academic authorization at ESI. Join us to keep up to date with all the latest accreditations and news.'
         />
         <div className="flex ">
           <PostSideBar />
-          <div className=" w-full items-center text-center">Articles news</div>
+          <div className=" w-full items-center text-center">Articles news
+          <ArticleCard imageUrl={"/assets/ArticlecardPG.png"} title={"FAQ: Journée mondiale de l’alimentation"} 
+          description={"Organized by the Food and Agriculture Organization of the United Nations  "} 
+          link={"https://www.esi.dz/wp-content/uploads/2022/09/La-JourneeMondialeDelAlimentation.pdf"} 
+          linkText={"World Food Day 2022 Concept Note Fr"}/>
+          <ArticleCard imageUrl={"/assets/ArticlecardPG.png"} title={"FAQ: Journée mondiale de l’alimentation"} 
+          description={"Organized by the Food and Agriculture Organization of the United Nations  "} 
+          link={"https://www.esi.dz/wp-content/uploads/2022/09/La-JourneeMondialeDelAlimentation.pdf"} 
+          linkText={"World Food Day 2022 Concept Note Fr"}/>
+          <ArticleCard imageUrl={"/assets/ArticlecardPG.png"} title={"FAQ: Journée mondiale de l’alimentation"} 
+          description={"Organized by the Food and Agriculture Organization of the United Nations  "} 
+          link={"https://www.esi.dz/wp-content/uploads/2022/09/La-JourneeMondialeDelAlimentation.pdf"} 
+          linkText={"World Food Day 2022 Concept Note Fr"}/>
+          <ArticleCard imageUrl={"/assets/ArticlecardPG.png"} title={"FAQ: Journée mondiale de l’alimentation"} 
+          description={"Organized by the Food and Agriculture Organization of the United Nations  "} 
+          link={"https://www.esi.dz/wp-content/uploads/2022/09/La-JourneeMondialeDelAlimentation.pdf"} 
+          linkText={"World Food Day 2022 Concept Note Fr"}/>
+          <ArticleCard imageUrl={"/images/Event2.png"} title={"FAQ: Journée mondiale de l’alimentation"} 
+          description={"Organized by the Food and Agriculture Organization of the United Nations  "} 
+          link={"https://www.esi.dz/wp-content/uploads/2022/09/La-JourneeMondialeDelAlimentation.pdf"} 
+          linkText={"World Food Day 2022 Concept Note Fr"}/>
+          <ArticleCard imageUrl={"/images/Event2.png"} title={"FAQ: Journée mondiale de l’alimentation"} 
+          description={"Organized by the Food and Agriculture Organization of the United Nations  "} 
+          link={"https://www.esi.dz/wp-content/uploads/2022/09/La-JourneeMondialeDelAlimentation.pdf"} 
+          linkText={"World Food Day 2022 Concept Note Fr"}/>
+          <p className="mb-4"></p>
+          </div>
         </div>
+        <Footer/>
       </div>
     </BrowserRouter>
   );

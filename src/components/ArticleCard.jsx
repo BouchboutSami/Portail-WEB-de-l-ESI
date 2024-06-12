@@ -1,3 +1,4 @@
+
 import React from "react";
 import { RxCaretRight } from "react-icons/rx";
 
@@ -35,3 +36,4 @@ const ArticleCard = ({ imageUrl, title, description, link, linkText }) => {
 };
 
 export default ArticleCard;
+

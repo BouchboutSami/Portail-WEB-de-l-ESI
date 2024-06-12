@@ -5,9 +5,9 @@ import { usePathname } from "next/navigation";
 
 const Breadcrumb = () => {
   const paths = usePathname();
-  const pathNames = paths.split("/").filter((path) => path.replace("-"," "));
+  const pathNames = paths.split("/").filter((path) => path.replace(/-/g," "));
   pathNames.forEach((element,index) => {
-    pathNames[index]=element.replace("-"," ");
+    pathNames[index]=element.replace(/-/g," ");
   });
 
   return (
@@ -32,7 +32,7 @@ const Breadcrumb = () => {
             >
               {pathNames.length - 1 !== index ? (
                 <div className="flex flex-row gap-2 items-center">
-                  {path}
+                  {path.replace("-", " ")}
                   <LuChevronRight className=" h-4" />
                 </div>
               ) : (

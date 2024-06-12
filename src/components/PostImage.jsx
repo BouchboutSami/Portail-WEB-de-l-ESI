@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Breadcrumb from "./Breadcrumb";
 
@@ -5,8 +6,9 @@ const PostImage = (props) => {
   return (
     <div className="w-full h-[500px] relative pl-[5%]">
       <img
-        src={props.img}
+        src={props.image}
         className="object-cover w-full h-full absolute inset-0"
+        alt="gg"
       />
       <div className="absolute bottom-0 left-0 w-full opacity-90 h-[300px] bg-gradient-to-t from-black " />
       <div className="absolute bottom-8 w-full font-poppins text-white ">
