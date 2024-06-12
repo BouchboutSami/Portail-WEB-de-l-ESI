@@ -24,7 +24,7 @@ const ClubCard = ({ club }) => {
         <p>{club.attributes.description}</p>
       </div>
       <a
-        href={"./Student-orgs/" + club.attributes.nom}
+        href={"./Student-organisations/" + club.attributes.nom}
         target="_blank"
         className="px-2 py-1 border-[1px] border-black w-max rounded-md font-medium"
         onClick={() => {
