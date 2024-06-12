@@ -7,7 +7,7 @@ import TrainingSchema from "@/components/TrainingSchema";
 import Footer from "@/components/Footer"; 
 import ContactCard from "@/components/ContactCard";
 import WhyESI from "@/components/WhyESI";
-import FAQSection from "@/components/FAQSection";
+import FAQ from "@/components/FAQ";
 import Overview from "@/components/overview";
 export default function Home() {
    const contacts = [
@@ -32,8 +32,18 @@ export default function Home() {
       email: 'm_anane@esi.dz',
     },
    ];
+   const FAQs = [
+    {
+      question: "How can I get the transport card?",
+      answer: "Each student can get the transport card if they pay 1510 in the progres website at the beginning of the year.",
+    },
+    {
+      question: "What does this card cover?",
+      answer: "It covers the bus, the tramway and the metro",
+    },
+  ];
   return (
-    <div className=" font-poppins w-screen flex flex-col relative">
+    <div className=" font-poppins w-full flex flex-col relative">
       <NavBar />
       <PageImg
        img="/assets/Etude.jpg" 
@@ -55,7 +65,8 @@ export default function Home() {
       </div>
      
       <WhyESI/>
-      <FAQSection/>
+      <h2 className="font-poppins text-4xl font-bold text-center text-bleunuit mt-8">FAQ</h2>
+      <FAQ faqs={FAQs}/>
       <Footer/>
     </div>
     
