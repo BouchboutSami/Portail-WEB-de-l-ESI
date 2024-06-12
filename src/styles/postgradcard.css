@@ -1,0 +1,43 @@
+.PGcard {
+    display: flex;
+    flex-direction: column; /* Changed from row to column */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: space-between;
+    max-width: 32rem;
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .PGcard-top {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  .LogoLabo {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .TitleLabo {
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .PGCardBottom {
+    display: flex; /* Use flexbox for button alignment */
+    align-items: right;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  
+  .ButtonIcon {
+    /* Style your button here */
+  }
+  

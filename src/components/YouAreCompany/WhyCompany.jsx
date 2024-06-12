@@ -4,7 +4,7 @@ const WhyCompany = () => {
   return (
     <div className="p-10 my-10 mx-10 relative w-full">
       <div className="font-poppins mx-auto my-auto font-bold text-noir text-4xl text-center p-8">
-        <h1>Why us?</h1>
+        <h1>ESI & Companies </h1>
       </div>
       <div className="flex items-center">
         <div className="w-1/2 relative mr-0">
@@ -15,7 +15,6 @@ const WhyCompany = () => {
           />
         </div>
         <div className="bg-bleu w-1/2 p-6 text-white font-poppins absolute right-20 top-50">
-          <h1 className="font-bold mb-4">ESI & Companies </h1>
           <p className="text-wrap mb-4">
           At ESI, maintaining close relations with companies is crucial. These partnerships are vital for preparing our students for the tech industry's demands.
           Through collaborations and internships, we ensure our curriculum remains aligned with real-world needs, providing students with sought-after skills and experiences. 

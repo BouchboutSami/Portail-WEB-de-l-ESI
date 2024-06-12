@@ -1,0 +1,19 @@
+.image-with-rectangle {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    margin-top: 5%;
+  }
+  
+  .rectangle {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100%);
+    height: calc(100%);
+    background-color: #185B9C;
+    box-sizing: border-box;
+    z-index: -1;
+  }
+  

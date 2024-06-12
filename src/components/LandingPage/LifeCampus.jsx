@@ -3,19 +3,22 @@ import React from "react";
 const LifeCampus = () => {
   const photos = [
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 1",
+      image: "/assets/S2EE15.JPG",
+      title: "Student organizations",
       text: "Text 1",
+      link:"WhyESI"
     },
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 2",
+      image: "/assets/Sports.png",
+      title: "Sports & Culture",
       text: "Text 2",
+      link:"WhyESI"
     },
     {
-      image: "https://via.placeholder.com/400x280",
-      title: "Title 3",
+      image: "/assets/ESIFabLab.png",
+      title: "ESI FabLab",
       text: "Text 3",
+      link:"WhyESI"
     },
   ];
 
@@ -31,6 +34,7 @@ const LifeCampus = () => {
         <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {photos.map((photo, index) => (
             <div key={index} className="flex flex-col items-start mb-[76px]">
+              <a href={photo.link}>
               <img
                 src={photo.image}
                 alt={photo.title}
@@ -39,6 +43,7 @@ const LifeCampus = () => {
               <p className="font-semibold mb-1 hover:underline m-4">
                 {photo.title}
               </p>
+              </a>
             </div>
           ))}
         </div>

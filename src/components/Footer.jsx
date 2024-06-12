@@ -1,5 +1,5 @@
+
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import React from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
