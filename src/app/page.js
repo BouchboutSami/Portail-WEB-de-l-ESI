@@ -25,7 +25,7 @@ export default function Home() {
       <PostGradAndResearchSection/>
       <div className="w-full flex flex-col justify-center items-center min-h-max xl:px-[15%] lg:px-[15%] px-[10%]">
         <h1 className="text-noir font-bold text-3xl mb-4 pt-4">Upcoming Events</h1>
-        <h2 className="mb-10 text-noir text-xl">
+        <h2 className="mb-10 text-noir text-[16px]">
           Discover our major upcoming events
         </h2>
         <NextEvents />
