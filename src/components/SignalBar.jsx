@@ -1,4 +1,5 @@
-'use client' ; 
+"use client";
+
 import React, { useState } from 'react';
 import { FaEye, FaLanguage ,FaExclamationCircle } from 'react-icons/fa';
 import Link from 'next/link';

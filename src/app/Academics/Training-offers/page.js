@@ -32,6 +32,17 @@ export default function Home() {
       email: 'm_anane@esi.dz',
     },
    ];
+   const Faqs = [
+    {
+      question: "How can I get the transport card?",
+      answer: "Each student can get the transport card if they pay 1510 in the progres website at the beginning of the year.",
+    },
+    {
+      question: "What does this card cover?",
+      answer: "It covers the bus, the tramway and the metro",
+    },
+  ];
+
   return (
     <div className=" font-poppins w-screen flex flex-col relative">
       <NavBar />
@@ -53,9 +64,11 @@ export default function Home() {
      <TrainingSchema/>
      </div>
       </div>
-     
       <WhyESI/>
-      <FAQSection/>
+      <FAQSection 
+      faqs={Faqs}
+      sectionTitle={"Lorem"}
+      sectionDescription={"Ipsum"}/>
       <Footer/>
     </div>
     
