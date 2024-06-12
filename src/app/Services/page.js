@@ -164,7 +164,7 @@ const page = () => {
         </div>
 
           {/* Statistics */}
-          <div className="px-[10px] w-full my-5 items-center">
+          <div className="px-[10px] w-full my-10 items-center">
                            <div style={{ display: 'inline-block' }}>
                             <h1 className="font-poppins font-bold text-xl"> Statistics </h1>
                             <div
