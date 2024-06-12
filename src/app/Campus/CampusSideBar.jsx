@@ -28,38 +28,26 @@ const CampusSideBar = () => {
     let activesubtitle = "";
     if (pathname === "/Campus/Student-life/Performances-and-success") {
       activeItem = "Student Life";
-    } else if (pathname === "/Campus/Student-life/Performances-and-success") {
-      activeItem = "Performance and success";
-    } else if (pathname === "/Campus/Student-life/Student-organisations") {
-      activeItem = "Student organisations";
-    } else if (pathname === "/Campus/Student-life/Healthcare-and-social-insurance") {
+    } else if (pathname === "/Campus/University-events") {
+      activeItem = "University events";
+    } else if (pathname === "/Campus/Sports-and-culture") {
+      activeItem = "Sports and Culture";
+    } else if (pathname === "/Campus/Entrepreneurship-at-school") {
+      activeItem = "Entrepreneurship at school";
+    } else if (pathname === "/Campus/Numeric-spaces") {
+      activeItem = "Numeric spaces";
+    } else if (
+      pathname === "/Campus/Student-life/Healthcare-and-social-insurance"
+    ) {
       activesubtitle = "Healthcare and social insurance";
     } else if (pathname === "/Campus/Student-life/University-works") {
       activesubtitle = "University works";
-    } else if (
-      pathname === "/Campus/Student-life/Work-spaces"
-    ) {
+    } else if (pathname === "/Campus/Student-life/Work-spaces") {
       activesubtitle = "Work spaces";
-    } else if (
-      pathname ===
-      "/Campus/University-events"
-    ) {
-      activesubtitle = "University events";
-    } else if (
-      pathname ===
-      "/Campus/Sports-and-culture"
-    ) {
-      activesubtitle = "Sports and Culture";
-    }else if (
-      pathname ===
-      "/Campus/Entrepreneurship-at-school"
-    ) {
-      activesubtitle = "Entrepreneurship at school";
-    }else if (
-      pathname ===
-      "/Campus/Numeric-spaces"
-    ) {
-      activesubtitle = "Numeric spaces";
+    } else if (pathname === "/Campus/Student-life/Student-organisations") {
+      activesubtitle = "Student organisations";
+    } else if (pathname === "/Campus/Student-life/Performances-and-success") {
+      activesubtitle = "Performances and success";
     }
     setActiveItem(activeItem);
     setActiveSubtitle(activesubtitle);
@@ -78,19 +66,19 @@ const CampusSideBar = () => {
         },
         {
           title: "Student organisations",
-          link: "",
+          link: "/Campus/Student-life/Student-organisations",
         },
         {
           title: "Healthcare and social insurance",
-          link: "",
+          link: "/Campus/Student-life/Healthcare-and-social-insurance",
         },
         {
           title: "University works",
-          link: "",
+          link: "/Campus/Student-life/University-works",
         },
         {
           title: "Work spaces",
-          link: "",
+          link: "/Campus/Student-life/Work-spaces",
         },
       ],
     },
@@ -106,7 +94,7 @@ const CampusSideBar = () => {
     },
     {
       title: "Entrepreneurship at school",
-      link: "",
+      link: "/Campus/Entrepreneurship-at-school",
       subtitles: [],
     },
     {
