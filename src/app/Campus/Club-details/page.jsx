@@ -14,7 +14,7 @@ const page = () => {
     <BrowserRouter>
       <div className="w-screen flex flex-col">
         <NavBar />
-        <Breadcrumb />
+        {/* <Breadcrumb /> */}
         <Details />
         <Footer />
       </div>

@@ -32,31 +32,85 @@ export default function NextEvents() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
         <SwiperSlide className="mb-16">
-          <CardEvent image="assets/Alumni.jpg" title="HHHHHHHHHHHH" />
+          <CardEvent
+            img="assets/Alumni.jpg"
+            title="HHHHHHHHHHHH"
+            month="APR"
+            day="16"
+            text="tttttttttttttttt"
+          />
         </SwiperSlide>
       </Swiper>
     </>
