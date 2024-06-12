@@ -47,26 +47,26 @@ const NavBar = () => {
     {
       title: "Education",
       imageUrl: "/assets/academics1.jpg",
-      link: "/Academics",
+      link: "/Academics/Education",
       description:
         "Explore diverse educational programs for transformative learning.",
     },
     {
       title: "Graduate & Professional",
       imageUrl: "/assets/academics2.jpg",
-      link: "/",
+      link: "/Academics/Graduate-and-professional",
       description: "Elevate your career with specialized programs.",
     },
     {
       title: "Internship departement",
       imageUrl: "/assets/academics3.jpg",
-      link: "/",
+      link: "/Academics/Internship-departement",
       description: " Gain practical experience bridging theory and practice.",
     },
     {
       title: "Schedule",
       imageUrl: "/assets/academics4.jpg",
-      link: "/",
+      link: "/Academics/Schedule",
       description: "Stay organized with academic scheduling.",
     },
   ];
@@ -132,25 +132,25 @@ const NavBar = () => {
     {
       title: "Customized programs",
       imageUrl: "/assets/services1.jpg",
-      link: "/",
+      link: "/Services/Customizedprograms",
       description: "Tailor your learning experience to achieve your goals.",
     },
     {
       title: "Pre-promotion Training",
       imageUrl: "/assets/services2.jpg",
-      link: "/",
+      link: "/Services/Pre-promotionTraining",
       description: "Prepare for career advancement with specialized training.",
     },
     {
       title: "Trainers",
       imageUrl: "/assets/services3.jpg",
-      link: "/",
+      link: "/Services/Trainers",
       description: "Learn from industry experts committed to your success.",
     },
     {
       title: "Calendar",
       imageUrl: "/assets/services4.jpg",
-      link: "/",
+      link: "/Services/Calendar",
       description: "Stay informed with our comprehensive academic calendar.",
     },
   ];
@@ -176,8 +176,12 @@ const NavBar = () => {
       imageUrl: "/assets/Company.jpg",
       link: "/YouAre-Company",
     },
-    { title: "Faculty Staff", imageUrl: "/assets/FacultyStaff.jpg", link: "/" },
-    { title: "Alumni", imageUrl: "/assets/Alumni.jpg", link: "/" },
+    {
+      title: "Faculty Staff",
+      imageUrl: "/assets/FacultyStaff.jpg",
+      link: "/YouAre-Staff",
+    },
+    { title: "Alumni", imageUrl: "/assets/Alumni.jpg", link: "/YouAre-Alumni" },
   ];
 
   const handleHover = (category) => {
@@ -211,7 +215,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className=" top-0 z-10 sticky flex flex-col">
+      <div className=" top-0 z-50 sticky flex flex-col">
         <Signalbar />
         <nav className="bg-white top-0 z-10 sticky px-8 flex justify-items-stretch items-center w-full font-poppins shadow-md">
           <div className="flex items-center pl-4 ">
@@ -229,7 +233,7 @@ const NavBar = () => {
                   University
                 </ul>
               </a>
-              <a href="/Academics">
+              <a href="/Academics/Education">
                 <ul
                   className="py-1 border-b-4 border-transparent hover:border-b-4 hover:border-[#185B9C] rounded"
                   onMouseEnter={() => handleHover("Academics")}
@@ -313,7 +317,7 @@ const NavBar = () => {
         </nav>
       </div>
       {DropdownList && (
-        <div className=" top-0 z-10 fixed mt-24 bg-transparent w-full py-2">
+        <div className=" top-0 z-50 fixed mt-24 bg-transparent w-full py-2">
           <div
             className=" w-full bg-[#F5F5F5] opacity-95 font-poppins font-semibold text-[16px] text-black"
             onMouseLeave={() => setDropdownList(false)}

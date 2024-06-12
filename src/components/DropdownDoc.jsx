@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaRegFolderOpen } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaRegFolderOpen } from "react-icons/fa";
 import { RxCaretDown } from "react-icons/rx";
 import { RxCaretUp } from "react-icons/rx";
 
@@ -15,7 +15,7 @@ function DropdownDoc({ text, menuItems }) {
       <div className="flex items-center">
         <button
           onClick={toggleDropdown}
-          className="text-black bg-white border border-gray-400 shadow-sm relative z-10"
+          className="text-black bg-white border border-gray-400 shadow-sm relative "
           type="button"
         >
           <div className="flex items-center">
@@ -26,7 +26,7 @@ function DropdownDoc({ text, menuItems }) {
               <span className="font-poppins text-[18px]">{text}</span>
             </div>
             <div className="p-2 ml-2 flex items-center">
-              {isOpen ? <RxCaretUp size={24}/> : <RxCaretDown size={24}/>}
+              {isOpen ? <RxCaretUp size={24} /> : <RxCaretDown size={24} />}
             </div>
           </div>
         </button>
@@ -55,6 +55,4 @@ function DropdownDoc({ text, menuItems }) {
   );
 }
 
-
 export default DropdownDoc;
-
