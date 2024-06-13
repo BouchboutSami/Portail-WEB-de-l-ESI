@@ -13,6 +13,7 @@ import { FaTiktok } from "react-icons/fa";
 
 const Details = () => {
   const club = JSON.parse(localStorage.getItem("club"));
+  console.log(club);
   return club.id > 0 ? (
     <div className="w-full flex flex-row px-[10%] gap-20 py-[5%]">
       <div className="logo flex flex-col w-1/5 items-center gap-10">

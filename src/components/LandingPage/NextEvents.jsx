@@ -28,7 +28,7 @@ export default function NextEvents() {
       >
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -37,7 +37,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -46,7 +46,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -55,7 +55,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -64,7 +64,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -73,7 +73,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -82,7 +82,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -91,7 +91,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide>
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"
@@ -100,7 +100,7 @@ export default function NextEvents() {
         </SwiperSlide>
         <SwiperSlide className="mb-16">
           <CardEvent
-            img="assets/Alumni.jpg"
+            img="/assets/Alumni.jpg"
             title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
             day="16"

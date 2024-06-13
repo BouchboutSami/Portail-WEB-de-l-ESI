@@ -18,7 +18,9 @@ const Campus = () => {
         students who are at the same time happy and fulfilled.
       </p>
       <div className="w-full h-96 bg-[url(/assets/CampusMain.png)] bg-cover bg-no-repeat bg-center" />
-      <Stats table={table} />
+      <div className="w-full">
+        <Stats table={table} />
+      </div>
       <h2 className="my-10 font-bold text-3xl">Student life</h2>
       <div className="flex flex-row items-center justify-evenly w-full cursor-pointer mb-10">
         <CampusNewsCard title="test" image="/assets/CampusMain.png" />
@@ -30,32 +32,32 @@ const Campus = () => {
         <div className="flex flex-row items-center justify-evenly w-full cursor-pointer gap-10 px-[10%]">
           <CardEvent
             img="/assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
-            day={14}
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit?"
+            day="16"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
           <CardEvent
             img="/assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
-            day={14}
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit?"
+            day="16"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
           <CardEvent
             img="/assets/Alumni.jpg"
-            title="HHHHHHHHHHHH"
-            day={14}
+            title="Algerian Doctoral Conference on Computer Science ADCCS’2024"
             month="APR"
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, fugit?"
+            day="16"
+            text="Algerian Doctoral Conference on Computer Science ADCCS’2024"
           />
         </div>
       </div>
       <h2 className="my-10 font-bold text-3xl">Sports & Culture</h2>
       <div className="flex flex-row items-center justify-evenly w-full cursor-pointer mb-10">
-        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
-        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
-        <CampusNewsCard title="test" image="/assets/CampusMain.png" />
+        <CampusNewsCard title="sport 1" image="/assets/CampusMain.png" />
+        <CampusNewsCard title="sport 2" image="/assets/CampusMain.png" />
+        <CampusNewsCard title="sport 3" image="/assets/CampusMain.png" />
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ const CampusSideBar = () => {
       activeItem = "Student Life";
     } else if (pathname === "/Campus/Student-life/Student-orgs") {
       activesubtitle = "Student organisations";
-    } 
+    }
     setActiveItem(activeItem);
     setActiveSubtitle(activesubtitle);
     localStorage.setItem("activeItem", activeItem);
@@ -68,7 +68,7 @@ const CampusSideBar = () => {
         },
         {
           title: "Student organisations",
-          link: "/Campus/Student-life/Student-orgs",
+          link: "/Campus/Student-life/Student-organisations",
         },
         {
           title: "Healthcare and social insurance",

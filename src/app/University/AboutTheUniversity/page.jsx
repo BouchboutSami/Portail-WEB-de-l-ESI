@@ -8,6 +8,7 @@ import { BrowserRouter } from "react-router-dom";
 import SpecialtiesSwiper from "@/components/SpecialtiesSwiper";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Academics from "@/components/Academics";
 const page = () => {
   const mySpecialties = [
     { id: 1, imageSrc: "/assets/university1.jpg", name: "Specialty 1" },
@@ -31,7 +32,7 @@ const page = () => {
   return (
     <BrowserRouter>
       <div className="w-screen">
-      <NavBar />
+        <NavBar />
         <ImageLanding
           imageUrl="/assets/PresentationEcole.png"
           title="About the university"
@@ -123,12 +124,12 @@ const page = () => {
             </div>
             <div>
               <div>
-                <SpecialtiesSwiper specialties={mySpecialties} />
+                {/* <SpecialtiesSwiper specialties={mySpecialties} /> */}
               </div>
             </div>
           </div>
         </div>
-      <Footer/>
+        <Footer />
       </div>
     </BrowserRouter>
   );

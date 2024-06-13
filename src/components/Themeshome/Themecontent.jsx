@@ -6,7 +6,6 @@ import { CiCalendar } from "react-icons/ci";
 import { useRouter } from "next/navigation";
 
 const Themecontent = ({ Theme, contenus }) => {
-  console.log("contenus", contenus);
   const [isOpen, setisOpen] = useState(false);
   const router = useRouter();
   function handleClick() {
@@ -14,7 +13,6 @@ const Themecontent = ({ Theme, contenus }) => {
   }
   async function handleDemandeDevis() {
     localStorage.setItem("ThemeDevis", JSON.stringify(Theme));
-
     router.push("./Customizedprograms/demandeDevis");
   }
   function handleCommandeFormation() {
