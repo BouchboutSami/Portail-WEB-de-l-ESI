@@ -11,24 +11,59 @@ const Footer = () => {
     <div className="w-full flex flex-col text-white text-[13px]">
       <div className="links bg-bleu flex flex-row w-full py-10 px-[10%] gap-[8%]">
         <div className="flex flex-col gap-6">
-          <a href="/University"><h1 className="text-[16px] font-medium">University</h1></a>
-          <a href="/University/AboutTheUniversity"> <h2 className="opacity-85">About University</h2></a>
-          <a href="/University/Organisation-Administration"><h2 className="opacity-85">Organisation & Administration</h2></a>
-          <a href="/University/ESI-Library"><h2 className="opacity-85">University Library</h2></a>
+          <a href="/University">
+            <h1 className="text-[16px] font-medium">University</h1>
+          </a>
+          <a href="/University/AboutTheUniversity">
+            {" "}
+            <h2 className="opacity-85">About University</h2>
+          </a>
+          <a href="/University/Organisation-Administration">
+            <h2 className="opacity-85">Organisation & Administration</h2>
+          </a>
+          <a href="/University/ESI-Library">
+            <h2 className="opacity-85">University Library</h2>
+          </a>
         </div>
         <div className="flex flex-col gap-6">
-        <a href="/Academics/Education"> <h1 className="text-[16px] font-medium">Academics</h1></a>
-        <a href="/Academics/Education"> <h2 className="opacity-85">Education</h2></a>
-        <a href="/Academics/Graduate-and-professional"> <h2 className="opacity-85">Graduate and Professional</h2></a>
-        <a href="/Academics/Internship-departement">  <h2 className="opacity-85">Internship Departement</h2></a>
-        <a href="/Academics/Schedule">  <h2 className="opacity-85">Schedule</h2></a>
+          <a href="/Academics/Education">
+            {" "}
+            <h1 className="text-[16px] font-medium">Academics</h1>
+          </a>
+          <a href="/Academics/Education">
+            {" "}
+            <h2 className="opacity-85">Education</h2>
+          </a>
+          <a href="/Academics/Graduate-and-professional">
+            {" "}
+            <h2 className="opacity-85">Graduate and Professional</h2>
+          </a>
+          <a href="/Academics/Internship-departement">
+            {" "}
+            <h2 className="opacity-85">Internship Departement</h2>
+          </a>
+          <a href="/Academics/Schedule">
+            {" "}
+            <h2 className="opacity-85">Schedule</h2>
+          </a>
         </div>
         <div className="flex flex-col gap-6">
-        <a href="/Services"> <h1 className="text-[16px] font-medium">Prestation</h1></a>
-        <a href="/Services/Customizedprograms"> <h2 className="opacity-75">Customized Programs</h2></a>
-        <a href="/Services/Pre-promotionTraining"> <h2 className="opacity-75">Pre-promotion Training</h2></a>
-        <a href="/Services/Trainers"> <h2 className="opacity-75">Trainers</h2></a>
-        <a href="/Services/Calendar"> <h2 className="opacity-75">Traning Calendar</h2></a>
+          <a href="/Services">
+            {" "}
+            <h1 className="text-[16px] font-medium">Prestation</h1>
+          </a>
+          <a href="/Services/Customizedprograms">
+            {" "}
+            <h2 className="opacity-75">Customized Programs</h2>
+          </a>
+          <a href="/Services/Pre-promotionTraining">
+            {" "}
+            <h2 className="opacity-75">Pre-promotion Training</h2>
+          </a>
+          <a href="/Services/Trainers">
+            {" "}
+            <h2 className="opacity-75">Trainers</h2>
+          </a>
         </div>
         <div className="flex flex-col gap-6">
           <h1 className="text-[16px] font-medium">Location</h1>
@@ -54,7 +89,7 @@ const Footer = () => {
 
         <div className="credit flex flex-col gap-6">
           <div className="extraLinks flex gap-4">
-            <a href="">Regulations</a>
+            <a href="/Reglementation">Regulations</a>
             <a href="">Contact</a>
             <a href="">Logos</a>
           </div>

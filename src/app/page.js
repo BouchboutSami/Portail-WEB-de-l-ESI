@@ -14,13 +14,15 @@ import PostGradAndResearchSection from "@/components/PostGradAndResearchSection"
 import UpcomingEvents from "@/components/UpcomingEvents";
 export default function Home() {
   return (
-    <div className="font-poppins text-bleu w-screen flex flex-col relative">
-      <NavBar/>
-      <LandingImage/>
+    <div className="font-poppins text-bleu w-full flex flex-col relative">
+      <NavBar />
+      <LandingImage />
       <WhyUs />
-      <CampusNews/>
+      <CampusNews />
       <div className="w-full flex flex-col justify-center items-center min-h-max xl:px-[15%] lg:px-[15%] px-[10%]">
-        <h1 className="text-noir font-bold text-3xl mb-4 pt-8">Upcoming Events</h1>
+        <h1 className="text-noir font-bold text-3xl mb-4 pt-8">
+          Upcoming Events
+        </h1>
         <h2 className="mb-10 text-noir text-md">
           Discover our major upcoming events
         </h2>
@@ -28,7 +30,7 @@ export default function Home() {
       </div>
       <Academics />
       <LifeCampus />
-      <PostGradAndResearchSection/>
+      <PostGradAndResearchSection />
       <ServicesForCompanies />
       <Partenaires />
       <Footer />

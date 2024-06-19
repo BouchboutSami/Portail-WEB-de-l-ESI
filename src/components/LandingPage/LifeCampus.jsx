@@ -4,31 +4,33 @@ import React from "react";
 const LifeCampus = () => {
   const photos = [
     {
-      image: "/assets/Sports1.png",
+      image: "/assets/studentorgs2.png",
       title: "Student organizations",
       text: "Text 1",
-      link: "WhyESI",
+      link: "/Campus/Student-life/Student-organisations",
     },
     {
       image: "/assets/Sports1.png",
       title: "Sports & Culture",
       text: "Text 2",
-      link: "WhyESI",
+      link: "/Campus/Sports-and-culture",
     },
     {
       image: "/assets/ESIFabLab.png",
       title: "ESI FabLab",
       text: "Text 3",
-      link: "WhyESI",
+      link: "/Campus/Student-life/Work-spaces",
     },
   ];
 
   return (
-    <div className="w-full bg-white p-4 pb-8">
-      <div className="text-black font-bold font-poppins text-[36px] text-center">
-        Life at campus
-      </div>
-      <div className="text-black font-medium font-poppins text-[20px] text-center mb-4">
+    <div className="w-full bg-white p-4 px-8">
+      <a href="/Campus/">
+        <h1 className="font-poppins font-bold mt-8 mb-4 text-[36px] text-center text-black hover:text-[#185B9C]">
+          Life at Campus
+        </h1>
+      </a>
+      <div className="text-black font-medium font-poppins text-md text-center mb-8">
         Find out about our range of activities designed to liven up student life
       </div>
       <div className="container  mx-auto mt-4">
@@ -51,13 +53,7 @@ const LifeCampus = () => {
             </div>
           ))}
         </div>
-        <div className="text-center ">
-          <a href="/Academics/Education">
-            <button className="bg-[#185B9C] hover:bg-[#002E5F] text-white font-poppins text-md rounded-lg py-3 px-4 w-[300px] h-[78] ">
-              More about campus life
-            </button>
-          </a>
-        </div>
+        <div className="text-center "></div>
       </div>
     </div>
   );

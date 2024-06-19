@@ -31,7 +31,7 @@ const page = () => {
   ];
   return (
     <BrowserRouter>
-      <div className="w-screen">
+      <div className="w-full">
         <NavBar />
         <ImageLanding
           imageUrl="/assets/PresentationEcole.png"
@@ -41,7 +41,7 @@ const page = () => {
           <UniSideBar />
           <div className="w-full">
             {/* Code here ! */}
-            <div className="flex flex-row gap-12 px-[100px] w-full mt-12 items-center">
+            <div className="flex flex-row gap-12 px-[100px] w-full my-12 items-center">
               <div className="">
                 <ImageWithRectangle imageUrl="/assets/ESI-Presentation-Photo-1.png" />
               </div>
@@ -94,7 +94,7 @@ const page = () => {
               <div className="">
                 <ImageWithRectangle imageUrl="/assets/VIE-A-LECOLE.png" />
               </div>
-              <div className="">
+              <div className="mb-8">
                 <h1 className="font-poppins font-bold text-[24px] text-[#185B9C]">
                   LIFE AT SCHOOL
                 </h1>
@@ -106,22 +106,13 @@ const page = () => {
                   to dazzling artistic performances showcasing our creativity.
                 </div>
                 <div className="flex justify-end">
-                  <Button title={"SEE DETAILS"} />
+                  <a href="/Campus/Student-life">
+                    <Button title={"SEE DETAILS"} />
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col mt-16 items-center justify-center text-center">
-              <h1 className="font-poppins font-bold text-[24px] text-[#185B9C] pb-4">
-                SCIENTIFIC RESEARCH
-              </h1>
-              <div className="text-black font-light font-poppins text-[18px] mb-4">
-                Our school offers doctoral training, supported by two research
-                laboratories: LMCS and LCSI, which house the majority of our
-                teacher-researchers. These laboratories are centers of
-                excellence where innovation and discovery thrive, propelling our
-                institution to new heights in research.
-              </div>
-            </div>
+
             <div>
               <div>
                 {/* <SpecialtiesSwiper specialties={mySpecialties} /> */}

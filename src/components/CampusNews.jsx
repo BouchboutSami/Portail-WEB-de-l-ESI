@@ -17,8 +17,7 @@ const CampusNews = () => {
     },
     {
       image: "/assets/Datahack.png",
-      title:
-        "Organisation de la 1ère édition du DataHack par le CSE",
+      title: "Organisation de la 1ère édition du DataHack par le CSE",
       link: "/",
     },
     {
@@ -27,18 +26,16 @@ const CampusNews = () => {
         "2 membres de GDG remportent la 2ème place au plus grand hackathon d'IA de la région MENA",
       link: "/",
     },
-  
+
     {
       image: "/assets/salle.jpeg",
-      title:
-        "Inauguration de la nouvelle salle de sport de l'ESI ",
+      title: "Inauguration de la nouvelle salle de sport de l'ESI ",
       link: "/",
     },
-  
+
     {
       image: "/assets/plante.png",
-      title:
-        "Campagne de plantation : Un arbre pour chaque étudiant ",
+      title: "Campagne de plantation : Un arbre pour chaque étudiant ",
       link: "/",
     },
     {
@@ -49,8 +46,7 @@ const CampusNews = () => {
     },
     {
       image: "/assets/Yennayer1.jpeg",
-      title:
-        "Célébrations de Yennayer à l'ESI, organisé par le CACE",
+      title: "Célébrations de Yennayer à l'ESI, organisé par le CACE",
       link: "/",
     },
     {
@@ -62,7 +58,7 @@ const CampusNews = () => {
   ];
   return (
     <div className="w-full bg-[#F5F5F5] flex flex-col items-center gap-8">
-      <h1 className="font-poppins font-bold mt-8 text-[28px] text-black hover:text-[#185B9C]">
+      <h1 className="font-poppins font-bold mt-8 text-[28px] text-black ">
         Campus News
       </h1>
       <div className="grid grid-cols-4 gap-1 items-center pb-4">

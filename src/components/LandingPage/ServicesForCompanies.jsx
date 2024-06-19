@@ -3,10 +3,12 @@ import React from "react";
 
 const ServicesForCompanies = () => {
   return (
-    <div className="p-10 my-10 mx-10 relative w-full">
-      <div className="font-poppins mx-auto my-auto mb-2 font-bold text-noir text-4xl text-center p-8">
-        <h1>Services for companies</h1>
-      </div>
+    <div className="p-10 my-5 mx-10 relative w-full">
+      <a href="/Services">
+        <h1 className="font-poppins font-bold text-center mb-8 text-[36px] text-black hover:text-[#185B9C]">
+          Services for companies
+        </h1>
+      </a>
       <div className="flex items-center">
         <div className="w-1/2 relative mr-0">
           <img
