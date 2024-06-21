@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 const Accordion = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,14 +17,14 @@ const Accordion = ({ title, children }) => {
         <h2 className="text-lg font-regular">{title}</h2>
         <svg
           className={`w-6 h-6 transition-transform transform ${
-            isOpen ? 'rotate-180' : ''
+            isOpen ? "rotate-180" : ""
           } text-[#185B9C]`}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
           style={{
-            transitionDuration: '0.5s', 
-            transitionProperty: 'transform', 
+            transitionDuration: "0.5s",
+            transitionProperty: "transform",
           }}
         >
           <path
@@ -32,10 +33,8 @@ const Accordion = ({ title, children }) => {
           />
         </svg>
       </div>
-      
-      {isOpen && (
-        <div className="p-4 bg-[#F5F5F5] rounded-lg">{children}</div>
-      )}
+
+      {isOpen && <div className="p-4 bg-[#F5F5F5] rounded-lg">{children}</div>}
     </div>
   );
 };
