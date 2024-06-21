@@ -10,14 +10,14 @@ const page = () => {
   return (
     <div className="font-poppins text-bleu w-screen flex flex-col relative">
       <NavBar />
-      {/* <PostImage
+      <PostImage
         img="/assets/Pre-promotion1.png"
         titre="Pre-promotion Training"
         details="Discover our pre-promotion training themes and perfect your skills in various fields thanks to our wide selection of programs tailored to your professional needs."
-      /> */}
+      />
       <div className="flex">
         <ServicesSideBar />
-        <Registration />
+        {/* <Registration /> */}
       </div>
       <Footer />
     </div>
