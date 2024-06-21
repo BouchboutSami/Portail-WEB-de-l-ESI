@@ -1,9 +1,9 @@
 "use client";
+import NavBar from "@/components/NavBar";
+import PostImage from "@/components/PostImage";
+import PostSideBar from "@/components/PostSideBar";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import NavBar from "../../../../Components/NavBar";
-import PostImage from "../../../../Components/PostImage";
-import PostSideBar from "../../../../Components/PostSideBar";
 
 const page = () => {
   return (

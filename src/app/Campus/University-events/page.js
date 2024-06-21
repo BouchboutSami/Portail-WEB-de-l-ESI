@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import NavBar from "../../../Components/NavBar";
 import NextEvents from "@/components/LandingPage/NextEvents";
 import EventSearch from "@/components/EventSearch";
 import PostImage from "@/components/PostImage";
 import EventDiscoverArtcile from "@/components/EventDiscoverArticle";
 import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 
 const page = () => {
   return (
