@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import NavBar from "@/components/NavBar";
 import { BrowserRouter } from "react-router-dom";
@@ -33,56 +32,53 @@ export default function Home() {
     "Data Scientist",
   ];
   return (
-    <BrowserRouter>
-      <div className=" font-poppins w-full flex flex-col relative">
-        <NavBar />
-        <PageImg
-          img="/assets/Etude.jpg"
-          titre="Academics"
-          details="Explore academic excellence through the diverse training programs offered by ESI. 
+    <div className=" font-poppins w-full flex flex-col relative">
+      <NavBar />
+      <PageImg
+        img="/assets/Etude.jpg"
+        titre="Academics"
+        details="Explore academic excellence through the diverse training programs offered by ESI. 
        Our comprehensive curriculum is meticulously crafted to provide students with the knowledge, 
        skills, and hands-on experience necessary for success in their chosen fields."
-        />
+      />
 
-        <div className="flex">
-          <EtudeSideBar />
-          <div className="container mx-auto w-fit py-10 flex flex-col gap-4">
-            <Accordion title="Training Duration and Organization">
-              <div>
-                <TrainingDurOrga
-                  duree={duration}
-                  semestre1={semester1}
-                  semestre2={semester2}
-                  imageS1={imageS1}
-                  imageS2={imageS2}
-                />
-              </div>
-            </Accordion>
-            <Accordion title="Access conditions">
-              <div>
-                <AccessConditions conditions={conditions} />
-              </div>
-            </Accordion>
-            <Accordion title="Training objectives">
-              <div>
-                <TrainingObjectives objectives={objectives} />
-              </div>
-            </Accordion>
-            <Accordion title="Targeted job profiles and skills:">
-              <div>
-                <TrainingProfiles profiles={profiles} />
-              </div>
-            </Accordion>
-            <Accordion title="Training program">
-              <div>
-                <TrainingProgram pdfPath="https://www.esi.dz/wp-content/uploads/2021/02/programmes/programme2cs-sil.pdf" />
-              </div>
-            </Accordion>
-          </div>
+      <div className="flex">
+        <div className="container mx-auto w-fit py-10 flex flex-col gap-4">
+          <Accordion title="Training Duration and Organization">
+            <div>
+              <TrainingDurOrga
+                duree={duration}
+                semestre1={semester1}
+                semestre2={semester2}
+                imageS1={imageS1}
+                imageS2={imageS2}
+              />
+            </div>
+          </Accordion>
+          <Accordion title="Access conditions">
+            <div>
+              <AccessConditions conditions={conditions} />
+            </div>
+          </Accordion>
+          <Accordion title="Training objectives">
+            <div>
+              <TrainingObjectives objectives={objectives} />
+            </div>
+          </Accordion>
+          <Accordion title="Targeted job profiles and skills:">
+            <div>
+              <TrainingProfiles profiles={profiles} />
+            </div>
+          </Accordion>
+          <Accordion title="Training program">
+            <div>
+              <TrainingProgram pdfPath="https://www.esi.dz/wp-content/uploads/2021/02/programmes/programme2cs-sil.pdf" />
+            </div>
+          </Accordion>
         </div>
-
-        <Footer />
       </div>
-    </BrowserRouter>
+
+      <Footer />
+    </div>
   );
 }
