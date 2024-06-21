@@ -2,7 +2,6 @@
 import ImageLanding from "@/components/ImageLanding";
 import NavBar from "@/components/NavBar";
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import Footer from "@/components/Footer";
 import Hierarchy from "@/components/Hierarchy";
 
@@ -215,19 +214,17 @@ const page = () => {
   ];
 
   return (
-    <BrowserRouter>
-      <div className="overflow-hidden">
-        <NavBar />
-        <ImageLanding
-          imageUrl="/assets/reglementations.png"
-          title="Reglementary texts"
-        />
-        <div className="flex mx-16 my-8">
-          <Hierarchy hierarchy={hierarchy} />
-        </div>
-        <Footer />
+    <div className="overflow-hidden">
+      <NavBar />
+      <ImageLanding
+        imageUrl="/assets/reglementations.png"
+        title="Reglementary texts"
+      />
+      <div className="flex mx-16 my-8">
+        <Hierarchy hierarchy={hierarchy} />
       </div>
-    </BrowserRouter>
+      <Footer />
+    </div>
   );
 };
 
