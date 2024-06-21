@@ -15,12 +15,11 @@ const page = () => {
         titre="Pre-promotion Training"
         details="Discover our pre-promotion training themes and perfect your skills in various fields thanks to our wide selection of programs tailored to your professional needs."
       />
-      {/*
       <div className="flex">
         <ServicesSideBar />
         <Registration />
       </div>
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
