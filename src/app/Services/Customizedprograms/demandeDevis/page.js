@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState } from "react";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 
 const DemandeDevis = () => {
   // State for form fields
@@ -35,7 +35,7 @@ const DemandeDevis = () => {
   return (
     <div>
       {" "}
-      <Navbar />
+      <NavBar />
       {!loading && (
         <div className="flex">
           {/* Left side with form */}
