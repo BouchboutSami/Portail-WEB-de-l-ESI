@@ -1,7 +1,6 @@
+"use client";
 import React from "react";
 import NavBar from "@/components/NavBar";
-import { BrowserRouter } from "react-router-dom";
-import EtudeSideBar from "@/components/EtudeSideBar";
 import Accordion from "@/components/Accordion";
 import TrainingDurOrga from "@/components/TrainingDurOrga";
 import AccessConditions from "@/components/AccessConditions";
