@@ -6,6 +6,7 @@ import { CiCalendar } from "react-icons/ci";
 import { useRouter } from "next/navigation";
 
 const Themecontent = ({ Theme, contenus }) => {
+  console.log(Theme, contenus);
   const [isOpen, setisOpen] = useState(false);
   const router = useRouter();
   function handleClick() {
@@ -37,20 +38,24 @@ const Themecontent = ({ Theme, contenus }) => {
       {isOpen && (
         <>
           <div className="px-2 flex flex-col gap-2">
-            {contenus.map((contenu, i) => {
-              return (
-                <div
-                  key={i}
-                  className="w-full flex flex-row items-center gap-2"
-                >
-                  <FaCheck color="#1E73BE" />
-                  <p className="text-grey font-medium">
-                    {contenu.attributes.title} ({contenu.attributes.duree}{" "}
-                    Jours)
-                  </p>
-                </div>
-              );
-            })}
+            {contenus != null ? (
+              contenus.map((contenu, i) => {
+                return (
+                  <div
+                    key={i}
+                    className="w-full flex flex-row items-center gap-2"
+                  >
+                    <FaCheck color="#1E73BE" />
+                    <p className="text-grey font-medium">
+                      {contenu.attributes.title} ({contenu.attributes.duree}{" "}
+                      Jours)
+                    </p>
+                  </div>
+                );
+              })
+            ) : (
+              <p>Il n&apos;y a pas de contenu pour ce thème</p>
+            )}
           </div>
           <div className="flex flex-row w-full justify-between px-[15%]">
             <button

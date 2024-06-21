@@ -10,7 +10,7 @@ const Accordionthemes = () => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:1337/api/domaine-prestations?populate[formations][populate][0]=tests"
+        "https://portail-web-de-l-esi-backend.onrender.com/api/domaine-prestations?populate[formations][populate][0]=contents"
       )
       .then((response) => {
         setThemes(response.data.data);
@@ -38,7 +38,7 @@ const Accordionthemes = () => {
                 <Themecontent
                   key={Tindex}
                   Theme={theme}
-                  contenus={theme.attributes.tests.data}
+                  contenus={theme.attributes.contents.data}
                 />
               );
             })}

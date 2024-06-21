@@ -15,7 +15,7 @@ const ClubCard = ({ club }) => {
         <div className="w-2/5 h-auto self-center">
           <img
             src={
-              "http://localhost:1337" +
+              "https://portail-web-de-l-esi-backend.onrender.com" +
               club.attributes.logo.data.attributes.formats.thumbnail.url
             }
             alt="logo"

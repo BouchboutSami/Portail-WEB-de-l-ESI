@@ -8,7 +8,9 @@ const ListeClubs = () => {
   const [isLoading, setisLoading] = useState(true);
   useEffect(() => {
     axios
-      .get("http://localhost:1337/api/clubs?populate=*")
+      .get(
+        "https://portail-web-de-l-esi-backend.onrender.com/api/clubs?populate=*"
+      )
       .then((response) => {
         setClubs(response.data.data);
       })

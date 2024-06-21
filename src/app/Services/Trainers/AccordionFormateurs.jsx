@@ -10,7 +10,9 @@ const AccordionFormateurs = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:1337/api/formateurs?populate=*")
+      .get(
+        "https://portail-web-de-l-esi-backend.onrender.com/api/formateurs?populate=*"
+      )
       .then((response) => {
         setFormateurs(response.data.data);
         setloading(false);

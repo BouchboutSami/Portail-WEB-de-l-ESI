@@ -20,7 +20,7 @@ const Details = () => {
         <div className="logoClub">
           <img
             src={
-              "http://localhost:1337" +
+              "https://portail-web-de-l-esi-backend.onrender.com" +
               club.attributes.logo.data.attributes.formats.thumbnail.url
             }
             alt=""

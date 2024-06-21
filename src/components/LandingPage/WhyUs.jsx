@@ -5,9 +5,11 @@ import axios from "axios";
 const WhyUs = () => {
   const [paragraph, setParagraph] = useState("");
   useEffect(() => {
-    axios.get("http://localhost:1337/api/why-us").then((response) => {
-      setParagraph(response.data.data.attributes.paragraph);
-    });
+    axios
+      .get("https://portail-web-de-l-esi-backend.onrender.com/api/why-us")
+      .then((response) => {
+        setParagraph(response.data.data.attributes.paragraph);
+      });
   }, []);
   return (
     paragraph.length > 0 && (
