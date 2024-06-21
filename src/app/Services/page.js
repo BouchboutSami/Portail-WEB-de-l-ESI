@@ -1,4 +1,3 @@
-"use client";
 import Footer from "@/components/Footer";
 import ServicesImage from "@/components/ServicesImage";
 import NavBar from "@/components/NavBar";
