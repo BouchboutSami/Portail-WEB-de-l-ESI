@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import NavBar from "../../../../Components/NavBar";
-import PostImage from "../../../../Components/PostImage";
-import PostSideBar from "../../../../Components/PostSideBar";
 import Researchproject from "./Researchproject";
+import NavBar from "@/components/NavBar";
+import PostImage from "@/components/PostImage";
+import PostSideBar from "@/components/PostSideBar";
 
 const page = () => {
   return (
@@ -12,15 +12,15 @@ const page = () => {
       <div className=" w-screen">
         <NavBar />
         <PostImage
-        image="/assets/ResearchProjects.png" 
-        titre = 'Research' 
-        details = 'Discover research initiatives at ESI. Dive into our diverse array of projects, where innovation thrives and breakthroughs await.'
+          image="/assets/ResearchProjects.png"
+          titre="Research"
+          details="Discover research initiatives at ESI. Dive into our diverse array of projects, where innovation thrives and breakthroughs await."
         />
         <div className="flex ">
           <PostSideBar />
-          <Researchproject/>
-    </div>
-   </div>
+          <Researchproject />
+        </div>
+      </div>
     </BrowserRouter>
   );
 };

@@ -1,7 +1,6 @@
 import React from "react";
 import DownloadButton from "./DownloadButton";
 
-
 const Researchproject = () => {
   const data = [
     { title: "Donnée 1", situation: "Donnée A" },
@@ -133,7 +132,9 @@ const Researchproject = () => {
           <p className="flex left-4 text-black font-bold text-[20px] underline mt-2">
             Appel à projets
           </p>
-          <p className="flex left-4 text-[#185B9C] text-[15px] mt-2 mb-1">PNR2:</p>
+          <p className="flex left-4 text-[#185B9C] text-[15px] mt-2 mb-1">
+            PNR2:
+          </p>
           <div className="mb-4">
             <DownloadButton title="Procédure de soumission" />
           </div>

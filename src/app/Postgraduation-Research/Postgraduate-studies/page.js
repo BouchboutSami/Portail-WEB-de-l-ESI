@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import NavBar from "../../../Components/NavBar";
-import PostImage from "../../../Components/PostImage";
-import PostSideBar from "../../../Components/PostSideBar";
 import { BrowserRouter } from "react-router-dom";
 import ArticleCard from "@/components/ArticleCard";
 import DoctoralRegistration from "@/components/DoctoralRegistration";
 import PostEventCard from "@/components/PostEventCard";
 import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
+import PostImage from "@/components/PostImage";
+import PostSideBar from "@/components/PostSideBar";
 
 const Page = () => {
   const articles = [
