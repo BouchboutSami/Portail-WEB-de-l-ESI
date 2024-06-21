@@ -33,7 +33,7 @@ const page = () => {
       <NavBar />
       <ServicesImage />
       <div className="flex">
-        {/* <ServicesSideBar /> */}
+        <ServicesSideBar />
         <div className="w-full">
           <div className="px-[10px] w-full my-5 items-center">
             <div style={{ display: "inline-block" }}>
