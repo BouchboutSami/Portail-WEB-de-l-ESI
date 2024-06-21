@@ -1,9 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
 
 const ServicesSideBar = () => {
-  const location = useLocation();
   const [activeItem, setActiveItem] = useState(
     localStorage.getItem("activeItem") || ""
   );
@@ -22,8 +21,9 @@ const ServicesSideBar = () => {
     localStorage.setItem("activeSubtitle", subtitle);
   };
 
+  const pathname = usePathname();
+
   useEffect(() => {
-    const pathname = location.pathname;
     let activeItem = "/Services/Customizedprograms";
     let activesubtitle = "Custumized programs";
     if (pathname === "/Services/Pre-promotionTraining") {
@@ -37,7 +37,7 @@ const ServicesSideBar = () => {
     setActiveSubtitle(activesubtitle);
     localStorage.setItem("activeItem", activeItem);
     localStorage.setItem("activeSubtitle", activesubtitle);
-  }, [location.pathname]);
+  }, [pathname]);
 
   const navigation = [
     {

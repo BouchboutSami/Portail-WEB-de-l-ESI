@@ -4,7 +4,6 @@ import ServicesImage from "@/components/ServicesImage";
 import NavBar from "@/components/NavBar";
 import ServicesSideBar from "@/components/ServicesSideBar";
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 
 const data = [
   {
@@ -35,7 +34,7 @@ const page = () => {
       <NavBar />
       <ServicesImage />
       <div className="flex">
-        {/* <ServicesSideBar /> */}
+        <ServicesSideBar />
         <div className="w-full">
           {/* Presentation */}
           <div className="px-[10px] w-full my-5 items-center">
