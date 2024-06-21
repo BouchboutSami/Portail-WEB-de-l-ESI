@@ -3,10 +3,9 @@ import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const ServicesSideBar = () => {
-  const [activeItem, setActiveItem] = useState(
-    localStorage.getItem("activeItem") || ""
-  );
+  const [activeItem, setActiveItem] = useState("");
   const [activeSubtitle, setActiveSubtitle] = useState("");
+
   useEffect(() => {
     setActiveItem(localStorage.getItem("activeItem") || "");
     setActiveSubtitle(localStorage.getItem("activeSubtitle") || "");
