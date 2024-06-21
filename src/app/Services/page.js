@@ -29,14 +29,12 @@ const data = [
 ];
 const page = () => {
   return (
-    // <BrowserRouter>
     <div className="w-screen">
       <NavBar />
       <ServicesImage />
       <div className="flex">
-        <ServicesSideBar />
+        {/* <ServicesSideBar /> */}
         <div className="w-full">
-          {/* Presentation */}
           <div className="px-[10px] w-full my-5 items-center">
             <div style={{ display: "inline-block" }}>
               <h1 className="font-poppins font-bold text-xl"> Our training </h1>
@@ -249,7 +247,6 @@ const page = () => {
       </div>
       <Footer />
     </div>
-    // </BrowserRouter>
   );
 };
 
