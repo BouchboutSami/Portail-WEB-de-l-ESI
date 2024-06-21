@@ -4,8 +4,6 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import ServicesSideBar from "@/components/ServicesSideBar";
 import ServicesImage from "@/components/ServicesImage";
-import { BrowserRouter } from "react-router-dom";
-
 const page = () => {
   return (
     <div className=" w-screen">
