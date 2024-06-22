@@ -4,7 +4,7 @@ import CampusNewsCard from "./CampusNewsCard";
 const CampusNews = () => {
   const News = [
     {
-      image: "/assets/Natixis.jpg",
+      image: "/assets/s2ee.png",
       title:
         "Le S2EE15 s'est tenu ce Samedi 18 mai 2024 et ce fut un grand succès",
       link: "/",
