@@ -1,13 +1,10 @@
 "use client";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-
 const EtudeSideBar = () => {
-    const location = useLocation();
-    const [activeItem, setActiveItem] = useState(
-    localStorage.getItem("activeItem") || ""
-  );
+  const [activeItem, setActiveItem] = useState("");
   const [activeSubtitle, setActiveSubtitle] = useState("");
   useEffect(() => {
     setActiveItem(localStorage.getItem("activeItem") || "");
@@ -22,8 +19,8 @@ const EtudeSideBar = () => {
     setActiveSubtitle(subtitle);
     localStorage.setItem("activeSubtitle", subtitle);
   };
+  const pathname = usePathname();
   useEffect(() => {
-    const pathname = location.pathname;
     let activeItem = "/";
     let activesubtitle = "";
     if (pathname === "/Training-offers") {
@@ -44,15 +41,15 @@ const EtudeSideBar = () => {
       activesubtitle = "Specialty SID: Intelligent Systems and Data";
     } else if (pathname === "/Master") {
       activesubtitle = "Master";
-    }else if (pathname === "/Entrepreneurship-engineer-training") {
-        activesubtitle = "Entrepreneurship Engineer Training";
-    }else if (pathname === "/Doctoral-training") {
+    } else if (pathname === "/Entrepreneurship-engineer-training") {
+      activesubtitle = "Entrepreneurship Engineer Training";
+    } else if (pathname === "/Doctoral-training") {
       activesubtitle = "Doctoral Training";
-    }else if (pathname === "/Diplomas-and-authentication") {
+    } else if (pathname === "/Diplomas-and-authentication") {
       activesubtitle = "Diplomas and Authentication";
-    }else if (pathname === "/Entreprise-discovery") {
+    } else if (pathname === "/Entreprise-discovery") {
       activesubtitle = "Entreprise discovery";
-    }else if (pathname === "/Schedule") {
+    } else if (pathname === "/Schedule") {
       activesubtitle = "Schedule";
     }
     setActiveItem(activeItem);
@@ -60,71 +57,71 @@ const EtudeSideBar = () => {
     localStorage.setItem("activeItem", activeItem);
     localStorage.setItem("activeSubtitle", activesubtitle);
   }, [location.pathname]);
-    const navigation = [
+  const navigation = [
+    {
+      title: "Education",
+      link: "/Academics/Education",
+      subtitles: [
         {
-          title: "Education",
-          link: "/Academics/Education",
-          subtitles: [
-            {
-                title: "First preparatory Year",
-                link: "/Academics/Education/First-preparatory-year",
-              },
-              {
-                title: "Second preparatory Year",
-                link: "/Academics/Education/Second-preparatory-year",
-              },
-              {
-                title: "Common core of the second cycle",
-                link: "/Academics/Education/Common-core-of-the-second-cycle",
-              },
-              {
-                title: "SIL Specialty: Computer Systems and Software",
-                link: "/Academics/Education/SIL-Specialty",
-              },
-              {
-                title: "SIQ Specialty: Computer Systems",
-                link: "/Academics/Education/SIQ-Specialty",
-              },
-              {
-                title: "Specialty SIT: Information Systems and Technologies",
-                link: "/Academics/Education/Specialty-SIT",
-              },
-              {
-                title: "Specialty SID: Intelligent Systems and Data",
-                link: "/Academics/Education/Specialty-SID",
-              },
-              {
-                title: "Master",
-                link: "/Academics/Education/Master",
-              },
-              {
-                title: "Entrepreneurship Engineer Training",
-                link: "/Academics/Education/Entrepreneurship-engineer-training",
-              },
-              {
-                title: "Doctoral Training",
-                link: "/Academics/Education/Doctoral-training",
-              },
-          ],
+          title: "First preparatory Year",
+          link: "/Academics/Education/First-preparatory-year",
         },
         {
-          title: "Diplomas and Authentication",
-          link: "/Academics/Graduate-and-professional",
-          subtitles: [],
+          title: "Second preparatory Year",
+          link: "/Academics/Education/Second-preparatory-year",
         },
         {
-          title: "Entreprise discovery",
-          link: "/Academics/Internship-department",
-          subtitles: [],
+          title: "Common core of the second cycle",
+          link: "/Academics/Education/Common-core-of-the-second-cycle",
         },
         {
-            title: "Schedule",
-            link: "/Academics/Schedule",
-            subtitles: [],
-          },
-      ];
-    return (
-      <div className=" min-h-screen bg-white w-fit text-[16px]">
+          title: "SIL Specialty: Computer Systems and Software",
+          link: "/Academics/Education/SIL-Specialty",
+        },
+        {
+          title: "SIQ Specialty: Computer Systems",
+          link: "/Academics/Education/SIQ-Specialty",
+        },
+        {
+          title: "Specialty SIT: Information Systems and Technologies",
+          link: "/Academics/Education/Specialty-SIT",
+        },
+        {
+          title: "Specialty SID: Intelligent Systems and Data",
+          link: "/Academics/Education/Specialty-SID",
+        },
+        {
+          title: "Master",
+          link: "/Academics/Education/Master",
+        },
+        {
+          title: "Entrepreneurship Engineer Training",
+          link: "/Academics/Education/Entrepreneurship-engineer-training",
+        },
+        {
+          title: "Doctoral Training",
+          link: "/Academics/Education/Doctoral-training",
+        },
+      ],
+    },
+    {
+      title: "Diplomas and Authentication",
+      link: "/Academics/Graduate-and-professional",
+      subtitles: [],
+    },
+    {
+      title: "Entreprise discovery",
+      link: "/Academics/Internship-department",
+      subtitles: [],
+    },
+    {
+      title: "Schedule",
+      link: "/Academics/Schedule",
+      subtitles: [],
+    },
+  ];
+  return (
+    <div className=" min-h-screen bg-white w-fit text-[16px]">
       <div class="sidebar pt-8 flex flex-col w-fit border-r border-[#A9A9A9] h-full ">
         <hr className="border-[#A9A9A9] mt-4" />
         {navigation.map((item, index) => (
@@ -168,5 +165,5 @@ const EtudeSideBar = () => {
       </div>
     </div>
   );
-}
+};
 export default EtudeSideBar;
