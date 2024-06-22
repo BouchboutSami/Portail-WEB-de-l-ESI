@@ -5,7 +5,7 @@ const LandingImage = (props) => {
   return (
     <div className="w-full h-[500px] relative">
       <Image
-        src="/assets/landing.png"
+        src="/assets/landing.jpg"
         className="object-cover w-full h-full absolute inset-0"
         width={1920}
         height={500}
