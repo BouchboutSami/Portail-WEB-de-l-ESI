@@ -17,7 +17,7 @@ const page = () => {
       />
       <div className="flex">
         <ServicesSideBar />
-        {/* <Registration /> */}
+        <Registration />
       </div>
       <Footer />
     </div>

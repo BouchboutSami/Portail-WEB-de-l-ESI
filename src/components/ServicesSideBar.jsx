@@ -7,17 +7,24 @@ const ServicesSideBar = () => {
   const [activeSubtitle, setActiveSubtitle] = useState("");
 
   useEffect(() => {
-    setActiveItem(localStorage.getItem("activeItem") || "");
-    setActiveSubtitle(localStorage.getItem("activeSubtitle") || "");
+    if (typeof window !== "undefined") {
+      setActiveItem(localStorage.getItem("activeItem") || "");
+      setActiveSubtitle(localStorage.getItem("activeSubtitle") || "");
+    }
   }, []);
+
   const handleClick = (item) => {
     setActiveSubtitle("");
     setActiveItem(item);
-    localStorage.setItem("activeItem", item);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("activeItem", item);
+    }
   };
   const handleSubtitleClick = (subtitle) => {
     setActiveSubtitle(subtitle);
-    localStorage.setItem("activeSubtitle", subtitle);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("activeSubtitle", subtitle);
+    }
   };
 
   const pathname = usePathname();
@@ -34,8 +41,10 @@ const ServicesSideBar = () => {
     }
     setActiveItem(activeItem);
     setActiveSubtitle(activesubtitle);
-    localStorage.setItem("activeItem", activeItem);
-    localStorage.setItem("activeSubtitle", activesubtitle);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("activeItem", activeItem);
+      localStorage.setItem("activeSubtitle", activesubtitle);
+    }
   }, [pathname]);
 
   const navigation = [
