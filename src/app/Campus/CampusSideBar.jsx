@@ -74,10 +74,6 @@ const CampusSideBar = () => {
           title: "University works",
           link: "/Campus/Student-life/University-works",
         },
-        {
-          title: "Work spaces",
-          link: "/Campus/Student-life/Work-spaces",
-        },
       ],
     },
     {
