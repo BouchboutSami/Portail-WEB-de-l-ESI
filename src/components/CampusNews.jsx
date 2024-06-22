@@ -45,7 +45,7 @@ const CampusNews = () => {
       link: "/",
     },
     {
-      image: "/assets/Yennayer1.jpeg",
+      image: "/assets/Yennayer.png",
       title: "Célébrations de Yennayer à l'ESI, organisé par le CACE",
       link: "/",
     },
