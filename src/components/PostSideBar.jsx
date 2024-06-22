@@ -1,12 +1,10 @@
 "use client";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 const PostSideBar = () => {
-  const location = useLocation();
-  const [activeItem, setActiveItem] = useState(
-    localStorage.getItem("activeItem") || ""
-  );
+  const [activeItem, setActiveItem] = useState("");
   const [activeSubtitle, setActiveSubtitle] = useState("");
   useEffect(() => {
     setActiveItem(localStorage.getItem("activeItem") || "");
@@ -21,9 +19,8 @@ const PostSideBar = () => {
     setActiveSubtitle(subtitle);
     localStorage.setItem("activeSubtitle", subtitle);
   };
-
+  const pathname = usePathname();
   useEffect(() => {
-    const pathname = location.pathname;
     let activeItem = "/Postgraduation-Research";
     let activesubtitle = "";
     if (pathname === "/Postgraduation-Research/Postgraduate-studies") {
@@ -34,36 +31,33 @@ const PostSideBar = () => {
       activeItem = "Academic authorization";
     } else if (pathname === "/Postgraduation-Research/Research/LCSI") {
       activesubtitle = "LCSI";
-      activeItem= "Research"
+      activeItem = "Research";
     } else if (pathname === "/Postgraduation-Research/Research/LMCS") {
       activesubtitle = "LMCS";
-      activeItem= "Research"
+      activeItem = "Research";
     } else if (
       pathname === "/Postgraduation-Research/Research/Research-projects"
     ) {
       activesubtitle = "Research Projects";
-      activeItem= "Research"
-
+      activeItem = "Research";
     } else if (
       pathname ===
       "/Postgraduation-Research/Academic-authorization/University-accreditation"
     ) {
       activesubtitle = "University accreditation";
       activeItem = "Academic authorization";
-
     } else if (
       pathname ===
       "/Postgraduation-Research/Academic-authorization/Articles-news"
     ) {
       activesubtitle = "Articles News";
       activeItem = "Academic authorization";
-
     }
     setActiveItem(activeItem);
     setActiveSubtitle(activesubtitle);
     localStorage.setItem("activeItem", activeItem);
     localStorage.setItem("activeSubtitle", activesubtitle);
-  }, [location.pathname]);
+  }, [pathname]);
 
   const navigation = [
     {
