@@ -12,7 +12,7 @@ const ServicesForCompanies = () => {
       <div className="flex items-center">
         <div className="w-1/2 relative mr-0">
           <img
-            className="h-auto w-full transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
+            className="h-auto w-full rounded-lg cursor-pointer"
             src="./assets/ServicesForCompanies.png"
             alt="ESI graduation ceremony"
           />
