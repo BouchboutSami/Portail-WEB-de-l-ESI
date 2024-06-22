@@ -147,12 +147,6 @@ const NavBar = () => {
       link: "/Services/Trainers",
       description: "Learn from industry experts committed to your success.",
     },
-    {
-      title: "Calendar",
-      imageUrl: "/assets/services4.jpg",
-      link: "/Services/Calendar",
-      description: "Stay informed with our comprehensive academic calendar.",
-    },
   ];
 
   const YouAreItems = [
