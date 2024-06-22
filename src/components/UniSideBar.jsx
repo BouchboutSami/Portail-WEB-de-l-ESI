@@ -1,9 +1,8 @@
 "use client";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 
 const UniSideBar = () => {
-  const location = useLocation();
   const [activeItem, setActiveItem] = useState(
     localStorage.getItem("activeItem") || ""
   );
@@ -14,9 +13,8 @@ const UniSideBar = () => {
     setActiveItem(item);
     localStorage.setItem("activeItem", item);
   };
-
+  const pathname = usePathname();
   useEffect(() => {
-    const pathname = location.pathname;
     let activeItem = "/University/AboutTheUniveristy";
     if (pathname === "/University/AboutTheUniversity") {
       activeItem = "About the university";
@@ -29,7 +27,7 @@ const UniSideBar = () => {
     }
     setActiveItem(activeItem);
     localStorage.setItem("activeItem", activeItem);
-  }, [location.pathname]);
+  }, [pathname]);
 
   const navigation = [
     {

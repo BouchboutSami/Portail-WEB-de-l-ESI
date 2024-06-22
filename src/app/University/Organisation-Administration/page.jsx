@@ -46,101 +46,98 @@ const page = () => {
     "/assets/Library3.png",
   ];
   return (
-    <BrowserRouter>
-      <div className="w-screen">
-        <NavBar />
-        <ImageLanding
-          imageUrl="/assets/OrganisationAdministrationHeader.png"
-          title="Organisation & Administration"
-        />
-        <div className="flex">
-          <UniSideBar />
-          <div className="w-full">
-            {/* Code here ! */}
-            <div className="px-[100px] w-full my-12 items-center">
-              <div className="">
-                <h1 className="font-poppins font-bold text-[24px] text-[#185B9C]">
-                  ORGANIZATION & MANAGEMENT
-                </h1>
-                <div className="text-black font-light font-poppins text-[18px] mb-4">
-                  ESI currently has 1,206 students in the graduation phase,
-                  accompanied by 134 doctoral students who are continuing their
-                  research. The teaching staff is made up of 120 permanent
-                  members dedicated to teaching and research. In addition, the
-                  establishment benefits from the contribution of 175 workers
-                  who support various administrative and logistical activities,
-                  thus contributing to the efficiency and vitality of the
-                  institution.
-                </div>
-                <ListComp
-                  heading={"Administrative organisation"}
-                  points={AdminOrgapoints}
-                />
-                <ListComp
-                  heading={"Educational and scientific organization"}
-                  points={departments}
-                />
-                <div>
-                  <h1 className="font-poppins font-bold text-[24px] text-[#185B9C] mb-4">
-                    STRUCTURES
-                  </h1>
-                  <div className="flex flex-row items-center justify-center">
-                    <div className="flex-grow">
-                      <ListComp
-                        heading={"Directorate of teaching"}
-                        paragraph={
-                          "It is the structure which manages the educational and administrative aspects of graduate training, that is to say engineering training. It includes several structures :"
-                        }
-                        points={Structdepartments}
-                      />
-                    </div>
-                    <div className="flex-shrink-0">
-                      <img
-                        className="object-contain h-full"
-                        src="/assets/StrcutureOrganisationAdmin.png"
-                      />
-                    </div>
-                  </div>
-                  <ListComp
-                    heading={
-                      "Department of External Relations and Continuing Training (DREFC)"
-                    }
-                    paragraph={
-                      "Its mission is to develop the image of the School by increasing the number of framework partnership agreements with the socio-economic community, the creation of continuing education offers and other services, as well as the keeping of statistics and their communication internally, to the hierarchy, to the board of directors, management board, supervision, partners and finally the press organs. It is structured into three services and a secretariat:"
-                    }
-                    points={DREFCStruct}
-                  />
-                  <Button title={"Learn more"} />
-                </div>
-                <div className="mt-4">
-                  <ListComp
-                    heading={"The IT Resources Department"}
-                    paragraph={
-                      "Made up of two services: the “network management and maintenance” service and the “teaching room management” service to ensure the practical work of our students."
-                    }
-                    points={[]}
-                  />
-                  <ImgSlider images={imagesLib} />
-                </div>
+    <div className="w-screen">
+      <NavBar />
+      <ImageLanding
+        imageUrl="/assets/OrganisationAdministrationHeader.png"
+        title="Organisation & Administration"
+      />
+      <div className="flex">
+        <UniSideBar />
+        <div className="w-full">
+          {/* Code here ! */}
+          <div className="px-[100px] w-full my-12 items-center">
+            <div className="">
+              <h1 className="font-poppins font-bold text-[24px] text-[#185B9C]">
+                ORGANIZATION & MANAGEMENT
+              </h1>
+              <div className="text-black font-light font-poppins text-[18px] mb-4">
+                ESI currently has 1,206 students in the graduation phase,
+                accompanied by 134 doctoral students who are continuing their
+                research. The teaching staff is made up of 120 permanent members
+                dedicated to teaching and research. In addition, the
+                establishment benefits from the contribution of 175 workers who
+                support various administrative and logistical activities, thus
+                contributing to the efficiency and vitality of the institution.
+              </div>
+              <ListComp
+                heading={"Administrative organisation"}
+                points={AdminOrgapoints}
+              />
+              <ListComp
+                heading={"Educational and scientific organization"}
+                points={departments}
+              />
+              <div>
                 <h1 className="font-poppins font-bold text-[24px] text-[#185B9C] mb-4">
-                  CONTACT BOOK
+                  STRUCTURES
                 </h1>
-                <p>
-                  Discover our complete directory bringing together our
-                  permanent teachers as well as our dedicated staff, each
-                  bringing unique expertise in their respective fields.
-                </p>
-                <div className="flex flex-row justify-center gap-16 mt-4">
-                  <Button title={"Staff's directory"} />
-                  <Button title={"Teachers' directory"} />
+                <div className="flex flex-row items-center justify-center">
+                  <div className="flex-grow">
+                    <ListComp
+                      heading={"Directorate of teaching"}
+                      paragraph={
+                        "It is the structure which manages the educational and administrative aspects of graduate training, that is to say engineering training. It includes several structures :"
+                      }
+                      points={Structdepartments}
+                    />
+                  </div>
+                  <div className="flex-shrink-0">
+                    <img
+                      className="object-contain h-full"
+                      src="/assets/StrcutureOrganisationAdmin.png"
+                    />
+                  </div>
                 </div>
+                <ListComp
+                  heading={
+                    "Department of External Relations and Continuing Training (DREFC)"
+                  }
+                  paragraph={
+                    "Its mission is to develop the image of the School by increasing the number of framework partnership agreements with the socio-economic community, the creation of continuing education offers and other services, as well as the keeping of statistics and their communication internally, to the hierarchy, to the board of directors, management board, supervision, partners and finally the press organs. It is structured into three services and a secretariat:"
+                  }
+                  points={DREFCStruct}
+                />
+                <Button title={"Learn more"} />
+              </div>
+              <div className="mt-4">
+                <ListComp
+                  heading={"The IT Resources Department"}
+                  paragraph={
+                    "Made up of two services: the “network management and maintenance” service and the “teaching room management” service to ensure the practical work of our students."
+                  }
+                  points={[]}
+                />
+                <ImgSlider images={imagesLib} />
+              </div>
+              <h1 className="font-poppins font-bold text-[24px] text-[#185B9C] mb-4">
+                CONTACT BOOK
+              </h1>
+              <p>
+                Discover our complete directory bringing together our permanent
+                teachers as well as our dedicated staff, each bringing unique
+                expertise in their respective fields.
+              </p>
+              <div className="flex flex-row justify-center gap-16 mt-4">
+                <Button title={"Staff's directory"} />
+                <Button title={"Teachers' directory"} />
               </div>
             </div>
           </div>
         </div>
-        <Footer />
       </div>
-    </BrowserRouter>
+      <Footer />
+    </div>
   );
 };
 
