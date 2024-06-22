@@ -4,8 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import NavBar from "@/components/NavBar";
 import PostImage from "@/components/PostImage";
 import Footer from "@/components/Footer";
-import CampusSideBar from "../../CampusSideBar";
 import Healthcare from "./Healthcare";
+import CampusSideBar from "../../CampusSideBar";
 
 const page = () => {
   return (
