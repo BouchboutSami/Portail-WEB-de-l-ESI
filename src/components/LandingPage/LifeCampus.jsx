@@ -40,7 +40,7 @@ const LifeCampus = () => {
               key={index}
               className="flex flex-col items-start mb-[76px] w-400 h-280"
             >
-              <a href={photo.link} className="w-full h-full">
+              <a href={photo.link} className="h-full">
                 <img
                   src={photo.image}
                   alt={photo.title}
