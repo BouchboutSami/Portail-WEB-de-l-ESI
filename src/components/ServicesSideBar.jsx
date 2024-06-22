@@ -8,10 +8,10 @@ const ServicesSideBar = () => {
 
   useEffect(() => {
     try {
-      if (typeof window !== "undefined") {
-        setActiveItem(localStorage.getItem("activeItem") || "");
-        setActiveSubtitle(localStorage.getItem("activeSubtitle") || "");
-      }
+      // if (typeof window !== "undefined") {
+      //   setActiveItem(localStorage.getItem("activeItem") || "");
+      //   setActiveSubtitle(localStorage.getItem("activeSubtitle") || "");
+      // }
     } catch (error) {
       console.log(error);
     }
@@ -21,9 +21,9 @@ const ServicesSideBar = () => {
     setActiveSubtitle("");
     setActiveItem(item);
     try {
-      if (typeof window !== "undefined") {
-        localStorage.setItem("activeItem", item);
-      }
+      // if (typeof window !== "undefined") {
+      //   localStorage.setItem("activeItem", item);
+      // }
     } catch (error) {
       console.log(error);
     }
@@ -31,9 +31,9 @@ const ServicesSideBar = () => {
   const handleSubtitleClick = (subtitle) => {
     setActiveSubtitle(subtitle);
     try {
-      if (typeof window !== "undefined") {
-        localStorage.setItem("activeSubtitle", subtitle);
-      }
+      // if (typeof window !== "undefined") {
+      //   localStorage.setItem("activeSubtitle", subtitle);
+      // }
     } catch (error) {
       console.log(error);
     }
@@ -54,10 +54,10 @@ const ServicesSideBar = () => {
     setActiveItem(activeItem);
     setActiveSubtitle(activesubtitle);
     try {
-      if (typeof window !== "undefined") {
-        localStorage.setItem("activeItem", activeItem);
-        localStorage.setItem("activeSubtitle", activesubtitle);
-      }
+      // if (typeof window !== "undefined") {
+      //   localStorage.setItem("activeItem", activeItem);
+      //   localStorage.setItem("activeSubtitle", activesubtitle);
+      // }
     } catch (error) {
       console.log(error);
     }
