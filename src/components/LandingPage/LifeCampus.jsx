@@ -34,7 +34,7 @@ const LifeCampus = () => {
         Find out about our range of activities designed to liven up student life
       </div>
       <div className="container  mx-auto mt-4">
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-fit">
           {photos.map((photo, index) => (
             <div
               key={index}
