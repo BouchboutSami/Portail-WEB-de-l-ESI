@@ -23,7 +23,7 @@ export default function Partenaires() {
           className="mySwiper w-full"
         >
           <SwiperSlide>
-            <PartenairesCard image="/assets/pwc.png" />
+            <PartenairesCard image="/assets/Yassir.png" />
           </SwiperSlide>
           <SwiperSlide>
             <PartenairesCard image="/assets/Ooredoo.png" />
