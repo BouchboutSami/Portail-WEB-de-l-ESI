@@ -3,9 +3,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 const UniSideBar = () => {
-  const [activeItem, setActiveItem] = useState(
-    localStorage.getItem("activeItem") || ""
-  );
+  const [activeItem, setActiveItem] = useState("");
   useEffect(() => {
     setActiveItem(localStorage.getItem("activeItem") || "");
   }, []);
