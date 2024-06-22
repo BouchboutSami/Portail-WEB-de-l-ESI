@@ -56,7 +56,7 @@ const EtudeSideBar = () => {
     setActiveSubtitle(activesubtitle);
     localStorage.setItem("activeItem", activeItem);
     localStorage.setItem("activeSubtitle", activesubtitle);
-  }, [location.pathname]);
+  }, [pathname]);
   const navigation = [
     {
       title: "Education",
