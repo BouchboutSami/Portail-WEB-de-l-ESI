@@ -1,12 +1,14 @@
+import Image from "next/image";
 import React from "react";
-import landingImage from "../../public/assets/Landing.jpg";
 
 const LandingImage = (props) => {
   return (
     <div className="w-full h-[500px] relative">
-      <img
-        src={landingImage}
+      <Image
+        src="/assets/landing.png"
         className="object-cover w-full h-full absolute inset-0"
+        width={1920}
+        height={500}
       />
       <div class="absolute top-0 left-0 w-full opacity-90 h-[400px] bg-gradient-to-b from-[#0E375F] " />
       <div class="absolute top-48 left-16 w-full font-poppins font-medium text-white ">
