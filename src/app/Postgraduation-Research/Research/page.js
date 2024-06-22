@@ -7,20 +7,18 @@ import PostSideBar from "@/components/PostSideBar";
 
 const page = () => {
   return (
-    <BrowserRouter>
-      <div className=" w-screen">
-        <NavBar />
-        <PostImage
-          image="/images/Event.png"
-          titre="Research"
-          details="Discover research initiatives at ESI. Dive into our diverse array of projects, where innovation thrives and breakthroughs await."
-        />
-        <div className="flex ">
-          <PostSideBar />
-          <div className=" w-full items-center text-center">Research</div>
-        </div>
+    <div className=" w-screen">
+      <NavBar />
+      <PostImage
+        image="/images/Event.png"
+        titre="Research"
+        details="Discover research initiatives at ESI. Dive into our diverse array of projects, where innovation thrives and breakthroughs await."
+      />
+      <div className="flex ">
+        <PostSideBar />
+        <div className=" w-full items-center text-center">Research</div>
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
 
