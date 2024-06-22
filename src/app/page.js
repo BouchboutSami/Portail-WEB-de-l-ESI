@@ -29,7 +29,7 @@ export default function Home() {
         <NextEvents />
       </div>
       <Academics />
-      <LifeCampus />
+      {/* <LifeCampus /> */}
       <PostGradAndResearchSection />
       <ServicesForCompanies />
       <Partenaires />
