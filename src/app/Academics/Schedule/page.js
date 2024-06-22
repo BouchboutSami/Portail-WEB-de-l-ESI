@@ -16,7 +16,7 @@ export default function Schedule() {
       />
 
       <div className="flex">
-        {/* <EtudeSideBar /> */}
+        <EtudeSideBar />
         <div className="flex-1 p-8">
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-bleunuit mb-4">Schedule</h1>
