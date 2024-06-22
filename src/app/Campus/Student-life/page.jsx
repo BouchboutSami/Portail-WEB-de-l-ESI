@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar";
 import PostImage from "@/components/PostImage";
 import Performance from "./Performance";
 import Footer from "@/components/Footer";
-import CampusSideBar from "../../CampusSideBar";
+import CampusSideBar from "../CampusSideBar";
 
 const page = () => {
   return (
