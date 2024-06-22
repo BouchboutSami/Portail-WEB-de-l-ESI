@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import CampusSideBar from "../../CampusSideBar";
 import NavBar from "@/components/NavBar";
 import PostImage from "@/components/PostImage";
 import Performance from "./Performance";
 import Footer from "@/components/Footer";
+import CampusSideBar from "../../CampusSideBar";
 
 const page = () => {
   return (
