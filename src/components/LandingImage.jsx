@@ -1,10 +1,11 @@
 import React from "react";
+import landingImage from "/assets/landing.png";
 
 const LandingImage = (props) => {
   return (
     <div className="w-full h-[500px] relative">
       <img
-        src="/assets/Yassir.png"
+        src={landingImage}
         className="object-cover w-full h-full absolute inset-0"
       />
       <div class="absolute top-0 left-0 w-full opacity-90 h-[400px] bg-gradient-to-b from-[#0E375F] " />
