@@ -1,13 +1,7 @@
 import DescriptionText from "@/components/DescriptionText";
 import DropdownDoc from "@/components/DropdownDoc";
-import Map from "@/components/Map";
 import React from "react";
 
-const loctable = {
-  lat: 36.720257652315446,
-  lng: 3.145609716792752,
-  name: "Hasan Badi Center",
-};
 const dossier = [
   { text: "Insurance form", href: "#" },
   { text: "Copy of identity card", href: "#" },
@@ -50,7 +44,7 @@ const Healthcare = () => {
           {" "}
           Geographical location of the CNAS
         </h3>
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.102885673336!2d3.1407506817404935!3d36.72009020072922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e53e358976901%3A0xe3c5f594359fea89!2sCNAS%20Hassan%20BADI%20El%20Harrach!5e0!3m2!1sfr!2sdz!4v1719021146781!5m2!1sfr!2sdz"
           width="320"
           height="320"
@@ -58,7 +52,7 @@ const Healthcare = () => {
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        ></iframe> */}
       </div>
     </div>
   );
