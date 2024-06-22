@@ -11,12 +11,12 @@ const page = () => {
     <div className="font-poppins text-bleu w-screen flex flex-col relative">
       <Signalbar />
       <NavBar />
-      {/* <PostImage
+      <PostImage
         img="/assets/Pre-promotion1.png"
         titre="Pre-promotion Training"
         details="Discover our pre-promotion training themes and perfect your skills in various fields thanks to our wide selection of programs tailored to your professional needs."
-      /> */}
-      <ServicesSideBar />
+      />
+      {/* <ServicesSideBar /> */}
       <Footer />
     </div>
   );
