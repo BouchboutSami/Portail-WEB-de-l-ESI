@@ -33,12 +33,12 @@ const LifeCampus = () => {
       <div className="text-black font-medium font-poppins text-md text-center mb-8">
         Find out about our range of activities designed to liven up student life
       </div>
-      <div className="container  mx-auto mt-4">
-        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="container  mx-auto mt-4 flex justify-center">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-fit">
           {photos.map((photo, index) => (
             <div
               key={index}
-              className="flex flex-col items-start mb-[76px] w-400 h-280"
+              className="flex flex-col items-start mb-[76px] w-fit h-280"
             >
               <a href={photo.link} className="h-full">
                 <img
