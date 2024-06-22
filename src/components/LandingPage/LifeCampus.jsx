@@ -38,7 +38,7 @@ const LifeCampus = () => {
           {photos.map((photo, index) => (
             <div
               key={index}
-              className="flex flex-col items-start mb-[76px] w-400 h-280"
+              className="flex flex-col items-start mb-[76px] w-auto h-280"
             >
               <a href={photo.link} className="h-full">
                 <img
